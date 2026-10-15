@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Technical SEO Audit Guide: Crawling & Findings | Groniq</title>
+    <meta name="description"
+        content="Learn how to configure a website crawl, interpret SEO findings, prioritize fixes, and verify changes with practical GroCrawl examples.">
+    <meta name="keywords"
+        content="technical seo audit, website crawler guide, seo spider interpretation, redirect chains, canonical tags, duplicate content seo, crux vs lighthouse, internal link analysis, grocrawl guide">
+    <meta name="author" content="Groniq Digital Solutions">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <link rel="canonical" href="https://groniqdigital.com/learn/technical-seo-audit/" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Groniq">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://groniqdigital.com/learn/technical-seo-audit/">
+    <meta property="og:title" content="Technical SEO Audit Guide: Crawling & Findings | Groniq">
+    <meta property="og:description"
+        content="Learn how to configure a website crawl, interpret SEO findings, prioritize fixes, and verify changes with practical GroCrawl examples.">
+    <meta property="og:image" content="https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@groniq">
+    <meta name="twitter:creator" content="@groniq">
+    <meta name="twitter:url" content="https://groniqdigital.com/learn/technical-seo-audit/">
+    <meta name="twitter:title" content="Technical SEO Audit Guide: Crawling & Findings | Groniq">
+    <meta name="twitter:description"
+        content="Learn how to configure a website crawl, interpret SEO findings, prioritize fixes, and verify changes with practical GroCrawl examples.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png">
+
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png">
+
+    <link rel="stylesheet" href="/tailwind.css">
+    <!-- Google Fonts & Icon Libraries -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@0.469.0"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZFQDDBR');</script>
+    <!-- End Google Tag Manager -->
+    <script src="/analytics.js" defer></script>
+    <script src="/accessibility.js" defer></script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "@id": "https://groniqdigital.com/learn/technical-seo-audit/#article",
+      "isPartOf": {
+        "@type": "WebPage",
+        "@id": "https://groniqdigital.com/learn/technical-seo-audit/"
+      },
+      "headline": "How to Run and Interpret a Technical SEO Audit",
+      "description": "Learn how to configure a website crawl, interpret SEO findings, prioritize fixes, and verify changes with practical GroCrawl examples.",
+      "url": "https://groniqdigital.com/learn/technical-seo-audit/",
+      "author": {
+        "@type": "Organization",
+        "name": "Groniq Digital Solutions",
+        "url": "https://groniqdigital.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Groniq Digital Solutions",
+        "url": "https://groniqdigital.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png"
+        }
+      },
+      "datePublished": "2026-10-14",
+      "dateModified": "2026-10-14",
+      "mainEntityOfPage": "https://groniqdigital.com/learn/technical-seo-audit/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://groniqdigital.com/learn/technical-seo-audit/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://groniqdigital.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Learn",
+          "item": "https://groniqdigital.com/learn/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Technical SEO Audit",
+          "item": "https://groniqdigital.com/learn/technical-seo-audit/"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <style>
+        :root {
+            --primary: #39FF14;
+            --bg: #050505;
+            --card: #0D0D0D;
+            --border: #1E1E1E;
+        }
+
+        .animate-scan {
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to right, transparent, var(--primary), transparent);
+            animation: scan 3s linear infinite;
+        }
+
+        @keyframes scan {
+            0% {
+                top: 0%;
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                top: 100%;
+                opacity: 0;
+            }
+        }
+
+        body.loading {
+            overflow: hidden;
+        }
+
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+        
+        /* Ensure anchor links don't hide under the sticky header */
+        :target {
+            scroll-margin-top: 110px;
+        }
+
+        .prose h2 {
+            font-size: 1.45rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            color: white;
+            margin-top: 3.5rem;
+            margin-bottom: 1rem;
+            padding-top: 0.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding-bottom: 0.6rem;
+        }
+
+        .prose h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #39FF14;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .prose p {
+            font-size: 0.9375rem;
+            line-height: 1.8;
+            color: #A3A3A3;
+            margin-bottom: 1.25rem;
+        }
+
+        .prose strong {
+            color: white;
+            font-weight: 600;
+        }
+
+        .prose a {
+            color: #39FF14;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            transition: color 0.15s ease;
+        }
+
+        .prose a:hover {
+            color: #FFFFFF;
+        }
+
+        .prose code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 0.8125rem;
+            background-color: #141414;
+            color: #39FF14;
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.375rem;
+            border: 1px solid #242424;
+            word-break: break-word;
+        }
+
+        .prose pre code {
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            color: inherit;
+        }
+
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.25rem;
+            margin-bottom: 1.5rem;
+            color: #A3A3A3;
+            font-size: 0.9375rem;
+            line-height: 1.75;
+        }
+
+        .prose ol {
+            list-style-type: decimal;
+            padding-left: 1.25rem;
+            margin-bottom: 1.5rem;
+            color: #A3A3A3;
+            font-size: 0.9375rem;
+            line-height: 1.75;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+        }
+
+        .prose li strong {
+            color: #FFFFFF;
+        }
+
+        html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+        section[id], [id] { scroll-margin-top: 110px; }
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid rgba(57,255,20,0.9); outline-offset: 2px; box-shadow: 0 0 0 4px rgba(57,255,20,0.14); }
+        .mobile-nav-rail { -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; position: relative; overflow-x: auto; white-space: nowrap; }
+        .mobile-nav-rail::-webkit-scrollbar { display: none; }
+        .mobile-nav-rail::after { content: ""; position: absolute; top: 0; right: 0; width: 32px; height: 100%; background: linear-gradient(to left, rgba(5,5,5,1), rgba(5,5,5,0)); pointer-events: none; }
+        #mobile-project-sheet { display: none; }
+        #mobile-project-sheet.is-open { display: block; }
+        .sheet-panel { transform: translateY(18px); opacity: 0; transition: transform 0.25s ease, opacity 0.25s ease; }
+        #mobile-project-sheet.is-open .sheet-panel { transform: translateY(0); opacity: 1; }
+        @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+    </style>
+</head>
+
+<body class="bg-brand-dark text-white selection:bg-brand-green selection:text-black min-h-screen flex flex-col loading">
+
+    <!-- Splash / Loading Screen -->
+    <div id="splash-screen"
+        class="fixed inset-0 z-[200] bg-[#050505] flex flex-col items-center justify-center transition-all duration-1000 ease-in-out">
+        <div class="animate-scan"></div>
+        <svg viewBox="0 0 100 100" class="w-20 h-20 mb-8" fill="none" aria-hidden="true">
+            <path
+                d="M70 20C85 20 95 35 95 50C95 65 85 80 70 80H60V65H70C78 65 83 58 83 50C83 42 78 35 70 35H45L40 20H70Z"
+                fill="#39FF14" />
+            <path d="M30 80C15 80 5 65 5 50C5 35 15 20 30 20H40V35H30C22 35 17 42 17 50C17 58 22 65 30 65H55L60 80H30Z"
+                fill="white" />
+        </svg>
+        <div class="w-48 space-y-4 text-center">
+            <span id="progress-text" class="text-brand-green font-black text-2xl font-mono">0%</span>
+            <div class="h-[2px] w-full bg-[#1F1F1F] rounded-full overflow-hidden relative">
+                <div id="progress-bar" class="absolute top-0 left-0 h-full bg-brand-green transition-all duration-100"
+                    style="width: 0%"></div>
+            </div>
+            <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-muted">Initialising Guide...</p>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header id="navbar" class="sticky top-0 w-full z-40 py-4 bg-[#050505]/90 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center gap-3">
+            <a href="/" class="flex items-center gap-3 group shrink-0" aria-label="Groniq Digital Solutions Home">
+                <svg viewBox="0 0 100 100" class="w-8 h-8 transition-transform group-hover:scale-105 duration-300"
+                    fill="none" aria-hidden="true">
+                    <path
+                        d="M70 20C85 20 95 35 95 50C95 65 85 80 70 80H60V65H70C78 65 83 58 83 50C83 42 78 35 70 35H45L40 20H70Z"
+                        fill="#39FF14" />
+                    <path
+                        d="M30 80C15 80 5 65 5 50C5 35 15 20 30 20H40V35H30C22 35 17 42 17 50C17 58 22 65 30 65H55L60 80H30Z"
+                        fill="white" />
+                </svg>
+                <div class="flex flex-col">
+                    <span class="text-xl font-black uppercase tracking-tight text-white leading-none">GRONIQ</span>
+                    <span class="text-[9px] uppercase tracking-widest text-brand-muted font-bold mt-0.5">Digital
+                        Solutions</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-7" aria-label="Main Navigation">
+                <div class="relative services-dropdown-container flex items-center">
+                    <a href="/services/" class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors py-1">Services</a>
+                    <button type="button" 
+                        class="services-menu-toggle ml-1 p-1 text-brand-muted hover:text-white focus-visible:outline-none focus-visible:text-brand-green transition-colors cursor-pointer" 
+                        aria-expanded="false" 
+                        aria-haspopup="true"
+                        aria-controls="services-dropdown-menu" 
+                        aria-label="Toggle Services submenu">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="toggle-icon transition-transform duration-200"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <!-- Accessible Dropdown Menu -->
+                    <div id="services-dropdown-menu" 
+                        class="services-dropdown-panel absolute top-full left-0 mt-2 w-60 rounded-xl bg-[#0D0D0D] border border-[#222] shadow-[0_16px_36px_rgba(0,0,0,0.8)] p-2 hidden z-50 backdrop-blur-md"
+                        role="menu" 
+                        aria-label="Services Submenu">
+                        <a href="/services/" role="menuitem" class="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white hover:bg-white/5 transition-colors">
+                            <span>All Services</span>
+                            <span class="text-[10px] text-brand-green font-mono">Overview &rarr;</span>
+                        </a>
+                        <a href="/services/paid-acquisition/" role="menuitem" class="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white hover:bg-white/5 transition-colors">
+                            <span>Paid Acquisition</span>
+                            <span class="text-[9px] text-brand-muted font-mono">Ads</span>
+                        </a>
+                        <a href="/services/measurement-tracking/" role="menuitem" class="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white hover:bg-white/5 transition-colors">
+                            <span>Measurement &amp; Tracking</span>
+                            <span class="text-[9px] text-brand-muted font-mono">GA4/GTM</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="/#selected-work"
+                    class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors">Work</a>
+                <a href="/tools/"
+                    class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors">Tools</a>
+                <a href="/learn/"
+                    class="text-xs font-semibold uppercase tracking-wider text-brand-green transition-colors">Learn</a>
+                <a href="/#about"
+                    class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors">About</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="/tools/grocrawl/"
+                    class="inline-flex items-center gap-2 px-4 py-2 border border-[#2a2a2a] bg-[#111] hover:border-brand-green/40 hover:text-white text-brand-muted text-xs font-bold uppercase tracking-wider rounded-lg transition-colors">
+                    <i data-lucide="terminal" class="w-3.5 h-3.5 text-brand-green"></i>
+                    <span>Open GroCrawl</span>
+                </a>
+                <a href="/#contact"
+                    class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-green text-black font-bold text-xs uppercase tracking-wider rounded-lg hover:bg-brand-greenHover hover:shadow-[0_0_20px_rgba(57,255,20,0.3)] transition-all duration-200">
+                    <span>Audit Website</span>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="lg:hidden flex items-center gap-2 ml-auto">
+                <a id="mobile-project-trigger" href="/#contact"
+                    class="inline-flex items-center justify-center gap-1.5 rounded-lg bg-brand-green px-3 py-2 text-[10px] sm:text-[11px] font-black uppercase tracking-[0.12em] text-black leading-none">
+                    <span>Start a Project</span>
+                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Sub Navigation Rail -->
+    <div class="lg:hidden w-full border-b border-[#181818] bg-brand-dark/95 backdrop-blur supports-[backdrop-filter]:bg-brand-dark/80">
+        <nav aria-label="Mobile navigation" class="mobile-nav-rail py-3 px-6">
+            <div class="flex items-center gap-6 text-[11px] font-bold uppercase tracking-[0.18em] text-brand-muted">
+                <div class="inline-flex items-center shrink-0">
+                    <a href="/services/" class="shrink-0 hover:text-white transition-colors">Services</a>
+                    <button type="button" class="mobile-services-toggle ml-1 p-1 text-brand-muted hover:text-white focus-visible:outline-none cursor-pointer" aria-expanded="false" aria-controls="mobile-services-submenu" aria-label="Toggle Services child links">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-200"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </div>
+                <a href="/tools/" class="shrink-0 hover:text-white transition-colors">Tools</a>
+                <a href="/learn/" class="shrink-0 text-brand-green transition-colors">Learn</a>
+                <a href="/#selected-work" class="shrink-0 hover:text-white transition-colors">Work</a>
+                <a href="/#about" class="shrink-0 hover:text-white transition-colors">About</a>
+                <a href="/#pricing" class="shrink-0 hover:text-white transition-colors">Pricing</a>
+            </div>
+        </nav>
+        <!-- Expandable Mobile Services Submenu -->
+        <div id="mobile-services-submenu" class="hidden px-6 py-2.5 bg-[#0C0C0C] border-t border-[#1C1C1C] flex flex-col gap-2 text-[10px] font-mono uppercase tracking-wider text-brand-muted">
+            <a href="/services/" class="hover:text-brand-green transition-colors flex items-center justify-between py-1">
+                <span>&bull; All Services Overview</span>
+                <span class="text-brand-green">&rarr;</span>
+            </a>
+            <a href="/services/paid-acquisition/" class="hover:text-brand-green transition-colors flex items-center justify-between py-1">
+                <span>&bull; Paid Acquisition (Google &amp; Meta Ads)</span>
+                <span class="text-brand-green">&rarr;</span>
+            </a>
+            <a href="/services/measurement-tracking/" class="hover:text-brand-green transition-colors flex items-center justify-between py-1">
+                <span>&bull; Measurement &amp; Tracking (GA4 / GTM / CAPI)</span>
+                <span class="text-brand-green">&rarr;</span>
+            </a>
+        </div>
+    </div>
+
+    <main class="flex-grow">
+        <!-- BREADCRUMB & HERO -->
+        <section class="relative pt-12 pb-14 px-6 bg-grid border-b border-[#181818]">
+            <div class="max-w-4xl mx-auto">
+                <nav class="flex items-center gap-2 text-xs font-mono uppercase text-brand-muted mb-6">
+                    <a href="/learn/" class="hover:text-brand-green transition-colors">Learn</a>
+                    <span>/</span>
+                    <span class="text-white">Technical SEO Audit</span>
+                </nav>
+
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-white mb-6 leading-tight">
+                    How to Run and Interpret a Technical SEO Audit
+                </h1>
+
+                <p class="text-base sm:text-lg text-brand-muted max-w-2xl leading-relaxed mb-6">
+                    A technical SEO audit examines how search engine bots discover, fetch, render, and index your website pages. Learn how to configure disciplined crawls, interpret HTTP evidence, diagnose canonical and duplicate issues, and prioritize high-leverage fixes.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-6 pt-4 border-t border-[#1C1C1C] text-xs font-mono text-brand-muted">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="book-open" class="w-4 h-4 text-brand-green"></i>
+                        <span>Comprehensive Field Guide</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="clock" class="w-4 h-4 text-brand-green"></i>
+                        <span>16 min read</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="shield-check" class="w-4 h-4 text-brand-green"></i>
+                        <span>Verified against Google Search Central</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTENT AREA -->
+        <section class="py-12 px-6">
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16">
+                
+                <!-- Main Article -->
+                <article class="prose max-w-2xl lg:max-w-3xl w-full">
+                    
+                    <!-- Quick Jump (Mobile) -->
+                    <div class="lg:hidden mb-8 p-5 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                        <details class="group">
+                            <summary class="flex items-center justify-between cursor-pointer list-none text-xs font-bold uppercase tracking-wider text-white">
+                                <span class="flex items-center gap-2"><i data-lucide="list" class="w-4 h-4 text-brand-green"></i> Jump to Section</span>
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-brand-muted group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <nav class="mt-4 pt-3 border-t border-[#1C1C1C] flex flex-col gap-2 text-xs text-brand-muted">
+                                <a href="#what-crawlers-can-and-cannot-do" class="hover:text-brand-green">1. What a Crawler Can &amp; Cannot Tell You</a>
+                                <a href="#defining-audit-scope" class="hover:text-brand-green">2. Defining Audit Scope &amp; Small First Crawls</a>
+                                <a href="#crawl-depth-and-limits" class="hover:text-brand-green">3. Crawl Depth vs. URL Path Depth</a>
+                                <a href="#concurrency-and-delays" class="hover:text-brand-green">4. Page Limits, Concurrency &amp; Delays</a>
+                                <a href="#robots-and-javascript" class="hover:text-brand-green">5. Robots.txt Compliance &amp; JS Rendering</a>
+                                <a href="#http-responses-and-redirects" class="hover:text-brand-green">6. HTTP Responses &amp; Redirect Chains</a>
+                                <a href="#canonicals-and-indexability" class="hover:text-brand-green">7. Meta Robots, X-Robots &amp; Canonicals</a>
+                                <a href="#duplicate-content" class="hover:text-brand-green">8. Titles, Headings &amp; Duplicates</a>
+                                <a href="#internal-links-and-orphans" class="hover:text-brand-green">9. Internal Link Analysis &amp; Orphan Pages</a>
+                                <a href="#pagespeed-lab-vs-field" class="hover:text-brand-green">10. PageSpeed: Lab vs. Field (CrUX)</a>
+                                <a href="#content-and-trust-heuristics" class="hover:text-brand-green">11. Content &amp; Trust Heuristics</a>
+                                <a href="#health-score-and-prioritization" class="hover:text-brand-green">12. Prioritizing &amp; Verifying Fixes</a>
+                                <a href="#worked-example" class="hover:text-brand-green">13. Fictional Worked Example</a>
+                            </nav>
+                        </details>
+                    </div>
+
+                    <!-- 1. WHAT A CRAWLER CAN AND CANNOT TELL YOU -->
+                    <h2 id="what-crawlers-can-and-cannot-do">1. What a Crawler Can and Cannot Tell You</h2>
+                    <p>A website crawler (such as <strong>GroCrawl</strong>) simulates automated web bots by requesting pages, parsing their HTML, extracting discovered links, and evaluating on-page markup. It provides an objective snapshot of how your site responds to automated inspection.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                        <div class="p-4 rounded-xl bg-[#0d0d0d] border border-[#222]">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-brand-green !mt-0 mb-2 flex items-center gap-1.5">
+                                <i data-lucide="check-circle" class="w-4 h-4"></i> What a Crawler Directly Verifies
+                            </h3>
+                            <ul class="text-xs text-[#a3a3a3] !mb-0 space-y-1.5 pl-4">
+                                <li><strong>HTTP status codes:</strong> 200 OK, 301/302 redirects, 404 broken links, and 500 server crashes.</li>
+                                <li><strong>Indexability directives:</strong> <code>noindex</code>, <code>nofollow</code>, <code>canonical</code> tags, and <code>robots.txt</code> blocks.</li>
+                                <li><strong>On-page metadata:</strong> Page titles, meta descriptions, Open Graph cards, H1–H6 structures, and images.</li>
+                                <li><strong>Link architecture:</strong> Internal link depth, inlinks, outlinks, anchor texts, and external endpoints.</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 rounded-xl bg-[#0d0d0d] border border-[#222]">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-[#ef4444] !mt-0 mb-2 flex items-center gap-1.5">
+                                <i data-lucide="alert-triangle" class="w-4 h-4"></i> What a Crawler Cannot Know Alone
+                            </h3>
+                            <ul class="text-xs text-[#a3a3a3] !mb-0 space-y-1.5 pl-4">
+                                <li><strong>Actual Google index status:</strong> An HTTP 200 code does not guarantee a page is indexed or will rank.</li>
+                                <li><strong>Real-world search impressions or clicks:</strong> Only Google Search Console performance data provides queries and impressions.</li>
+                                <li><strong>Off-site orphan pages:</strong> If no internal links point to a page, a crawler starting at the homepage cannot find it without an XML sitemap or log file.</li>
+                                <li><strong>Algorithm penalties:</strong> Search engines do not report algorithmic demotions in HTTP response headers.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>
+                        A crawler reveals technical friction and architecture issues. It does not replace Search Console, log analysis, or qualitative content assessment. See <a href="https://developers.google.com/search/docs/crawling-indexing" target="_blank" rel="noopener">Google Search Central crawling and indexing documentation</a> for official background.
+                    </p>
+
+                    <!-- 2. DEFINING AUDIT SCOPE AND CONFIGURING A SMALL FIRST CRAWL -->
+                    <h2 id="defining-audit-scope">2. Defining Audit Scope &amp; Configuring a Small First Crawl</h2>
+                    <p>A common mistake is launching an unbounded crawl against an enterprise domain on your first attempt. Large ecommerce sites or faceted catalogs can produce millions of parameter URLs, exhausting client memory or overloading web servers.</p>
+                    
+                    <p>Always perform a staged audit workflow:</p>
+                    <ol>
+                        <li><strong>Stage 1 — Smoke Crawl (25 to 50 URLs):</strong> Set Max URLs to 50 and Depth to 2. Confirm your target hostname resolves, verify canonical domains (HTTP vs HTTPS, <code>www</code> vs non-<code>www</code>), inspect basic response times, and verify robots.txt compliance.</li>
+                        <li><strong>Stage 2 — Sectional or Directory Crawl:</strong> Target key template archetypes (e.g., <code>/blog/</code>, <code>/products/</code>, <code>/services/</code>). Verify template-wide metadata, canonical formats, and schema markup.</li>
+                        <li><strong>Stage 3 — Full Frontier Crawl:</strong> Increase limits to 500+ URLs to inspect link equity, orphan detection, and sitewide status code integrity.</li>
+                    </ol>
+
+                    <div class="p-5 bg-[#0D0D0D] border-l-2 border-l-brand-green border-y border-r border-[#1C1C1C] rounded-r-xl my-6">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-brand-green !mt-0 mb-2">Seed URL Protocol Consistency</h3>
+                        <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">
+                            Always input your exact canonical production protocol and host as the seed URL (e.g. <code>https://example.com/</code>, not <code>http://example.com</code>). If the seed URL immediately issues a 301 redirect, verify that internal links throughout the site do not still reference the old non-canonical protocol.
+                        </p>
+                    </div>
+
+                    <!-- 3. CRAWL DEPTH VERSUS URL PATH DEPTH -->
+                    <h2 id="crawl-depth-and-limits">3. Crawl Depth vs. URL Path Depth</h2>
+                    <p>One of the most frequent misunderstandings in technical SEO is confusing <strong>crawl click depth</strong> with <strong>URL path slug depth</strong>.</p>
+
+                    <div class="overflow-x-auto my-6 border border-[#1E1E1E] rounded-xl bg-[#0D0D0D]">
+                        <table class="w-full text-left text-xs text-[#A3A3A3]">
+                            <thead class="bg-[#141414] text-white uppercase tracking-wider text-[11px] border-b border-[#222]">
+                                <tr>
+                                    <th class="p-3 sm:p-4">Concept</th>
+                                    <th class="p-3 sm:p-4">Definition</th>
+                                    <th class="p-3 sm:p-4">Example</th>
+                                    <th class="p-3 sm:p-4">SEO Significance</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-[#181818]">
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green font-bold">Crawl Click Depth (Level)</td>
+                                    <td class="p-3 sm:p-4">The minimum number of internal links a bot must follow from the seed URL (usually homepage = Depth 0) to reach the target page.</td>
+                                    <td class="p-3 sm:p-4">Homepage (0) &rarr; Header Nav (1) &rarr; Category (2) &rarr; Product (3)</td>
+                                    <td class="p-3 sm:p-4">Pages closer to the homepage receive more internal link equity and are crawled and re-indexed more frequently by search engines.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-mono text-white font-bold">URL Path Slug Depth</td>
+                                    <td class="p-3 sm:p-4">The number of slashes (<code>/</code>) in the URL structure.</td>
+                                    <td class="p-3 sm:p-4 font-mono text-xs">/store/clothing/mens/jackets/winter-parka/</td>
+                                    <td class="p-3 sm:p-4">A page with 5 slashes can still have a Crawl Depth of 1 if it is linked directly from the global navigation or homepage. Google assesses internal link architecture, not slug slash counts.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>In <strong>GroCrawl</strong>, the <code>Max Depth</code> setting limits how many link hops the crawler will follow from the starting address. Setting Max Depth to 3 means the crawler explores pages at levels 0, 1, 2, and 3, but will not enqueue links discovered on level-3 pages.</p>
+
+                    <!-- 4. PAGE LIMITS, CONCURRENCY, DELAYS, AND ROBOTS.TXT -->
+                    <h2 id="concurrency-and-delays">4. Page Limits, Concurrency, Delays, and Partial Results</h2>
+                    <p>Responsible crawling requires balancing audit speed against origin server health. Automated crawlers should never degrade website performance for real human visitors.</p>
+                    
+                    <ul>
+                        <li><strong>Max URLs (Frontier Cap):</strong> Restricts the total number of unique addresses the spider will fetch. Once reached, crawling stops, preserving all discovered and crawled data for analysis.</li>
+                        <li><strong>Concurrent Worker Threads:</strong> Governs how many HTTP requests run simultaneously. For small production servers or shared hosting, 2 to 5 concurrent workers prevent CPU and database connection pool exhaustion.</li>
+                        <li><strong>Crawl Delay (Politeness):</strong> Introduces an intentional pause between consecutive requests. If a server responds with HTTP 429 (Too Many Requests) or 503 (Service Unavailable), increase the delay immediately to 1.5–3.0 seconds.</li>
+                    </ul>
+
+                    <p>When an audit halts because it hit the Max URLs limit, the resulting dataset is a <strong>partial crawl</strong>. A partial crawl is valid for template audits and high-priority fixes, but you cannot compute absolute sitewide link metrics (like total orphan pages) from an incomplete crawl.</p>
+
+                    <!-- 5. ROBOTS.TXT AND JAVASCRIPT RENDERING -->
+                    <h2 id="robots-and-javascript">5. Robots.txt Compliance &amp; JavaScript Rendering</h2>
+                    <p>Search engines follow strict protocol specifications before requesting web documents.</p>
+
+                    <h3>Robots.txt Directive Compliance</h3>
+                    <p>The <code>robots.txt</code> file instructs web robots which URL paths they are allowed or forbidden to crawl. GroCrawl parses your site's <code>/robots.txt</code> and respects <code>Disallow</code> rules by default.</p>
+                    
+                    <div class="p-5 bg-[#0D0D0D] border-l-2 border-l-brand-green border-y border-r border-[#1C1C1C] rounded-r-xl my-4">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-brand-green !mt-0 mb-2">Crucial Distinction: Disallow vs. Noindex</h3>
+                        <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">
+                            Blocking a page in <code>robots.txt</code> prevents bots from crawling it, but it <strong>does not prevent indexing</strong> if other websites link to that URL. Furthermore, if a page contains a <code>&lt;meta name="robots" content="noindex"&gt;</code> tag but is blocked in robots.txt, the crawler can never download the page to see the noindex tag! To guarantee de-indexing, allow the URL in robots.txt and let bots read the noindex directive.
+                        </p>
+                    </div>
+
+                    <h3 id="javascript-rendering-limitations">Headless JavaScript Rendering: When and Why</h3>
+                    <p>Modern web applications built with frameworks such as React, Next.js, Vue, or Angular often render content and links dynamically via client-side JavaScript. Standard fast HTTP crawlers only receive the raw initial HTML stream.</p>
+
+                    <p>When to enable JavaScript rendering:</p>
+                    <ul>
+                        <li><strong>Client-Side Rendered (CSR) Single-Page Applications:</strong> When view-source reveals an empty <code>&lt;div id="root"&gt;&lt;/div&gt;</code> without navigation links or headings.</li>
+                        <li><strong>Dynamically Injected Links:</strong> When product pagination or category menus only populate after script execution.</li>
+                        <li><strong>Interactive Elements:</strong> Accordions, tabs, or pricing toggles containing critical text content.</li>
+                    </ul>
+
+                    <p><strong>Trade-offs and Limitations:</strong> Headless rendering (using automated Chromium instances) consumes significantly more CPU and RAM per URL and crawls at roughly 10% the speed of direct HTTP streaming. Always crawl first with standard HTTP mode; only enable JS rendering if critical content or links are missing from initial HTML responses.</p>
+
+                    <!-- 6. HTTP RESPONSES AND REDIRECT CHAINS -->
+                    <h2 id="http-responses-and-redirects">6. HTTP Responses, Redirects, Chains, Loops, and Broken Links</h2>
+                    <p>Status codes communicate the outcome of an HTTP request. Clean technical architecture ensures that all internal links point directly to canonical, <code>200 OK</code> destinations without intermediate hops.</p>
+
+                    <div class="overflow-x-auto my-6 border border-[#1E1E1E] rounded-xl bg-[#0D0D0D]">
+                        <table class="w-full text-left text-xs text-[#A3A3A3]">
+                            <thead class="bg-[#141414] text-white uppercase tracking-wider text-[11px] border-b border-[#222]">
+                                <tr>
+                                    <th class="p-3 sm:p-4">Status Class</th>
+                                    <th class="p-3 sm:p-4">Key Codes</th>
+                                    <th class="p-3 sm:p-4">Audit Implication</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-[#181818]">
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green font-bold">2xx Success</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">200 OK</td>
+                                    <td class="p-3 sm:p-4">Page was successfully retrieved. All internal links should ideally resolve directly to 200 URLs.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-mono text-amber-400 font-bold">3xx Redirect</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">301 (Permanent), 302/307 (Temporary), 308</td>
+                                    <td class="p-3 sm:p-4">Redirects are normal for site migrations, but internal links should point directly to the final target to avoid wasting crawl budget and adding network latency.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-mono text-[#ef4444] font-bold">4xx Client Error</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">404 (Not Found), 410 (Gone), 403 (Forbidden)</td>
+                                    <td class="p-3 sm:p-4">Broken links erode user experience and waste crawl allocation. Internal 404 links must be updated or removed.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-mono text-purple-400 font-bold">5xx Server Error</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">500 (Internal Error), 502 (Bad Gateway), 503 (Unavailable)</td>
+                                    <td class="p-3 sm:p-4">Indicates origin infrastructure failures. High 5xx rates can cause search engines to reduce crawl frequency.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Redirect Chains and Loops</h3>
+                    <p>A <strong>redirect chain</strong> occurs when Page A redirects to Page B, which redirects to Page C. Each hop introduces network latency, and search engines may abandon crawling after 4–5 consecutive hops. A <strong>redirect loop</strong> (Page A &rarr; Page B &rarr; Page A) causes bot failure and browser crash errors.</p>
+                    <p><strong>The Fix:</strong> Update internal links and redirects so Page A points directly to Page C in a single 301 hop.</p>
+
+                    <!-- 7. META ROBOTS, X-ROBOTS-TAG, AND CANONICALS -->
+                    <h2 id="canonicals-and-indexability">7. Meta Robots, X-Robots-Tag, and Canonicals</h2>
+                    <p>Search engines rely on page-level directives to decide whether to index a document and how to handle duplicates.</p>
+
+                    <h3>Robots Meta Tags vs. X-Robots-Tag Headers</h3>
+                    <ul>
+                        <li><strong>HTML Meta Robots:</strong> Placed in the HTML <code>&lt;head&gt;</code> (e.g. <code>&lt;meta name="robots" content="noindex, follow"&gt;</code>). Applicable only to HTML documents.</li>
+                        <li><strong>HTTP X-Robots-Tag:</strong> Emitted in the HTTP response header (e.g. <code>X-Robots-Tag: noindex</code>). Essential for non-HTML assets such as PDFs, downloadable spreadsheets, and API responses.</li>
+                    </ul>
+
+                    <h3>Canonical Tags (Rel=Canonical)</h3>
+                    <p>The canonical tag specifies the preferred version of a webpage when multiple URLs contain identical or substantially similar content (e.g., tracking URLs, print versions, category filters). Reference: <a href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls" target="_blank" rel="noopener">Google Canonicalization Guidelines</a>.</p>
+
+                    <p>Common canonical issues flagged in audits:</p>
+                    <ul>
+                        <li><strong>Self-Referencing Canonicals (Best Practice):</strong> Clean canonical pages should point to themselves using absolute HTTPS URLs.</li>
+                        <li><strong>Canonical Mismatch:</strong> Page A declares Page B as canonical, but internal links consistently link to Page A.</li>
+                        <li><strong>Canonicalizing to a 404 or Redirect:</strong> The canonical target must always return <code>200 OK</code>. Canonicalizing to a 301 or 404 confuses search engines.</li>
+                        <li><strong>Canonical in Body:</strong> Canonical links outside the <code>&lt;head&gt;</code> tag are ignored by Google.</li>
+                    </ul>
+
+                    <!-- 8. TITLES, DESCRIPTIONS, HEADINGS, AND DUPLICATE-CONTENT FINDINGS -->
+                    <h2 id="duplicate-content">8. Titles, Descriptions, Headings &amp; Duplicate Content</h2>
+                    <p>On-page textual metadata helps search engines determine page relevance, topical hierarchy, and search result snippets.</p>
+
+                    <h3>Title Tags &amp; Character Limits: The Myth</h3>
+                    <p>Many legacy SEO checklists enforce strict "60 characters" as a rule. In reality, Google measures title display by <strong>pixel width</strong> (typically around 600px on desktop), not character counts. Furthermore, Google frequently rewrites titles in SERPs if they are repetitive, generic, or do not accurately match user intent. Write descriptive, human-centered titles with primary brand and product context.</p>
+
+                    <h3>Duplicate Content: Penalties vs. Dilution</h3>
+                    <p>A widespread misconception is that duplicate content triggers an active "Google penalty." Google does not penalize sites for duplicate content unless it is deemed manipulative or malicious. Instead, duplicate content causes <strong>ranking dilution</strong>: search engines choose one version to display and ignore the rest, scattering backlinks, crawl frequency, and signals across multiple URLs.</p>
+
+                    <p>In <strong>GroCrawl</strong>, duplicate detection evaluates exact title matches as well as weighted content similarity (comparing titles, descriptions, H1 headings, and word count ratios). An audit threshold of 85% flags pages that risk competing against one another.</p>
+
+                    <!-- 9. INTERNAL LINKS AND ORPHAN PAGES -->
+                    <h2 id="internal-links-and-orphans">9. Internal Link Analysis &amp; Investigating Orphan Pages</h2>
+                    <p>Search bots discover pages primarily by following hyperlinks (<code>&lt;a href="..."&gt;</code>) from already-known pages. Internal link architecture distributes authority and guides crawl priority.</p>
+
+                    <h3>What is an Orphan Page?</h3>
+                    <p>An <strong>orphan page</strong> is a live webpage on your domain that has zero internal links pointing to it from any other page on the site. Humans cannot navigate to it, and search crawlers traversing the site link graph will never find it.</p>
+
+                    <div class="p-5 bg-[#0D0D0D] border-l-2 border-l-[#ef4444] border-y border-r border-[#1C1C1C] rounded-r-xl my-6">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-[#ef4444] !mt-0 mb-2">Can a Crawler Alone Find All Orphan Pages?</h3>
+                        <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">
+                            <strong>No.</strong> By definition, if a crawler only follows links on your site, it cannot discover a page that has no links pointing to it! To detect true orphan pages, you must cross-reference your crawl results against external data sources:
+                        </p>
+                        <ul class="text-xs text-[#A3A3A3] mt-2 mb-0 space-y-1 pl-4">
+                            <li><strong>XML Sitemaps:</strong> URLs declared in your sitemap that were not discovered during the crawl.</li>
+                            <li><strong>Google Search Console Coverage:</strong> Indexed URLs receiving search impressions that have zero inlinks.</li>
+                            <li><strong>Web Server Access Logs:</strong> URLs receiving organic bot requests that exist outside the current internal link tree.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 10. PAGESPEED: LAB RESULTS VS CRUX FIELD DATA -->
+                    <h2 id="pagespeed-lab-vs-field">10. PageSpeed: Lighthouse Lab Results vs. CrUX Field Data</h2>
+                    <p>Performance auditing requires distinguishing between synthetic lab simulations and real-world user observations.</p>
+
+                    <div class="overflow-x-auto my-6 border border-[#1E1E1E] rounded-xl bg-[#0D0D0D]">
+                        <table class="w-full text-left text-xs text-[#A3A3A3]">
+                            <thead class="bg-[#141414] text-white uppercase tracking-wider text-[11px] border-b border-[#222]">
+                                <tr>
+                                    <th class="p-3 sm:p-4">Dimension</th>
+                                    <th class="p-3 sm:p-4">Lighthouse Lab Data</th>
+                                    <th class="p-3 sm:p-4">Chrome UX Report (CrUX) Field Data</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-[#181818]">
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-bold text-white">Environment</td>
+                                    <td class="p-3 sm:p-4">Simulated, controlled test (fixed CPU throttling and 4G network emulation).</td>
+                                    <td class="p-3 sm:p-4">Aggregated observations from millions of opted-in real Chrome users over a rolling 28-day window.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-bold text-white">Metrics Measured</td>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green">FCP, LCP, TBT (Total Blocking Time), CLS, Speed Index</td>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green">LCP, INP (Interaction to Next Paint), CLS, FCP, TTFB</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-bold text-white">Google Ranking Role</td>
+                                    <td class="p-3 sm:p-4">Lab scores do not directly affect Google rankings; they serve as developer debugging diagnostics.</td>
+                                    <td class="p-3 sm:p-4 font-bold text-white">Real-world Core Web Vitals (CrUX) at the 75th percentile are used in Google's page experience signals.</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-bold text-white">When Missing?</td>
+                                    <td class="p-3 sm:p-4">Always available when tested.</td>
+                                    <td class="p-3 sm:p-4">Low-traffic URLs lack sufficient aggregated Chrome visits to meet privacy thresholds (missing data is not a zero score).</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>In <strong>GroCrawl</strong>, the PageSpeed integration queries Google's PageSpeed Insights API to display both real-world CrUX field percentiles (when available) and detailed Lighthouse lab diagnostics for audited URLs.</p>
+
+                    <!-- 11. CONTENT & TRUST CHECKS AS TRANSPARENT HEURISTICS -->
+                    <h2 id="content-and-trust-heuristics">11. Content &amp; Trust Checks as Transparent Heuristics</h2>
+                    <p>In technical audits, terms like "E-E-A-T" (Experience, Expertise, Authoritativeness, Trustworthiness) refer to concepts from Google's <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener">Search Quality Rater Guidelines</a>. Google raters use these human guidelines to evaluate search algorithm quality; there is <strong>no single "Google E-E-A-T algorithm score"</strong> inside search ranking algorithms.</p>
+
+                    <p>GroCrawl's <strong>Content &amp; Trust</strong> workspace evaluates transparent, observable editorial and structural signals:</p>
+                    <ul>
+                        <li><strong>Author Byline &amp; Attribution:</strong> Checks for author metadata, <code>Person</code> schema, or byline classes.</li>
+                        <li><strong>Structured Data (JSON-LD):</strong> Detects schema markup helping search engines parse article, product, or organizational entities.</li>
+                        <li><strong>External Citations:</strong> Checks for authoritative outbound references and documentation citations.</li>
+                        <li><strong>Transport Security (HTTPS):</strong> Confirms encrypted transport integrity.</li>
+                        <li><strong>Content Depth:</strong> Evaluates word count baseline thresholds (&gt;300 and &gt;600 words) to flag thin utility stubs.</li>
+                    </ul>
+
+                    <p>Treat these checks as editorial hygiene and user trust indicators, never as a guaranteed ranking formula.</p>
+
+                    <!-- 12. PRIORITIZING FINDINGS, EXPORTING ACTIONABLE WORK, AND RECHECKING FIXES -->
+                    <h2 id="health-score-and-prioritization">12. Prioritizing Findings, Exporting Actionable Work, and Rechecking Fixes</h2>
+                    <p>Audits often return hundreds of alerts. Effective technical SEO requires ruthless prioritization based on real business impact.</p>
+
+                    <h3>Understanding GroCrawl's SEO Health Score</h3>
+                    <p>GroCrawl computes an internal diagnostic index using the following verified formula:</p>
+                    <div class="p-4 bg-[#0d0d0d] border border-[#222] rounded-xl font-mono text-xs my-4 leading-relaxed">
+                        <span class="text-brand-muted">// GroCrawl Health Score Calculation</span><br>
+                        <span class="text-white">penalty = (Critical Errors &times; 8) + (Warnings &times; 2)</span><br>
+                        <span class="text-brand-green">Health Score = Math.max(10, Math.min(100, Math.round(100 - penalty)))</span>
+                    </div>
+                    <p>Critical errors (such as 4xx broken links, 5xx server crashes, or indexable pages canonicalizing to 404s) incur an 8-point penalty, while minor warnings incur a 2-point penalty. The score serves as a benchmark to track remediation progress across crawl sessions.</p>
+
+                    <h3>A 3-Tier Remediation Matrix</h3>
+                    <ol>
+                        <li><strong>Tier 1 — High Severity (Direct Indexing Blockers):</strong>
+                            <ul>
+                                <li>Accidental <code>noindex</code> tags on revenue-generating product or service pages.</li>
+                                <li>5xx server errors on core landing pages.</li>
+                                <li>Broken redirect loops or sitewide 404 chains.</li>
+                                <li>Unintentional <code>Disallow</code> directives in robots.txt blocking entire sections.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tier 2 — Medium Severity (Signal Dilution &amp; Waste):</strong>
+                            <ul>
+                                <li>Internal links pointing to 301 redirects instead of canonical destinations.</li>
+                                <li>Conflicting canonical tags (e.g. self-canonical on HTTP while site runs on HTTPS).</li>
+                                <li>Faceted navigation creating duplicate indexable URLs.</li>
+                                <li>Missing H1 tags or duplicate titles on primary category pages.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tier 3 — Low Severity (Polish &amp; Minor Hygiene):</strong>
+                            <ul>
+                                <li>Image alt text missing on decorative elements.</li>
+                                <li>Meta descriptions exceeding desktop pixel width.</li>
+                                <li>Missing optional schema attributes.</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <!-- 13. FICTIONAL WORKED EXAMPLE -->
+                    <h2 id="worked-example">13. Fictional Worked Example: Step-by-Step Remediation</h2>
+                    <p>To understand how technical audit findings translate into engineering tickets, review this worked case study for the fictional brand <em>Apex Footwear</em>.</p>
+
+                    <div class="p-6 rounded-2xl bg-[#0D0D0D] border border-[#1C1C1C] space-y-4 my-6">
+                        <div class="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-brand-green">
+                            <span class="w-2 h-2 rounded-full bg-brand-green"></span>
+                            Case Study: Faceted Filter Crawl Explosion
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-bold uppercase text-white !mt-0 mb-1">1. Observed Finding</h3>
+                            <p class="text-xs text-[#a3a3a3] !mb-0 leading-relaxed">
+                                A crawl capped at 250 URLs reached its limit at Depth 2 without discovering key blog posts or contact pages. The duplicate content report flagged 84 URLs with identical titles and H1 tags: <code>Men's Trail Running Shoes</code>.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-bold uppercase text-white !mt-0 mb-1">2. Technical Evidence</h3>
+                            <p class="text-xs text-[#a3a3a3] !mb-0 leading-relaxed">
+                                Reviewing the Master URL Explorer revealed that faceted sidebar filters (color, size, sort order) generated unique parameter URLs:
+                            </p>
+                            <div class="p-3 bg-[#141414] rounded-lg font-mono text-[11px] text-brand-muted my-2 break-all space-y-1">
+                                <div>https://apexfootwear.example/shoes/trail?color=black&amp;size=10</div>
+                                <div>https://apexfootwear.example/shoes/trail?sort=price_asc&amp;color=black</div>
+                                <div>https://apexfootwear.example/shoes/trail?size=10&amp;color=black</div>
+                            </div>
+                            <p class="text-xs text-[#a3a3a3] !mb-0 leading-relaxed">
+                                Inspecting HTML headers showed that none of these parameter URLs contained a <code>canonical</code> tag, and the multi-select sidebar links lacked <code>rel="nofollow"</code>.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-bold uppercase text-white !mt-0 mb-1">3. Interpretation</h3>
+                            <p class="text-xs text-[#a3a3a3] !mb-0 leading-relaxed">
+                                The spider was trapped in an infinite faceted navigation matrix. Because parameter combinations were internally linked without canonical tags, the bot consumed the entire crawl budget traversing duplicate permutations, missing major site sections.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-bold uppercase text-white !mt-0 mb-1">4. Proposed Action</h3>
+                            <ul class="text-xs text-[#a3a3a3] !mb-0 space-y-1 pl-4">
+                                <li>Add a self-referencing canonical tag on the base category: <code>https://apexfootwear.example/shoes/trail</code>.</li>
+                                <li>Ensure all filtered parameter URLs declare the base category URL as their canonical target.</li>
+                                <li>Add a <code>Disallow: /*?*sort=</code> rule in <code>robots.txt</code> for pure sorting parameters that add no search value.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-sm font-bold uppercase text-white !mt-0 mb-1">5. Verification</h3>
+                            <p class="text-xs text-[#a3a3a3] !mb-0 leading-relaxed">
+                                Following deployment, a 250-URL re-crawl reached Depth 4, successfully discovering blog articles and company pages. Duplicate title issues dropped from 84 to 0, and the SEO Health Score improved from 64% to 96%.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CTA BACK TO TOOL -->
+                    <div class="mt-12 pt-8 border-t border-[#1C1C1C] flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <h3 class="text-base font-bold uppercase text-white !mt-0 mb-1">Ready to inspect your website?</h3>
+                            <p class="text-xs text-brand-muted !mb-0">Run a free technical audit using GroCrawl directly in your browser.</p>
+                        </div>
+                        <a href="/tools/grocrawl/" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-green text-black hover:bg-brand-greenHover transition-all rounded-xl text-xs font-black uppercase tracking-wider group shrink-0">
+                            <span>Open GroCrawl Tool</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Sidebar ToC (Desktop) -->
+                <aside class="hidden lg:block w-64 shrink-0">
+                    <div class="sticky top-24">
+                        <span class="text-[10px] font-black uppercase tracking-widest text-white block mb-6">On this page</span>
+                        <nav class="flex flex-col gap-2.5 text-xs font-medium text-brand-muted">
+                            <a href="#what-crawlers-can-and-cannot-do" class="hover:text-brand-green transition-colors">What Crawlers Can &amp; Can't Do</a>
+                            <a href="#defining-audit-scope" class="hover:text-brand-green transition-colors">Defining Audit Scope</a>
+                            <a href="#crawl-depth-and-limits" class="hover:text-brand-green transition-colors">Crawl Depth vs. Slug Depth</a>
+                            <a href="#concurrency-and-delays" class="hover:text-brand-green transition-colors">Concurrency &amp; Delays</a>
+                            <a href="#robots-and-javascript" class="hover:text-brand-green transition-colors">Robots.txt &amp; JS Rendering</a>
+                            <a href="#http-responses-and-redirects" class="hover:text-brand-green transition-colors">HTTP Statuses &amp; Redirects</a>
+                            <a href="#canonicals-and-indexability" class="hover:text-brand-green transition-colors">Meta Robots &amp; Canonicals</a>
+                            <a href="#duplicate-content" class="hover:text-brand-green transition-colors">Duplicates &amp; Metadata</a>
+                            <a href="#internal-links-and-orphans" class="hover:text-brand-green transition-colors">Internal Links &amp; Orphans</a>
+                            <a href="#pagespeed-lab-vs-field" class="hover:text-brand-green transition-colors">PageSpeed: Lab vs. Field</a>
+                            <a href="#content-and-trust-heuristics" class="hover:text-brand-green transition-colors">Content &amp; Trust Heuristics</a>
+                            <a href="#health-score-and-prioritization" class="hover:text-brand-green transition-colors">Prioritizing &amp; Health Score</a>
+                            <a href="#worked-example" class="hover:text-brand-green transition-colors">Fictional Worked Example</a>
+                        </nav>
+
+                        <div class="mt-8 p-4 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-green block mb-1">Groniq Tool</span>
+                            <p class="text-[11px] text-brand-muted mb-3 leading-relaxed">Audit page responses, link trees, duplicates, and Core Web Vitals in-browser.</p>
+                            <a href="/tools/grocrawl/" class="text-xs font-bold uppercase tracking-wider text-white hover:text-brand-green inline-flex items-center gap-1">
+                                Launch GroCrawl <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-16 bg-[#040404] border-t border-[#181818] text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-[#181818]">
+
+                <!-- Logo & Positioning -->
+                <div class="flex flex-col items-center md:items-start gap-2">
+                    <a href="/" class="flex items-center gap-3">
+                        <svg viewBox="0 0 100 100" class="w-8 h-8" fill="none">
+                            <path
+                                d="M70 20C85 20 95 35 95 50C95 65 85 80 70 80H60V65H70C78 65 83 58 83 50C83 42 78 35 70 35H45L40 20H70Z"
+                                fill="#39FF14" />
+                            <path
+                                d="M30 80C15 80 5 65 5 50C5 35 15 20 30 20H40V35H30C22 35 17 42 17 50C17 58 22 65 30 65H55L60 80H30Z"
+                                fill="white" />
+                        </svg>
+                        <div class="flex flex-col">
+                            <span class="text-2xl font-black uppercase tracking-tight text-white leading-none">GRONIQ</span>
+                            <span class="text-[9px] uppercase tracking-widest text-brand-muted font-bold mt-0.5">Digital Solutions</span>
+                        </div>
+                    </a>
+                    <p class="text-xs text-brand-muted text-center md:text-left max-w-sm">
+                        Performance marketing, SEO, conversion-focused websites, and measurable marketing systems for emerging brands.
+                    </p>
+                </div>
+
+                <!-- Navigation Quick Links -->
+                <div class="flex flex-wrap justify-center gap-6 text-xs font-semibold text-brand-muted">
+                    <a href="/#what-we-do" class="hover:text-white transition-colors">What We Do</a>
+                    <a href="/#growth-system" class="hover:text-white transition-colors">Growth System</a>
+                    <a href="/#how-we-work" class="hover:text-white transition-colors">How We Work</a>
+                    <a href="/#selected-work" class="hover:text-white transition-colors">Real Work</a>
+                    <a href="/tools/" class="hover:text-brand-green transition-colors">Tools</a>
+                    <a href="/learn/" class="hover:text-brand-green transition-colors">Learn</a>
+                    <a href="/#about" class="hover:text-white transition-colors">About</a>
+                    <a href="/#contact" class="hover:text-brand-green transition-colors font-bold">Growth Audit</a>
+                </div>
+
+                <!-- Social Channels -->
+                <div class="flex items-center gap-4">
+                    <a href="https://www.linkedin.com/company/groniq-digital-solutions" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin text-sm"></i>
+                    </a>
+                    <a href="https://instagram.com/groniq_digiital_solutions" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                    <a href="mailto:support@groniqdigital.com"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="Email">
+                        <i class="fa-solid fa-envelope text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-medium text-brand-muted">
+                <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-green"></span>
+                    <span class="uppercase tracking-widest text-brand-mutedLight font-bold">Performance • SEO • E-commerce • Tracking • Growth Systems</span>
+                </div>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="mailto:support@groniqdigital.com" class="hover:text-white transition-colors">support@groniqdigital.com</a>
+                    <span class="text-[#333] hidden sm:inline">&bull;</span>
+                    <a href="mailto:contact@mdtavrejansari.com" class="hover:text-brand-green transition-colors">Founder: contact@mdtavrejansari.com</a>
+                    <span class="text-[#333] hidden sm:inline">&bull;</span>
+                    <span>© 2025–2026 Groniq Digital Solutions. MSME Registered.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const projectSheet = document.getElementById('mobile-project-sheet');
+        const mobileProjectTrigger = document.getElementById('mobile-project-trigger');
+        let lastFocusedElement = null;
+
+        function openProjectSheet() {
+            if (!projectSheet) return;
+            lastFocusedElement = document.activeElement;
+            projectSheet.classList.add('is-open');
+            projectSheet.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => document.getElementById('project-sheet-close')?.focus(), 50);
+        }
+
+        function closeProjectSheet() {
+            if (!projectSheet) return;
+            projectSheet.classList.remove('is-open');
+            projectSheet.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            if (lastFocusedElement) lastFocusedElement.focus();
+        }
+
+        mobileProjectTrigger?.addEventListener('click', (event) => {
+            const isMobile = window.innerWidth < 1024;
+            if (isMobile && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
+                event.preventDefault();
+                openProjectSheet();
+            }
+        });
+
+        document.getElementById('project-sheet-backdrop')?.addEventListener('click', closeProjectSheet);
+        document.getElementById('project-sheet-close')?.addEventListener('click', closeProjectSheet);
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && projectSheet && projectSheet.classList.contains('is-open')) closeProjectSheet();
+        });
+
+        if (window.lucide) { lucide.createIcons(); }
+
+        // Initialize Splash Screen (0-100% System) and Icons
+        function initSplashScreen() {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            const splash = document.getElementById('splash-screen');
+            if (!splash) {
+                document.body.classList.remove('loading');
+                return;
+            }
+
+            let progress = 0;
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+
+            const progressInterval = setInterval(() => {
+                progress += 5;
+                if (progressBar) progressBar.style.width = progress + '%';
+                if (progressText) progressText.innerText = progress + '%';
+
+                if (progress >= 100) {
+                    clearInterval(progressInterval);
+                    setTimeout(() => {
+                        splash.style.opacity = '0';
+                        splash.style.pointerEvents = 'none';
+                        setTimeout(() => splash.remove(), 600);
+                        document.body.classList.remove('loading');
+
+                        if (window.location.hash) {
+                            const target = document.querySelector(window.location.hash);
+                            if (target) target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }, 350);
+                }
+            }, 25);
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initSplashScreen);
+        } else {
+            initSplashScreen();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+# Groniq Digital Solutions - Full Context
+
+> Official documentation, tool capabilities, UTM tracking reference, and service overview for LLMs and AI search engines.
+> Canonical URL: https://groniqdigital.com
+
+---
+
+## 1. About Groniq Digital Solutions
+Groniq Digital Solutions is an MSME-registered digital solutions practice dedicated to businesses, emerging brands, and e-commerce companies. Groniq specializes in:
+1. Performance Marketing & Paid Media (Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads, Programmatic)
+2. Conversion-Focused Websites & Landing Pages (High-Speed JAMstack, Next.js, Tailored D2C & Service Websites)
+3. Analytics, Tracking & Attribution Infrastructure (GA4, Google Tag Manager, Conversion Tracking, CRO)
+4. Search Engine Optimization (Technical SEO, High-Intent Content Systems, Structured Data)
+
+Website: https://groniqdigital.com
+Support & Inquiries: support@groniqdigital.com
+
+---
+
+## 2. Flagship Tool: Groniq UTM Builder & Campaign URL Generator
+URL: https://groniqdigital.com/tools/utm-builder/
+
+### Key Features
+- **Guided Mode**: Pre-configured channel selections for Google Ads, Meta Ads (Facebook & Instagram), TikTok, LinkedIn, YouTube, and Email. Automatically assigns standard `utm_source` and `utm_medium` following industry naming hygiene.
+- **Advanced Mode**: Full granular control over all standard and extended parameters:
+  - `utm_source`: Identifies where the traffic originates (e.g., `google`, `facebook`, `newsletter`).
+  - `utm_medium`: Identifies the marketing channel or medium type (e.g., `cpc`, `paid_social`, `email`, `organic`).
+  - `utm_campaign`: The individual campaign name or product launch (e.g., `summer_launch_2026`).
+  - `utm_content`: Distinguishes specific creative formats, ad variations, or button links (e.g., `video_ad_01`, `carousel_blue`).
+  - `utm_term`: Keywords for paid search or target audience identifiers.
+  - `utm_id`: Platform-specific campaign identification code (e.g., `CMP-104`).
+  - Extended parameters: `utm_source_platform`, `utm_creative_format`, `utm_marketing_tactic`.
+- **Bulk Mode**:
+  - Build dozens of campaign links in a high-density tabular workspace.
+  - Paste directly from Excel or Google Sheets (tab-delimited values).
+  - Import from CSV and Export completed campaign tracking URLs to CSV.
+  - One-click "Copy All URLs".
+- **Campaign Workspace**:
+  - Group multiple links across channels under one overarching campaign name.
+  - Stored locally in the browser (`localStorage`) for zero external data leakage.
+- **Check URL Inspector**:
+  - Audits pre-existing campaign links.
+  - Flags duplicate parameters, missing core tags, and improper character encoding.
+- **Integrated High-Resolution QR Code Generator**:
+  - Generates downloadable QR codes in 512px, 1024px HD, 2048px Print PNG, and Vector SVG formats.
+  - Privacy-preserving: QR generation happens 100% locally via client-side Canvas and JavaScript.
+- **Naming Convention Rules**:
+  - Configurable casing (enforce lowercase or preserve original).
+  - Configurable separator (underscores `_` or hyphens `-`).
+- **Privacy Guarantee**:
+  - All link generation, spreadsheet parsing, and storage operate purely in the browser. No client URL data or customer analytics parameters are sent to external servers.
+
+---
+
+## 3. UTM Parameters Reference & Best Practices
+URL: https://groniqdigital.com/learn/utm-tracking/
+
+### Standard Parameters
+1. **utm_source** (Required): The traffic source (e.g., `google`, `meta`, `linkedin`, `klaviyo`).
+2. **utm_medium** (Required): The mechanism/channel of delivery. Common standards:
+   - `cpc`: Paid search advertising (Google Ads).
+   - `paid_social`: Paid social ads (Meta, TikTok, LinkedIn).
+   - `email`: Email campaigns and newsletters.
+   - `referral`: Partner links or affiliate referrals.
+   - `organic`: Unpaid organic social or profiles.
+3. **utm_campaign** (Required): The specific marketing campaign (e.g., `spring_clearance`, `brand_awareness`).
+4. **utm_content** (Optional): Creative/ad variation (e.g., `lifestyle_image`, `founder_video`).
+5. **utm_term** (Optional): Paid search keyword or targeting cluster (e.g., `running_shoes_men`).
+6. **utm_id** (Optional): Unique campaign ID for automated platform reconciliation in GA4.
+
+### 5 Critical UTM Rules
+1. **Always use lowercase**: Analytics platforms like GA4 treat `CPC`, `cpc`, and `Cpc` as three distinct mediums, fragmenting attribution reports.
+2. **Standardize separators**: Consistently use underscores (`_`) or hyphens (`-`). Never use spaces or raw URL-encoded `%20`.
+3. **Never tag internal links**: Using UTM parameters on links inside your own website resets the user's session in GA4, wiping out original acquisition attribution and inflating session counts.
+4. **Preserve existing parameters**: Never overwrite tracking or session queries like `gclid`, `fbclid`, or custom application query parameters when building campaign URLs.
+5. **Document your naming taxonomy**: Ensure all team members and agency partners follow the exact same spelling and naming rules.
+
+---
+
+## 4. Index of Canonical Pages
+- **Home**: https://groniqdigital.com/
+- **Marketing Tools Directory**: https://groniqdigital.com/tools/
+- **UTM Builder Tool**: https://groniqdigital.com/tools/utm-builder/
+- **Learning & Guides**: https://groniqdigital.com/learn/
+- **UTM Tracking Guide**: https://groniqdigital.com/learn/utm-tracking/

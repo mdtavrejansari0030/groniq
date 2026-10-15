@@ -1,0 +1,31 @@
+# Groniq Digital Solutions
+
+> Groniq Digital Solutions (https://groniqdigital.com) is a digital growth practice helping businesses, emerging brands, and e-commerce companies grow through performance marketing, SEO, conversion-focused websites, CRO, and reliable analytics and tracking systems.
+
+## Primary Tools
+
+- [UTM Builder & Campaign URL Generator](https://groniqdigital.com/tools/utm-builder/): A free, privacy-first, browser-local campaign URL generator. Features guided channel presets (Google Ads, Meta Ads, TikTok, LinkedIn, Email), advanced multi-parameter editing, bulk spreadsheet paste & CSV import/export, local campaign grouping, UTM parameter auditing, and high-resolution QR code generation (PNG & SVG).
+- [Digital Marketing Tools Directory](https://groniqdigital.com/tools/): Collection of free digital marketing, analytics, and campaign tracking utilities built by Groniq.
+
+## Documentation & Knowledge Base
+
+- [UTM Tracking Complete Guide](https://groniqdigital.com/learn/utm-tracking/): Comprehensive educational guide detailing UTM parameter conventions (utm_source, utm_medium, utm_campaign, utm_content, utm_term, utm_id), platform-specific configurations for Google Ads and Meta Ads, common attribution pitfalls, and GA4 integration practices.
+- [Learning Hub](https://groniqdigital.com/learn/): Practical guides and insights on digital performance, attribution, tracking hygiene, and growth architecture for emerging brands.
+
+## Core Capabilities & Services
+
+- [Performance Marketing](https://groniqdigital.com/#what-we-do): Paid search and paid social campaign architecture across Google Ads, Meta Ads, and programmatic channels focused on profitable customer acquisition and ROAS.
+- [Conversion-Focused Web Development](https://groniqdigital.com/#what-we-do): High-speed, conversion-engineered landing pages, e-commerce storefronts, and web applications built for emerging direct-to-consumer (D2C) brands.
+- [Search Engine Optimization (SEO)](https://groniqdigital.com/#what-we-do): Technical SEO, structured data implementation, local search optimization, and search-intent content systems.
+- [Tracking & Analytics Infrastructure](https://groniqdigital.com/#what-we-do): Server-side tracking, Google Tag Manager (GTM) setups, Google Analytics 4 (GA4) custom event schemas, and measurement consistency audits.
+
+## Business & Contact
+
+- Website: https://groniqdigital.com
+- Contact Email: support@groniqdigital.com
+- Organization: Groniq Digital Solutions (MSME Registered Practice)
+- Inquiries: https://groniqdigital.com/#contact
+
+## Optional
+
+- [Full LLM Context Document](https://groniqdigital.com/llms-full.txt): Detailed documentation including tool parameters, complete FAQ answers, and technical schema for LLMs and AI search engines.

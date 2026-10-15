@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>UTM Tracking Guide: Campaign URLs & GA4 Reports | Groniq</title>
+    <meta name="description"
+        content="Master UTM tracking: learn URL parameter anatomy, follow an email campaign tracking walkthrough, avoid attribution errors, and analyze campaign data in GA4.">
+    <meta name="keywords"
+        content="utm tracking, utm parameters, ga4 campaign tracking, utm builder guide, traffic acquisition ga4, campaign url generator, utm naming convention, google analytics utm">
+    <meta name="author" content="Groniq Digital Solutions">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <link rel="canonical" href="https://groniqdigital.com/learn/utm-tracking/" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Groniq">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://groniqdigital.com/learn/utm-tracking/">
+    <meta property="og:title" content="UTM Tracking Guide: Campaign URLs & GA4 Reports | Groniq">
+    <meta property="og:description"
+        content="Master UTM tracking: learn URL parameter anatomy, follow an email campaign tracking walkthrough, avoid attribution errors, and analyze campaign data in GA4.">
+    <meta property="og:image" content="https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@groniq">
+    <meta name="twitter:creator" content="@groniq">
+    <meta name="twitter:url" content="https://groniqdigital.com/learn/utm-tracking/">
+    <meta name="twitter:title" content="UTM Tracking Guide: Campaign URLs & GA4 Reports | Groniq">
+    <meta name="twitter:description"
+        content="Master UTM tracking: learn URL parameter anatomy, follow an email campaign tracking walkthrough, avoid attribution errors, and analyze campaign data in GA4.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png">
+
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png">
+
+    <link rel="stylesheet" href="/tailwind.css">
+    <!-- Google Fonts & Icon Libraries -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@0.469.0"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZFQDDBR');</script>
+    <!-- End Google Tag Manager -->
+    <script src="/analytics.js" defer></script>
+    <script src="/accessibility.js" defer></script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://groniqdigital.com/learn/utm-tracking/#article",
+      "isPartOf": {
+        "@type": "WebPage",
+        "@id": "https://groniqdigital.com/learn/utm-tracking/"
+      },
+      "headline": "UTM Tracking Guide: Campaign URLs & GA4 Reports",
+      "description": "Master UTM tracking: learn URL parameter anatomy, follow an email campaign tracking walkthrough, avoid attribution errors, and analyze campaign data in GA4.",
+      "url": "https://groniqdigital.com/learn/utm-tracking/",
+      "author": {
+        "@type": "Organization",
+        "name": "Groniq Digital Solutions",
+        "url": "https://groniqdigital.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Groniq Digital Solutions",
+        "url": "https://groniqdigital.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png"
+        }
+      },
+      "datePublished": "2026-10-12",
+      "dateModified": "2026-10-12",
+      "mainEntityOfPage": "https://groniqdigital.com/learn/utm-tracking/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://groniqdigital.com/learn/utm-tracking/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://groniqdigital.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Learn",
+          "item": "https://groniqdigital.com/learn/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "UTM Tracking",
+          "item": "https://groniqdigital.com/learn/utm-tracking/"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <style>
+        :root {
+            --primary: #39FF14;
+            --bg: #050505;
+            --card: #0D0D0D;
+            --border: #1E1E1E;
+        }
+
+        .animate-scan {
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to right, transparent, var(--primary), transparent);
+            animation: scan 3s linear infinite;
+        }
+
+        @keyframes scan {
+            0% {
+                top: 0%;
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                top: 100%;
+                opacity: 0;
+            }
+        }
+
+        body.loading {
+            overflow: hidden;
+        }
+
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+        
+        /* Ensure anchor links don't hide under the sticky header */
+        :target {
+            scroll-margin-top: 100px;
+        }
+
+        .prose h2 {
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            color: white;
+            margin-top: 3.5rem;
+            margin-bottom: 1rem;
+            padding-top: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #39FF14;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .prose p {
+            font-size: 0.9375rem;
+            line-height: 1.75;
+            color: #A3A3A3;
+            margin-bottom: 1.25rem;
+        }
+
+        .prose strong {
+            color: white;
+            font-weight: 600;
+        }
+
+        .prose a {
+            color: #39FF14;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            transition: color 0.15s ease;
+        }
+
+        .prose a:hover {
+            color: #FFFFFF;
+        }
+
+        .prose code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 0.8125rem;
+            background-color: #141414;
+            color: #39FF14;
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.375rem;
+            border: 1px solid #242424;
+            word-break: break-word;
+        }
+
+        .prose pre code {
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            color: inherit;
+        }
+
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.25rem;
+            margin-bottom: 1.5rem;
+            color: #A3A3A3;
+            font-size: 0.9375rem;
+            line-height: 1.7;
+        }
+
+        .prose ol {
+            list-style-type: decimal;
+            padding-left: 1.25rem;
+            margin-bottom: 1.5rem;
+            color: #A3A3A3;
+            font-size: 0.9375rem;
+            line-height: 1.7;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+        }
+
+        .prose li strong {
+            color: #FFFFFF;
+        }
+
+        html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+        section[id], [id] { scroll-margin-top: 110px; }
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid rgba(57,255,20,0.9); outline-offset: 2px; box-shadow: 0 0 0 4px rgba(57,255,20,0.14); }
+        .mobile-nav-rail { -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; position: relative; overflow-x: auto; white-space: nowrap; }
+        .mobile-nav-rail::-webkit-scrollbar { display: none; }
+        .mobile-nav-rail::after { content: ""; position: absolute; top: 0; right: 0; width: 32px; height: 100%; background: linear-gradient(to left, rgba(5,5,5,1), rgba(5,5,5,0)); pointer-events: none; }
+        #mobile-project-sheet { display: none; }
+        #mobile-project-sheet.is-open { display: block; }
+        .sheet-panel { transform: translateY(18px); opacity: 0; transition: transform 0.25s ease, opacity 0.25s ease; }
+        #mobile-project-sheet.is-open .sheet-panel { transform: translateY(0); opacity: 1; }
+        @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+    </style>
+</head>
+
+<body class="bg-brand-dark text-white selection:bg-brand-green selection:text-black min-h-screen flex flex-col loading">
+
+    <!-- Splash / Loading Screen -->
+    <div id="splash-screen"
+        class="fixed inset-0 z-[200] bg-[#050505] flex flex-col items-center justify-center transition-all duration-1000 ease-in-out">
+        <div class="animate-scan"></div>
+        <svg viewBox="0 0 100 100" class="w-20 h-20 mb-8" fill="none" aria-hidden="true">
+            <path
+                d="M70 20C85 20 95 35 95 50C95 65 85 80 70 80H60V65H70C78 65 83 58 83 50C83 42 78 35 70 35H45L40 20H70Z"
+                fill="#39FF14" />
+            <path d="M30 80C15 80 5 65 5 50C5 35 15 20 30 20H40V35H30C22 35 17 42 17 50C17 58 22 65 30 65H55L60 80H30Z"
+                fill="white" />
+        </svg>
+        <div class="w-48 space-y-4 text-center">
+            <span id="progress-text" class="text-brand-green font-black text-2xl font-mono">0%</span>
+            <div class="h-[2px] w-full bg-[#1F1F1F] rounded-full overflow-hidden relative">
+                <div id="progress-bar" class="absolute top-0 left-0 h-full bg-brand-green transition-all duration-100"
+                    style="width: 0%"></div>
+            </div>
+            <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-muted">Initialising Systems...</p>
+        </div>
+    </div>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZFQDDBR"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header id="navbar"
+        class="sticky top-0 w-full z-50 transition-all duration-300 py-4 bg-brand-dark/80 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center gap-3">
+            <a href="/" class="flex items-center gap-3 group shrink-0" aria-label="Groniq Digital Solutions Home">
+                <svg viewBox="0 0 100 100" class="w-8 h-8 transition-transform group-hover:scale-105 duration-300" fill="none" aria-hidden="true">
+                    <path d="M70 20C85 20 95 35 95 50C95 65 85 80 70 80H60V65H70C78 65 83 58 83 50C83 42 78 35 70 35H45L40 20H70Z" fill="#39FF14" />
+                    <path d="M30 80C15 80 5 65 5 50C5 35 15 20 30 20H40V35H30C22 35 17 42 17 50C17 58 22 65 30 65H55L60 80H30Z" fill="white" />
+                </svg>
+                <div class="flex flex-col">
+                    <span class="text-xl font-black uppercase tracking-tight text-white leading-none">GRONIQ</span>
+                    <span class="text-[9px] uppercase tracking-widest text-brand-muted font-bold mt-0.5">Digital Solutions</span>
+                </div>
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-7">
+                <div class="relative services-dropdown-container flex items-center">
+                    <a href="/services/" class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors py-1">Services</a>
+                    <button type="button" 
+                        class="services-menu-toggle ml-1 p-1 text-brand-muted hover:text-white focus-visible:outline-none focus-visible:text-brand-green transition-colors cursor-pointer" 
+                        aria-expanded="false" 
+                        aria-haspopup="true"
+                        aria-controls="services-dropdown-menu" 
+                        aria-label="Toggle Services submenu">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="toggle-icon transition-transform duration-200"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <!-- Accessible Dropdown Menu -->
+                    <div id="services-dropdown-menu" 
+                        class="services-dropdown-panel absolute top-full left-0 mt-2 w-60 rounded-xl bg-[#0D0D0D] border border-[#222] shadow-[0_16px_36px_rgba(0,0,0,0.8)] p-2 hidden z-50 backdrop-blur-md"
+                        role="menu" 
+                        aria-label="Services Submenu">
+                        <a href="/services/" role="menuitem" class="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white hover:bg-white/5 transition-colors">
+                            <span>All Services</span>
+                            <span class="text-[10px] text-brand-green font-mono">Overview &rarr;</span>
+                        </a>
+                        <a href="/services/paid-acquisition/" role="menuitem" class="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white hover:bg-white/5 transition-colors">
+                            <span>Paid Acquisition</span>
+                            <span class="text-[9px] text-brand-muted font-mono">Ads</span>
+                        </a>
+                        <a href="/services/measurement-tracking/" role="menuitem" class="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white hover:bg-white/5 transition-colors">
+                            <span>Measurement &amp; Tracking</span>
+                            <span class="text-[9px] text-brand-muted font-mono">GA4/GTM</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="/#selected-work" class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors">Work</a>
+                <a href="/tools/" class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors">Tools</a>
+                <a href="/learn/" class="text-xs font-semibold uppercase tracking-wider text-brand-green transition-colors">Learn</a>
+                <a href="/#about" class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors">About</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="/#contact" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-green text-black font-bold text-xs uppercase tracking-wider rounded-lg hover:bg-[#32e012] transition-all">
+                    <span>Request a Growth Audit</span>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="lg:hidden flex items-center gap-2 ml-auto">
+                <a id="mobile-project-trigger" href="/#contact" class="inline-flex items-center justify-center gap-1.5 rounded-lg bg-brand-green px-3 py-2 text-[10px] sm:text-[11px] font-black uppercase tracking-[0.12em] text-black leading-none shadow-[0_0_18px_rgba(57,255,20,0.2)]">
+                    <span>Start a Project</span>
+                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="lg:hidden w-full border-b border-[#181818] bg-brand-dark/95 backdrop-blur supports-[backdrop-filter]:bg-brand-dark/80">
+        <nav aria-label="Mobile navigation" class="mobile-nav-rail py-3 px-6">
+            <div class="flex items-center gap-6 text-[11px] font-bold uppercase tracking-[0.18em] text-brand-muted">
+                <div class="inline-flex items-center shrink-0">
+                    <a href="/services/" class="shrink-0 hover:text-white transition-colors">Services</a>
+                    <button type="button" class="mobile-services-toggle ml-1 p-1 text-brand-muted hover:text-white focus-visible:outline-none cursor-pointer" aria-expanded="false" aria-controls="mobile-services-submenu" aria-label="Toggle Services child links">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-200"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </div>
+                <a href="/tools/" class="shrink-0 hover:text-white transition-colors">Tools</a>
+                <a href="/learn/" class="shrink-0 text-brand-green transition-colors">Learn</a>
+                <a href="/#selected-work" class="shrink-0 hover:text-white transition-colors">Work</a>
+                <a href="/#about" class="shrink-0 hover:text-white transition-colors">About</a>
+                <a href="/#pricing" class="shrink-0 hover:text-white transition-colors">Pricing</a>
+            </div>
+        </nav>
+        <!-- Expandable Mobile Services Submenu -->
+        <div id="mobile-services-submenu" class="hidden px-6 py-2.5 bg-[#0C0C0C] border-t border-[#1C1C1C] flex flex-col gap-2 text-[10px] font-mono uppercase tracking-wider text-brand-muted">
+            <a href="/services/" class="hover:text-brand-green transition-colors flex items-center justify-between py-1">
+                <span>&bull; All Services Overview</span>
+                <span class="text-brand-green">&rarr;</span>
+            </a>
+            <a href="/services/paid-acquisition/" class="hover:text-brand-green transition-colors flex items-center justify-between py-1">
+                <span>&bull; Paid Acquisition (Google &amp; Meta Ads)</span>
+                <span class="text-brand-green">&rarr;</span>
+            </a>
+            <a href="/services/measurement-tracking/" class="hover:text-brand-green transition-colors flex items-center justify-between py-1">
+                <span>&bull; Measurement &amp; Tracking (GA4 / GTM / CAPI)</span>
+                <span class="text-brand-green">&rarr;</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="mobile-project-sheet" class="fixed inset-0 z-[120]" aria-hidden="true">
+        <button type="button" id="project-sheet-backdrop" class="absolute inset-0 bg-black/70 backdrop-blur-[2px]" aria-label="Close project options"></button>
+        <div class="absolute inset-x-0 bottom-0 mx-auto w-full max-w-md rounded-t-[28px] border border-white/10 bg-[#0C0C0C] p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-[0_-12px_40px_rgba(0,0,0,0.45)] sheet-panel" role="dialog" aria-modal="true" aria-labelledby="project-sheet-title">
+            <div class="flex items-center justify-between mb-4">
+                <h2 id="project-sheet-title" class="text-lg font-black uppercase tracking-tight text-white">Start a Project</h2>
+                <button type="button" id="project-sheet-close" class="p-2 text-brand-muted hover:text-white focus-visible:outline-none" aria-label="Close project options"><i data-lucide="x" class="w-5 h-5"></i></button>
+            </div>
+            <div class="space-y-2">
+                <a href="/#contact" class="flex items-center justify-between rounded-2xl border border-[#1F1F1F] bg-[#111111] px-4 py-3 text-left text-sm font-bold uppercase tracking-[0.14em] text-white hover:border-brand-green/40 hover:text-brand-green transition-colors"><span>Request a Growth Audit</span><i data-lucide="arrow-up-right" class="w-4 h-4 text-brand-green"></i></a>
+                <a href="https://wa.me/918016156537?text=Hi%20Groniq,%20I'd%20like%20to%20discuss%20a%20growth%20audit%20for%20my%20brand." target="_blank" rel="noopener" class="flex items-center justify-between rounded-2xl border border-[#1F1F1F] bg-[#111111] px-4 py-3 text-left text-sm font-bold uppercase tracking-[0.14em] text-white hover:border-brand-green/40 hover:text-brand-green transition-colors"><span>Chat on WhatsApp</span><i data-lucide="message-circle-more" class="w-4 h-4 text-brand-green"></i></a>
+                <a href="mailto:support@groniqdigital.com?subject=Start%20a%20Project" class="flex items-center justify-between rounded-2xl border border-[#1F1F1F] bg-[#111111] px-4 py-3 text-left text-sm font-bold uppercase tracking-[0.14em] text-white hover:border-brand-green/40 hover:text-brand-green transition-colors"><span>Send an Email</span><i data-lucide="mail" class="w-4 h-4 text-brand-green"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex-grow">
+        <!-- HEADER -->
+        <section class="pt-12 pb-12 px-6 border-b border-[#181818] bg-[#050505]">
+            <div class="max-w-4xl mx-auto">
+                <a href="/learn/" class="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-brand-muted hover:text-white transition-colors mb-6">
+                    <i data-lucide="arrow-left" class="w-3 h-3"></i> Back to Learn
+                </a>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-white mb-4">UTM Tracking Guide: Campaign URLs & GA4 Reports</h1>
+                <p class="text-brand-muted text-sm sm:text-base max-w-2xl leading-relaxed">A practical guide for marketers, ecommerce teams, and agencies to build clean campaign URLs, avoid attribution errors, and analyze campaign traffic in Google Analytics 4.</p>
+            </div>
+        </section>
+
+        <!-- CONTENT AREA -->
+        <section class="py-12 px-6">
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16">
+                
+                <!-- Main Article -->
+                <article class="prose max-w-2xl lg:max-w-3xl w-full">
+                    
+                    <!-- Quick Jump (Mobile Friendly) -->
+                    <div class="lg:hidden mb-8 p-5 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                        <details class="group">
+                            <summary class="flex items-center justify-between cursor-pointer list-none text-xs font-bold uppercase tracking-wider text-white">
+                                <span class="flex items-center gap-2"><i data-lucide="list" class="w-4 h-4 text-brand-green"></i> Quick Navigation</span>
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-brand-muted group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <nav class="mt-4 pt-3 border-t border-[#1C1C1C] flex flex-col gap-2 text-xs text-brand-muted">
+                                <a href="#introduction" class="hover:text-brand-green">1. What UTMs Do (and Don't Do)</a>
+                                <a href="#anatomy" class="hover:text-brand-green">2. URL Anatomy & Parameter Table</a>
+                                <a href="#walkthrough" class="hover:text-brand-green">3. Email Campaign Walkthrough</a>
+                                <a href="#ga4-reporting" class="hover:text-brand-green">4. Finding Campaign Traffic in GA4</a>
+                                <a href="#naming-conventions" class="hover:text-brand-green">5. Practical Naming Conventions</a>
+                                <a href="#troubleshooting" class="hover:text-brand-green">6. Common Mistakes & Troubleshooting</a>
+                                <a href="#google-ads" class="hover:text-brand-green">7. Google Ads & Auto-Tagging</a>
+                                <a href="#faqs" class="hover:text-brand-green">8. Frequently Asked Questions</a>
+                            </nav>
+                        </details>
+                    </div>
+
+                    <!-- 1. INTRODUCTION -->
+                    <h2 id="introduction">What UTMs Do (and What They Don't Do)</h2>
+                    <p><strong>UTM parameters</strong> (Urchin Tracking Module parameters) are standard key-value pairs added to the end of a URL. When a visitor clicks a tagged link, web analytics tools such as Google Analytics 4 (GA4) read those tags to identify which marketing initiative, platform, or link generated the visit.</p>
+                    <p>You should use UTM parameters whenever you distribute links across external marketing touchpoints that you control:</p>
+                    <ul>
+                        <li>Email marketing campaigns and automated newsletters</li>
+                        <li>Organic social media posts, bios, and Linktree-style directory pages</li>
+                        <li>Paid social advertising campaigns on platforms outside Google Ads (such as Meta, LinkedIn, and TikTok)</li>
+                        <li>Affiliate partner links and influencer collaborations</li>
+                        <li>Printed promotional QR codes, flyers, and business cards</li>
+                        <li>Direct message campaigns (SMS, WhatsApp) and downloadable PDF whitepapers</li>
+                    </ul>
+
+                    <div class="p-5 bg-[#0D0D0D] border-l-2 border-l-brand-green border-y border-r border-[#1C1C1C] rounded-r-xl my-6">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-brand-green !mt-0 mb-2">Campaign Tagging vs. Automatic Referrer Detection</h3>
+                        <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">When a user clicks an untagged link on a webpage, browsers automatically send an HTTP <code>Referer</code> header (such as <code>instagram.com</code> or <code>google.com</code>). GA4 uses this header to classify organic traffic. However, automatic referrers cannot tell you whether a click came from an unpaid bio link, an ad test, or a targeted newsletter. UTM parameters explicitly provide that context, instructing your analytics tool to classify traffic into the intended campaign bucket.</p>
+                    </div>
+
+                    <p><strong>What UTMs do not do:</strong> UTMs label inbound campaign links; they do not guarantee complete user-level attribution, bypass cookie consent, or identify individual people. Browser privacy features (like Safari's Advanced Tracking Protection), ad blockers, and visitors who decline analytics cookies via consent banners will still prevent or limit tracking. UTM parameters provide aggregated traffic attribution, not permanent or individual visitor identification.</p>
+
+                    <!-- 2. ANATOMY & PARAMETERS -->
+                    <h2 id="anatomy">Anatomy of a Tracked URL</h2>
+                    <p>A campaign URL consists of the base destination address, a question mark (<code>?</code>) that begins the query string, and individual UTM parameters separated by ampersands (<code>&amp;</code>):</p>
+
+                    <div class="p-5 sm:p-6 bg-[#0D0D0D] border border-[#1C1C1C] rounded-xl font-mono text-xs sm:text-sm break-all mb-6 leading-relaxed">
+                        <span class="text-white">https://example.com/product</span><span class="text-brand-muted">?</span><br>
+                        <span class="text-brand-green">utm_source=instagram</span><span class="text-brand-muted">&amp;</span><br>
+                        <span class="text-brand-green">utm_medium=paid_social</span><span class="text-brand-muted">&amp;</span><br>
+                        <span class="text-brand-green">utm_campaign=summer_sale_2026</span><span class="text-brand-muted">&amp;</span><br>
+                        <span class="text-brand-green">utm_content=carousel_v1</span><span class="text-brand-muted">&amp;</span><br>
+                        <span class="text-brand-green">utm_term=running_shoes</span>
+                    </div>
+
+                    <h3 class="!mt-6">Standard UTM Parameters Reference</h3>
+                    <p>Below is a breakdown of the five standard parameters recognized across web analytics platforms:</p>
+
+                    <div class="overflow-x-auto my-6 border border-[#1E1E1E] rounded-xl bg-[#0D0D0D]">
+                        <table class="w-full text-left text-xs text-[#A3A3A3]">
+                            <thead class="bg-[#141414] text-white uppercase tracking-wider text-[11px] border-b border-[#222]">
+                                <tr>
+                                    <th class="p-3 sm:p-4">Parameter</th>
+                                    <th class="p-3 sm:p-4">Purpose</th>
+                                    <th class="p-3 sm:p-4">Realistic Example</th>
+                                    <th class="p-3 sm:p-4">GA4 Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-[#181818]">
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green font-bold whitespace-nowrap">utm_source</td>
+                                    <td class="p-3 sm:p-4">Identifies the specific platform, vendor, or site sending the traffic.</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">newsletter, google, facebook</td>
+                                    <td class="p-3 sm:p-4"><span class="px-2 py-0.5 rounded bg-brand-green/10 text-brand-green font-semibold uppercase text-[10px]">Essential</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green font-bold whitespace-nowrap">utm_medium</td>
+                                    <td class="p-3 sm:p-4">Identifies the high-level marketing channel or mechanism.</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">email, cpc, paid_social, organic_social</td>
+                                    <td class="p-3 sm:p-4"><span class="px-2 py-0.5 rounded bg-brand-green/10 text-brand-green font-semibold uppercase text-[10px]">Essential</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green font-bold whitespace-nowrap">utm_campaign</td>
+                                    <td class="p-3 sm:p-4">Identifies the overall marketing promotion, seasonal event, or theme.</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">spring_sale_2027, brand_awareness</td>
+                                    <td class="p-3 sm:p-4"><span class="px-2 py-0.5 rounded bg-white/10 text-white font-semibold uppercase text-[10px]">Recommended</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green font-bold whitespace-nowrap">utm_content</td>
+                                    <td class="p-3 sm:p-4">Distinguishes links pointing to the same page within the same creative or email.</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">primary_cta, footer_link, video_ad_01</td>
+                                    <td class="p-3 sm:p-4"><span class="px-2 py-0.5 rounded bg-[#222] text-[#888] font-semibold uppercase text-[10px]">Optional</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green font-bold whitespace-nowrap">utm_term</td>
+                                    <td class="p-3 sm:p-4">Supplies an audience segment, targeting criterion, or paid search keyword.</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">running_shoes, cart_abandoners</td>
+                                    <td class="p-3 sm:p-4"><span class="px-2 py-0.5 rounded bg-[#222] text-[#888] font-semibold uppercase text-[10px]">Optional</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p><strong>Official parameter requirements in GA4:</strong> According to <a href="https://support.google.com/analytics/answer/10918862" target="_blank" rel="noopener">Google Analytics documentation on campaign tracking</a>, GA4 can capture individual UTM parameters independently if passed. However, to classify traffic accurately into standard channels, <code>utm_source</code> and <code>utm_medium</code> are practically mandatory. If <code>utm_source</code> is missing, traffic typically falls into <code>(direct) / (none)</code> or <code>Unassigned</code>.</p>
+                    <p><strong>A note on <code>utm_term</code>:</strong> This parameter does <em>not</em> automatically extract the search term someone typed into Google or Bing. Search engines withhold live organic search queries for user privacy. The value in <code>utm_term</code> is strictly whatever string you enter manually or whatever dynamic replacement token (such as <code>{keyword}</code> in paid search platforms) your ad network populates.</p>
+
+                    <!-- 3. EMAIL WALKTHROUGH -->
+                    <h2 id="walkthrough">End-to-End Walkthrough: Tracking an Email Campaign</h2>
+                    <p>To see how campaign tagging works in practice, let's walk through tracking a seasonal promotional newsletter using the <a href="/tools/utm-builder/">Groniq UTM Builder</a>.</p>
+
+                    <div class="p-5 bg-[#0D0D0D] border border-[#1C1C1C] rounded-xl mb-6">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-brand-green block mb-2">Scenario Details</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                            <div><span class="text-brand-muted">Landing Page:</span> <code class="text-white">https://example.com/spring-sale</code></div>
+                            <div><span class="text-brand-muted">Source:</span> <code class="text-white">newsletter</code></div>
+                            <div><span class="text-brand-muted">Medium:</span> <code class="text-white">email</code></div>
+                            <div><span class="text-brand-muted">Campaign:</span> <code class="text-white">spring_sale_2027</code></div>
+                            <div class="sm:col-span-2"><span class="text-brand-muted">Content:</span> <code class="text-white">primary_cta</code> (isolates the hero button from secondary links)</div>
+                        </div>
+                    </div>
+
+                    <p>Here is the completed, correctly encoded destination URL:</p>
+                    <div class="p-4 sm:p-5 bg-[#0D0D0D] border border-brand-green/30 rounded-xl font-mono text-xs sm:text-sm text-brand-green break-all mb-6">
+                        https://example.com/spring-sale?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=spring_sale_2027&amp;utm_content=primary_cta
+                    </div>
+
+                    <h3 class="!mt-4">Step-by-Step Implementation</h3>
+                    <ol>
+                        <li>
+                            <strong>Select your parameter values:</strong> Using <code>medium=email</code> ensures GA4 automatically groups this traffic into its default <strong>Email</strong> channel. Using <code>source=newsletter</code> identifies the distribution list, while <code>content=primary_cta</code> lets you distinguish between clicks on the main button and links in the email footer.
+                        </li>
+                        <li>
+                            <strong>Open the Groniq UTM Builder:</strong> Navigate to the <a href="/tools/utm-builder/">Free UTM Builder &amp; Campaign Generator</a>.
+                            <ul>
+                                <li><strong>In Guided Mode:</strong> In <em>Step 1 (Destination URL)</em>, enter <code>https://example.com/spring-sale</code>. In <em>Step 2 (Channel)</em>, click the <strong>Newsletter / Email</strong> preset button (which automatically configures <code>source: newsletter</code> and <code>medium: email</code>). In <em>Step 3 (Campaign Name)</em>, type <code>spring_sale_2027</code>. Finally, open <em>Step 4 (Optional details)</em> and enter <code>primary_cta</code> in the <strong>Campaign Content</strong> field.</li>
+                                <li><strong>In Advanced Mode:</strong> Click the <strong>Advanced</strong> tab and enter the Destination URL, <code>newsletter</code> into Campaign Source, <code>email</code> into Campaign Medium, <code>spring_sale_2027</code> into Campaign Name, and <code>primary_cta</code> into Campaign Content.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Copy the generated URL:</strong> Click the <strong>Copy URL</strong> button located in the builder's preview panel.
+                        </li>
+                        <li>
+                            <strong>Test the link in a private browser window:</strong> Paste the copied link into an incognito or private browsing window. Confirm two things:
+                            <ul>
+                                <li>The correct landing page loads without 404 or application errors.</li>
+                                <li>Check the browser address bar after page load. If your site performs server-side redirects (such as forcing <code>http://</code> to <code>https://</code>, redirecting non-www to www, or appending a trailing slash like <code>/spring-sale/</code>), ensure the server passes the UTM query string through rather than stripping it off.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Deploy in your email campaign:</strong> Paste the tested URL into your email service provider (e.g., Klaviyo, Mailchimp, or HubSpot) as the destination link for your primary call-to-action button. <em>Note:</em> If your email platform has an automatic UTM tracking toggle enabled, verify that its settings do not overwrite or duplicate your custom parameters.
+                        </li>
+                    </ol>
+
+                    <div class="p-6 bg-[#0D0D0D] border border-[#222] rounded-xl my-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-white block mb-1">Generate your campaign link now</span>
+                            <span class="text-xs text-brand-muted">Build, validate, and copy single or bulk UTM links with preset channels.</span>
+                        </div>
+                        <a href="/tools/utm-builder/" class="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 bg-brand-green text-black font-extrabold text-xs uppercase tracking-wider rounded-lg hover:bg-[#32e012] transition-colors">
+                            <span>Open UTM Builder</span>
+                            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <!-- 4. GA4 REPORTING -->
+                    <h2 id="ga4-reporting">Where to Find Campaign Traffic in GA4</h2>
+                    <p>Once your campaign begins driving visits, you can analyze the incoming traffic inside Google Analytics 4. Follow this workflow based on official <a href="https://support.google.com/analytics/answer/9756891" target="_blank" rel="noopener">GA4 Traffic Acquisition documentation</a>:</p>
+
+                    <h3>1. Access the Traffic Acquisition Report</h3>
+                    <p>In the left-hand navigation menu of GA4, go to <strong>Reports &rarr; Acquisition &rarr; Traffic acquisition</strong>.</p>
+
+                    <div class="p-5 bg-[#0D0D0D] border-l-2 border-l-brand-green border-y border-r border-[#1C1C1C] rounded-r-xl my-6">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-brand-green !mt-0 mb-2">Traffic Acquisition vs. User Acquisition (Scope Matters)</h3>
+                        <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">
+                            GA4 provides two different acquisition reports. Choosing the right one is critical:
+                            <br><br>
+                            &bull; <strong>Traffic acquisition (Session scope):</strong> Measures how <em>each individual session</em> started using dimensions like <code>Session source / medium</code> and <code>Session campaign</code>. If an existing email subscriber clicks your newsletter link, their session will appear under <code>email / newsletter</code> here. <strong>Use this report for campaign evaluation.</strong>
+                            <br><br>
+                            &bull; <strong>User acquisition (First-user scope):</strong> Measures how <em>a person first discovered your website</em> across their lifetime using dimensions like <code>First user source / medium</code>. If that subscriber first discovered your brand via Google organic search six months ago, this report will continue attributing them to Organic Search, not your email campaign.
+                        </p>
+                    </div>
+
+                    <h3>2. Switch Primary Dimensions & Apply Filters</h3>
+                    <p>In the Traffic acquisition data table, the default primary dimension column is <strong>Session default channel group</strong>. To view your specific UTM tags:</p>
+                    <ul>
+                        <li>Click the dropdown arrow above the first column of the table and switch the dimension to <strong>Session source / medium</strong> or <strong>Session campaign</strong>.</li>
+                        <li><strong>Set the Date Range:</strong> In the top-right corner of the interface, ensure your date selector covers the campaign timeframe.</li>
+                        <li><strong>Filter for your campaign:</strong> Use the search bar directly above the data table to filter for <code>spring_sale_2027</code>. Alternatively, click <strong>Add filter</strong> at the top of the report, select dimension <code>Session campaign</code>, choose match type <em>contains</em> or <em>exactly matches</em>, and enter <code>spring_sale_2027</code>.</li>
+                    </ul>
+
+                    <h3>3. Analyzing <code>utm_content</code> and <code>utm_term</code> (Explorations)</h3>
+                    <p>By default, GA4 standard reports do not display columns for <code>utm_content</code> (named <strong>Session manual ad content</strong>) or <code>utm_term</code> (named <strong>Session manual term</strong>). To inspect these granular values:</p>
+                    <ul>
+                        <li><strong>As a Secondary Dimension:</strong> In the Traffic acquisition report, click the blue <strong>+</strong> icon next to the primary dimension header and search for <code>Session manual ad content</code>.</li>
+                        <li><strong>Via Explorations:</strong> For deep analysis, click <strong>Explore</strong> in the left menu and start a <strong>Free-form Exploration</strong>. In the Dimensions panel, import <code>Session campaign</code> and <code>Session manual ad content</code>. In the Metrics panel, import <code>Sessions</code>, <code>Engaged sessions</code>, and <code>Key events</code>. Drag them into your report layout to see side-by-side performance for every link variation.</li>
+                    </ul>
+
+                    <h3>4. Immediate Checks vs. Processed Reports</h3>
+                    <p>Marketers frequently worry when a test click does not appear in standard reports immediately. Keep these timing factors in mind:</p>
+                    <ul>
+                        <li><strong>Realtime Verification:</strong> Open <strong>Reports &rarr; Realtime</strong> or <strong>Admin &rarr; DebugView</strong> (when using the Google Analytics Debugger browser extension). Realtime activity displays within seconds to confirm that your tracking tags fire properly.</li>
+                        <li><strong>Data Processing Latency:</strong> Standard GA4 reports require <strong>24 to 48 hours</strong> to process, aggregate, and populate session data. Seeing zero campaign sessions in standard tables five minutes after launching is expected behavior.</li>
+                        <li><strong>Collection Blockers:</strong> A test click does not guarantee data collection if your browser runs an ad blocker, uses privacy shields (like Brave or Firefox Strict Tracking Protection), or if you reject analytics cookies on your site's consent banner.</li>
+                    </ul>
+
+                    <div class="p-5 bg-yellow-500/5 border border-yellow-500/20 rounded-xl my-6">
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-yellow-400 mb-1">UTMs Do Not Track Purchases By Themselves</h4>
+                        <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">UTM parameters only categorize the incoming session. They do not automatically track e-commerce purchases, leads, or revenue. Your website must have relevant tracking events (such as <code>purchase</code> or <code>generate_lead</code>) properly implemented and marked as <strong>Key events</strong> in GA4 Admin. GA4 can then attribute those key events to your UTM campaign source.</p>
+                    </div>
+
+                    <!-- 5. NAMING CONVENTIONS -->
+                    <h2 id="naming-conventions">Practical UTM Naming Conventions</h2>
+                    <p>Consistent naming rules prevent fragmented reports. Follow these core standards across your team:</p>
+                    <ul>
+                        <li><strong>Always use lowercase:</strong> GA4 is case-sensitive. If one team member writes <code>Email</code> and another writes <code>email</code>, GA4 will treat them as two separate rows in your reports, distorting totals.</li>
+                        <li><strong>Use a consistent separator (hyphens or underscores):</strong> Stick to either <code>spring-sale-2027</code> or <code>spring_sale_2027</code> across all tracking.</li>
+                        <li><strong>The truth about spaces in URLs:</strong> Spaces do not technically break HTTP requests because browsers convert them to URL-encoded entities (such as <code>%20</code> or <code>+</code>). However, encoded spaces make links fragile in chat apps and email clients, increase the chance of copy-paste truncation, and create messy report tables. Using simple alphanumeric strings with hyphens or underscores avoids these problems completely.</li>
+                    </ul>
+
+                    <h3 class="!mt-6">Channel Naming Examples &amp; GA4 Channel Group Mapping</h3>
+                    <p>GA4 categorizes traffic into standard default channels based on strict rule matching. Ensure your <code>utm_medium</code> aligns with official GA4 criteria:</p>
+
+                    <div class="overflow-x-auto my-6 border border-[#1E1E1E] rounded-xl bg-[#0D0D0D]">
+                        <table class="w-full text-left text-xs text-[#A3A3A3]">
+                            <thead class="bg-[#141414] text-white uppercase tracking-wider text-[11px] border-b border-[#222]">
+                                <tr>
+                                    <th class="p-3 sm:p-4">Channel</th>
+                                    <th class="p-3 sm:p-4">utm_source</th>
+                                    <th class="p-3 sm:p-4">utm_medium</th>
+                                    <th class="p-3 sm:p-4">utm_campaign</th>
+                                    <th class="p-3 sm:p-4">Resulting GA4 Channel</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-[#181818]">
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-bold text-white">Email Newsletter</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">newsletter</td>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green">email</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">spring_sale_2027</td>
+                                    <td class="p-3 sm:p-4"><span class="px-2 py-0.5 rounded bg-brand-green/10 text-brand-green font-semibold text-[10px]">Email</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-bold text-white">Paid Social (Meta)</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">facebook / instagram</td>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green">paid_social</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">spring_sale_2027</td>
+                                    <td class="p-3 sm:p-4"><span class="px-2 py-0.5 rounded bg-brand-green/10 text-brand-green font-semibold text-[10px]">Paid Social</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-bold text-white">Organic Social</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">linkedin</td>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green">organic_social</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">brand_thought_leadership</td>
+                                    <td class="p-3 sm:p-4"><span class="px-2 py-0.5 rounded bg-brand-green/10 text-brand-green font-semibold text-[10px]">Organic Social</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 sm:p-4 font-bold text-white">Affiliate Partnership</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">partner_network</td>
+                                    <td class="p-3 sm:p-4 font-mono text-brand-green">affiliate</td>
+                                    <td class="p-3 sm:p-4 font-mono text-white">spring_sale_2027</td>
+                                    <td class="p-3 sm:p-4"><span class="px-2 py-0.5 rounded bg-brand-green/10 text-brand-green font-semibold text-[10px]">Affiliates</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p><em>Warning on arbitrary mediums:</em> If you invent non-standard medium values such as <code>utm_medium=promo</code>, <code>utm_medium=insta</code>, or <code>utm_medium=post</code>, GA4 will not recognize them and will classify the traffic as <strong>Unassigned</strong>.</p>
+
+                    <h3 class="!mt-4">Shared vs. Distinct Campaign Names Across Channels</h3>
+                    <p>Neither approach is mandatory; choose based on what you need to evaluate:</p>
+                    <ul>
+                        <li><strong>Shared campaign names (e.g. <code>spring_sale_2027</code> across Email, Meta Ads, and Affiliates):</strong> Best when you want to measure total omnichannel performance under one unified campaign row in GA4. You can break down individual channels using secondary dimensions.</li>
+                        <li><strong>Distinct campaign names (e.g. <code>spring_sale_email_vip</code> vs <code>spring_sale_meta_prospecting</code>):</strong> Best when different channels run unique offers, distinct audiences, or separate budgets and you want immediate high-level clarity in the Campaign dimension without building custom explorations.</li>
+                    </ul>
+
+                    <!-- 6. TROUBLESHOOTING -->
+                    <h2 id="troubleshooting">Common Mistakes &amp; Troubleshooting</h2>
+                    <p>Before launching your next campaign, review this troubleshooting checklist to avoid common tracking errors:</p>
+
+                    <div class="space-y-4 my-6">
+                        <div class="p-4 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-1 flex items-center gap-2">
+                                <i data-lucide="alert-triangle" class="w-3.5 h-3.5 text-yellow-400"></i> Query-String Syntax Errors
+                            </h4>
+                            <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">A URL can contain only <strong>one</strong> question mark (<code>?</code>). If your destination URL already contains query parameters (e.g. <code>example.com/shop?category=shoes</code>), append UTMs with ampersands (<code>&amp;utm_source=newsletter</code>), not another question mark. Also, never place anchor fragments before query strings (e.g. <code>example.com/#reviews?utm_source=...</code> is invalid; write <code>example.com/?utm_source=...#reviews</code>).</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-1 flex items-center gap-2">
+                                <i data-lucide="alert-triangle" class="w-3.5 h-3.5 text-yellow-400"></i> Server Redirects Stripping Parameters
+                            </h4>
+                            <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">When web servers process 301 or 302 redirects (such as adding a trailing slash, redirecting HTTP to HTTPS, or pointing non-www to www), poorly configured redirect rules frequently strip off the query string. Always test the destination URL in a browser and verify that the final URL in the address bar still contains your parameters.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-1 flex items-center gap-2">
+                                <i data-lucide="alert-triangle" class="w-3.5 h-3.5 text-yellow-400"></i> Using UTMs on Internal Site Links (Never Do This)
+                            </h4>
+                            <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed"><strong>Do not add UTM parameters to internal links</strong> (such as your homepage hero banner linking to a product page). In GA4, clicking an internal link tagged with UTMs immediately overrides the session's active traffic source. If a visitor arrived via a paid ad and subsequently clicked an internal banner tagged with <code>utm_source=homepage_hero</code>, subsequent events and purchases will be attributed to your internal link rather than the paid ad. For internal link tracking, use GA4 recommended events (such as <code>select_promotion</code>) or custom click events.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-1 flex items-center gap-2">
+                                <i data-lucide="alert-triangle" class="w-3.5 h-3.5 text-yellow-400"></i> Inconsistent Casing &amp; Naming
+                            </h4>
+                            <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">Because GA4 dimensions are case-sensitive, mixing <code>Facebook</code> and <code>facebook</code> or <code>Email</code> and <code>email</code> fragments your campaign reports into multiple rows. Enforce lowercase values across your entire team.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-1 flex items-center gap-2">
+                                <i data-lucide="alert-triangle" class="w-3.5 h-3.5 text-yellow-400"></i> Personal Information (PII) in UTMs
+                            </h4>
+                            <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed"><strong>Never include personally identifiable information</strong> (such as names, email addresses, phone numbers, or user IDs) in UTM values. Passing PII in URLs violates Google Analytics Terms of Service and data privacy regulations (GDPR and CCPA), and can result in data deletion or property termination.</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. GOOGLE ADS -->
+                    <h2 id="google-ads">Google Ads &amp; Auto-Tagging</h2>
+                    <p>For Google Ads campaigns, manually creating UTM tracking links is generally unnecessary and can lead to data discrepancies.</p>
+                    
+                    <h3>The Role of Auto-Tagging</h3>
+                    <p>When you link your Google Ads account to GA4 and enable <strong>Auto-tagging</strong> in Google Ads settings, Google automatically appends a Google Click Identifier parameter (<code>gclid</code>) to your landing page URLs. This identifier allows GA4 to import detailed Google Ads dimensions automatically, including:</p>
+                    <ul>
+                        <li>Google Ads campaign, ad group, and ad ID</li>
+                        <li>Search query and keyword match type</li>
+                        <li>Google Ads creative format and ad network placement</li>
+                        <li>Impression, cost, and click data synchronized via API</li>
+                    </ul>
+
+                    <h3>Manual UTMs vs. Auto-Tagging Precedence</h3>
+                    <p>According to <a href="https://support.google.com/analytics/answer/2938246" target="_blank" rel="noopener">official Google Analytics guidance</a>, when both <code>gclid</code> and manual UTM tags are present on a destination URL, GA4 prioritizes the auto-tagged values for its Google Ads and traffic classification dimensions.</p>
+                    <p><strong>When are manual UTMs still useful with Google Ads?</strong> If you use external third-party tools (such as HubSpot, Salesforce, or a standalone attribution platform) that cannot read Google's proprietary <code>gclid</code>, you can add manual UTM parameters to Google Ads using <em>Tracking Templates</em> and dynamic ValueTrack parameters (e.g. <code>utm_campaign={campaignid}&amp;utm_content={creative}</code>). Keep auto-tagging enabled so GA4 continues to receive full Google Ads data while your third-party systems capture standard UTM tags.</p>
+
+                    <!-- 8. FAQS -->
+                    <h2 id="faqs">Frequently Asked Questions</h2>
+                    <div class="space-y-4 my-6">
+                        <div class="p-5 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                            <h3 class="text-sm font-bold uppercase tracking-wider text-white !mt-0 mb-2">Do I need UTMs on every link?</h3>
+                            <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">No. Only tag links on external channels you control (emails, social posts, non-Google ads, QR codes, affiliate links). Never tag internal navigation links on your own site, and do not expect to tag organic search results or independent editorial press coverage.</p>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                            <h3 class="text-sm font-bold uppercase tracking-wider text-white !mt-0 mb-2">Can UTMs track conversions by themselves?</h3>
+                            <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">No. UTM parameters only attribute the visit to a specific source, medium, and campaign. Tracking purchases or form completions requires properly implemented conversion events (e.g. <code>purchase</code> or <code>generate_lead</code>) designated as Key events in GA4.</p>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                            <h3 class="text-sm font-bold uppercase tracking-wider text-white !mt-0 mb-2">Why is my campaign missing from GA4?</h3>
+                            <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">Common causes include standard report processing latency (GA4 takes 24–48 hours to populate standard reports), inspecting the First-user report instead of Traffic acquisition, date range filters excluding today's test, server redirects stripping parameters, or ad blockers preventing the analytics tag from firing.</p>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                            <h3 class="text-sm font-bold uppercase tracking-wider text-white !mt-0 mb-2">Should I add UTMs to internal links?</h3>
+                            <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">No. Adding UTMs to internal navigation links overwrites the session's traffic source attribution mid-session, masking the true marketing channel that brought the user to your site. Use custom event tracking for internal banners.</p>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                            <h3 class="text-sm font-bold uppercase tracking-wider text-white !mt-0 mb-2">Do UTMs improve Google rankings?</h3>
+                            <p class="text-xs text-[#A3A3A3] !mb-0 leading-relaxed">No. UTM parameters are purely analytics measurement tags; search engine crawlers ignore them for ranking purposes. To prevent search engines from treating parameter-tagged URLs as duplicate content, ensure your pages include proper canonical tags pointing to the clean base URL.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 pt-8 border-t border-[#1C1C1C]">
+                        <a href="/tools/utm-builder/" class="inline-flex items-center gap-2 px-6 py-3 bg-[#111] border border-[#333] hover:border-brand-green hover:bg-[#141414] transition-all rounded-xl text-xs font-bold uppercase tracking-wider text-white group">
+                            Build a tracking URL <i data-lucide="arrow-right" class="w-4 h-4 text-brand-green group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Sidebar ToC (Desktop) -->
+                <aside class="hidden lg:block w-64 shrink-0">
+                    <div class="sticky top-24">
+                        <span class="text-[10px] font-black uppercase tracking-widest text-white block mb-6">On this page</span>
+                        <nav class="flex flex-col gap-3 text-xs font-medium text-brand-muted">
+                            <a href="#introduction" class="hover:text-brand-green transition-colors">What UTMs Do &amp; Don't Do</a>
+                            <a href="#anatomy" class="hover:text-brand-green transition-colors">URL Anatomy &amp; Parameters</a>
+                            <a href="#walkthrough" class="hover:text-brand-green transition-colors">Email Campaign Walkthrough</a>
+                            <a href="#ga4-reporting" class="hover:text-brand-green transition-colors">Finding Traffic in GA4</a>
+                            <a href="#naming-conventions" class="hover:text-brand-green transition-colors">Naming Conventions</a>
+                            <a href="#troubleshooting" class="hover:text-brand-green transition-colors">Mistakes &amp; Troubleshooting</a>
+                            <a href="#google-ads" class="hover:text-brand-green transition-colors">Google Ads &amp; Auto-Tagging</a>
+                            <a href="#faqs" class="hover:text-brand-green transition-colors">Frequently Asked Questions</a>
+                        </nav>
+
+                        <div class="mt-8 p-4 rounded-xl bg-[#0D0D0D] border border-[#1C1C1C]">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-green block mb-1">Groniq Tool</span>
+                            <p class="text-[11px] text-brand-muted mb-3 leading-relaxed">Generate consistent UTM links with presets, validation, and QR export.</p>
+                            <a href="/tools/utm-builder/" class="text-xs font-bold uppercase tracking-wider text-white hover:text-brand-green inline-flex items-center gap-1">
+                                Open UTM Builder <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-16 bg-[#040404] border-t border-[#181818] text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-[#181818]">
+
+                <!-- Logo & Positioning -->
+                <div class="flex flex-col items-center md:items-start gap-2">
+                    <a href="/" class="flex items-center gap-3">
+                        <svg viewBox="0 0 100 100" class="w-8 h-8" fill="none">
+                            <path
+                                d="M70 20C85 20 95 35 95 50C95 65 85 80 70 80H60V65H70C78 65 83 58 83 50C83 42 78 35 70 35H45L40 20H70Z"
+                                fill="#39FF14" />
+                            <path
+                                d="M30 80C15 80 5 65 5 50C5 35 15 20 30 20H40V35H30C22 35 17 42 17 50C17 58 22 65 30 65H55L60 80H30Z"
+                                fill="white" />
+                        </svg>
+                        <div class="flex flex-col">
+                            <span
+                                class="text-2xl font-black uppercase tracking-tight text-white leading-none">GRONIQ</span>
+                            <span class="text-[9px] uppercase tracking-widest text-brand-muted font-bold mt-0.5">Digital
+                                Solutions</span>
+                        </div>
+                    </a>
+                    <p class="text-xs text-brand-muted text-center md:text-left max-w-sm">
+                        Performance marketing, SEO, conversion-focused websites, and measurable marketing systems for
+                        emerging brands.
+                    </p>
+                </div>
+
+                <!-- Navigation Quick Links -->
+                <div class="flex flex-wrap justify-center gap-6 text-xs font-semibold text-brand-muted">
+                    <a href="/#what-we-do" class="hover:text-white transition-colors">What We Do</a>
+                    <a href="/#growth-system" class="hover:text-white transition-colors">Growth System</a>
+                    <a href="/#how-we-work" class="hover:text-white transition-colors">How We Work</a>
+                    <a href="/#selected-work" class="hover:text-white transition-colors">Real Work</a>
+                    <a href="/#groniq-labs" class="hover:text-brand-green transition-colors">Groniq Labs</a>
+                    <a href="/#insights" class="hover:text-white transition-colors">Insights</a>
+                    <a href="/#about" class="hover:text-white transition-colors">About</a>
+                    <a href="/#pricing" class="hover:text-white transition-colors">Engagements</a>
+                    <a href="/#contact" class="hover:text-brand-green transition-colors font-bold">Growth Audit</a>
+                </div>
+
+                <!-- Social Channels -->
+                <div class="flex items-center gap-4">
+                    <a href="https://www.linkedin.com/company/groniq-digital-solutions" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin text-sm"></i>
+                    </a>
+                    <a href="https://instagram.com/groniq_digiital_solutions" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@mdtavrejansari" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="YouTube">
+                        <i class="fa-brands fa-youtube text-sm"></i>
+                    </a>
+                    <a href="https://www.behance.net/md-tavrej-ansari" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="Behance">
+                        <i class="fa-brands fa-behance text-sm"></i>
+                    </a>
+                    <a href="mailto:support@groniqdigital.com"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="Email">
+                        <i class="fa-solid fa-envelope text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-medium text-brand-muted">
+                <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-green"></span>
+                    <span class="uppercase tracking-widest text-brand-mutedLight font-bold">Performance • SEO •
+                        E-commerce • Tracking • Growth Systems</span>
+                </div>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="mailto:support@groniqdigital.com" class="hover:text-white transition-colors">support@groniqdigital.com</a>
+                    <span class="text-[#333] hidden sm:inline">&bull;</span>
+                    <a href="mailto:contact@mdtavrejansari.com" class="hover:text-brand-green transition-colors">Founder: contact@mdtavrejansari.com</a>
+                    <span class="text-[#333] hidden sm:inline">&bull;</span>
+                    <span>© 2025–2026 Groniq Digital Solutions. MSME Registered.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const projectSheet = document.getElementById('mobile-project-sheet');
+        const mobileProjectTrigger = document.getElementById('mobile-project-trigger');
+        let lastFocusedElement = null;
+
+        function openProjectSheet() {
+            if (!projectSheet) return;
+            lastFocusedElement = document.activeElement;
+            projectSheet.classList.add('is-open');
+            projectSheet.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => document.getElementById('project-sheet-close')?.focus(), 50);
+        }
+
+        function closeProjectSheet() {
+            if (!projectSheet) return;
+            projectSheet.classList.remove('is-open');
+            projectSheet.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            if (lastFocusedElement) lastFocusedElement.focus();
+        }
+
+        mobileProjectTrigger?.addEventListener('click', (event) => {
+            const isMobile = window.innerWidth < 1024;
+            if (isMobile && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
+                event.preventDefault();
+                openProjectSheet();
+            }
+        });
+
+        document.getElementById('project-sheet-backdrop')?.addEventListener('click', closeProjectSheet);
+        document.getElementById('project-sheet-close')?.addEventListener('click', closeProjectSheet);
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && projectSheet && projectSheet.classList.contains('is-open')) closeProjectSheet();
+        });
+
+        if (window.lucide) { lucide.createIcons(); }
+
+        // Initialize Splash Screen (0-100% System) and Icons
+        function initSplashScreen() {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            const splash = document.getElementById('splash-screen');
+            if (!splash) {
+                document.body.classList.remove('loading');
+                return;
+            }
+
+            let progress = 0;
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+
+            const progressInterval = setInterval(() => {
+                progress += 5;
+                if (progressBar) progressBar.style.width = progress + '%';
+                if (progressText) progressText.innerText = progress + '%';
+
+                if (progress >= 100) {
+                    clearInterval(progressInterval);
+                    setTimeout(() => {
+                        splash.style.opacity = '0';
+                        splash.style.pointerEvents = 'none';
+                        setTimeout(() => splash.remove(), 600);
+                        document.body.classList.remove('loading');
+
+                        if (window.location.hash) {
+                            const target = document.querySelector(window.location.hash);
+                            if (target) target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }, 350);
+                }
+            }, 25);
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initSplashScreen);
+        } else {
+            initSplashScreen();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Robots.txt for Groniq Digital Solutions
+# https://groniqdigital.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://groniqdigital.com/sitemap.xml

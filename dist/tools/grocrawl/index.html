@@ -1,0 +1,2932 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>GroCrawl: SEO Crawler & Website Audit Tool | Groniq</title>
+    <meta name="description" content="Inspect website pages, links, redirects and SEO signals with GroCrawl. Review audit findings, explore supporting evidence and export results.">
+  <meta name="keywords" content="GroCrawl, SEO crawler, website crawler, SEO spider, website audit tool, technical SEO audit, redirect checker, canonical tag checker, internal link analysis">
+    <meta name="keywords"
+        content="Groniq Digital Solutions, Performance Marketing, E-commerce Growth, SEO, Conversion Rate Optimisation, CRO, Google Ads, Meta Ads, GA4, GTM, Marketing Automation, Emerging Consumer Brands">
+    <meta name="author" content="Groniq Digital Solutions">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://groniqdigital.com/tools/grocrawl/">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Groniq">
+    <meta property="og:locale" content="en_US">
+    
+    
+    
+    <meta property="og:image" content="https://res.cloudinary.com/deaammmyy/image/upload/w_1200,h_630,c_pad,b_rgb:050505/v1765349123/favicon.png">
+    <meta property="og:image:secure_url" content="https://res.cloudinary.com/deaammmyy/image/upload/w_1200,h_630,c_pad,b_rgb:050505/v1765349123/favicon.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@groniq">
+    <meta name="twitter:creator" content="@groniq">
+    
+    
+    <meta name="twitter:image" content="https://res.cloudinary.com/deaammmyy/image/upload/w_1200,h_630,c_pad,b_rgb:050505/v1765349123/favicon.png">
+    
+
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png">
+
+    
+    <link rel="stylesheet" href="/tailwind.css">
+    <link rel="stylesheet" href="../../tailwind.css">
+    <style>
+      /* Prevent unstyled SVG explosion before CSS hydration */
+      header svg, footer svg, #navbar svg { width: 32px !important; height: 32px !important; max-width: 32px !important; max-height: 32px !important; }
+      header svg.lucide, footer svg.lucide, header [data-lucide] svg, footer [data-lucide] svg, .lucide { width: 16px !important; height: 16px !important; max-width: 16px !important; max-height: 16px !important; }
+      #navbar { position: sticky !important; top: 0 !important; z-index: 50 !important; background: rgba(5, 5, 5, 0.95) !important; backdrop-filter: blur(14px) !important; -webkit-backdrop-filter: blur(14px) !important; border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important; }
+      body { background: #050505 !important; color: #ffffff !important; margin: 0 !important; font-family: 'Inter', system-ui, -apple-system, sans-serif !important; }
+      #splash-screen { position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important; width: 100vw !important; height: 100vh !important; z-index: 99999 !important; background-color: #050505 !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; transition: opacity 0.6s ease-in-out !important; }
+      body.loading { overflow: hidden !important; }
+    </style>
+
+
+    <!-- Google Fonts & Icon Libraries -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@0.469.0"></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZFQDDBR');</script>
+    <!-- End Google Tag Manager -->
+            <script src="/analytics.js" defer></script>
+    <script src="/accessibility.js" defer></script>
+
+    <!-- Structured Data (JSON-LD) -->
+    
+
+    <style>
+        :root {
+            --primary: #39FF14;
+            --bg: #050505;
+            --card: #0D0D0D;
+            --border: #1E1E1E;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #222222;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #333333;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .glass {
+            background: rgba(10, 10, 10, 0.82);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .glass-card {
+            background: linear-gradient(180deg, rgba(20, 20, 20, 0.75) 0%, rgba(12, 12, 12, 0.85) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+        }
+
+        .system-node-active {
+            box-shadow: 0 0 25px rgba(57, 255, 20, 0.15);
+            border-color: rgba(57, 255, 20, 0.35);
+        }
+
+        .spinner {
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            border-top: 2px solid var(--primary);
+            width: 1.1rem;
+            height: 1.1rem;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .animate-scan {
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to right, transparent, var(--primary), transparent);
+            animation: scan 3s linear infinite;
+        }
+
+        @keyframes scan {
+            0% {
+                top: 0%;
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                top: 100%;
+                opacity: 0;
+            }
+        }
+
+        body.loading {
+            overflow: hidden;
+        }
+
+        /* Subtle grid background */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+
+        /* Drawer overlay animation */
+        #modal-overlay {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        #modal-overlay.hidden-state {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        #modal-overlay.active-state {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        input,
+        select,
+        textarea {
+            color-scheme: dark;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 110px;
+        }
+
+        section[id],
+        [id] {
+            scroll-margin-top: 110px;
+        }
+
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        textarea:focus-visible {
+            outline: 2px solid rgba(57, 255, 20, 0.9);
+            outline-offset: 2px;
+            box-shadow: 0 0 0 4px rgba(57, 255, 20, 0.14);
+        }
+
+        .mobile-nav-rail {
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            position: relative;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .mobile-nav-rail::-webkit-scrollbar {
+            display: none;
+        }
+
+        .mobile-nav-rail::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 32px;
+            height: 100%;
+            background: linear-gradient(to left, rgba(5, 5, 5, 1), rgba(5, 5, 5, 0));
+            pointer-events: none;
+        }
+
+        .navbar-compact {
+            padding-top: 0.625rem;
+            padding-bottom: 0.625rem;
+        }
+
+        #mobile-project-sheet {
+            display: none;
+        }
+
+        #mobile-project-sheet.is-open {
+            display: block;
+        }
+
+        .sheet-panel {
+            transform: translateY(18px);
+            opacity: 0;
+            transition: transform 0.25s ease, opacity 0.25s ease;
+        }
+
+        #mobile-project-sheet.is-open .sheet-panel {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .mobile-snap-list {
+            display: none;
+        }
+
+        .service-summary {
+            display: none;
+        }
+
+        .service-panel-content {
+            display: block;
+        }
+
+        @media (max-width: 767px) {
+            .mobile-nav-rail {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .mobile-nav-rail a {
+                display: inline-flex;
+                align-items: center;
+                min-height: 44px;
+            }
+
+            #mobile-project-trigger {
+                min-height: 44px;
+            }
+
+            #project-sheet-close {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 44px;
+                min-height: 44px;
+            }
+
+            #home {
+                padding-top: 2.25rem;
+                padding-bottom: 4.5rem;
+            }
+
+            #home h1 {
+                font-size: clamp(2.6rem, 14vw, 4rem);
+                line-height: 0.96;
+                letter-spacing: -0.06em;
+            }
+
+            #home .hero-copy p {
+                font-size: 0.95rem;
+                line-height: 1.65;
+            }
+
+            #home .hero-cta-row {
+                gap: 0.75rem;
+            }
+
+            #home .hero-cta-row a {
+                width: 100%;
+                min-height: 48px;
+            }
+
+            #home .hero-visual {
+                padding: 1rem;
+            }
+
+            #home .hero-visual .flex.items-center.justify-between {
+                gap: 0.75rem;
+            }
+
+            #home .hero-visual .text-xs.font-black.uppercase.tracking-wide.text-white {
+                font-size: 10px;
+            }
+
+            #home .hero-visual .text-\[11px\] {
+                font-size: 10px;
+                line-height: 1.45;
+            }
+
+            #growth-system .growth-system-grid,
+            #selected-work .selected-work-grid,
+            #selected-work-grid {
+                display: none !important;
+            }
+
+            #what-we-do .service-grid,
+            #how-we-work .work-grid,
+            #groniq-labs .labs-grid,
+            #pricing .pricing-grid {
+                display: flex !important;
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            #insights .flex.items-center.gap-3 {
+                flex-wrap: wrap;
+            }
+
+            .mobile-snap-list {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+                gap: 0.75rem;
+                padding: 0.25rem 0 1rem;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+
+            .mobile-snap-list::-webkit-scrollbar {
+                display: none;
+            }
+
+            .mobile-snap-item {
+                scroll-snap-align: center;
+                min-width: 82vw;
+                max-width: 82vw;
+            }
+
+            .growth-system-dots,
+            .selected-work-dots {
+                display: flex;
+                justify-content: center;
+                gap: 0.5rem;
+                margin-top: 0.5rem;
+            }
+
+            .growth-system-dot,
+            .selected-work-dot {
+                display: grid;
+                place-items: center;
+                position: relative;
+                width: 24px;
+                height: 24px;
+                background: transparent;
+                border: 0;
+                padding: 0;
+            }
+
+            .growth-system-dot::before,
+            .selected-work-dot::before {
+                content: "";
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 9999px;
+                background: rgba(255, 255, 255, 0.18);
+                transition: all 0.2s ease;
+            }
+
+            .growth-system-dot.is-active::before,
+            .selected-work-dot.is-active::before {
+                width: 1.4rem;
+                background: var(--primary);
+            }
+
+            .service-card {
+                border-radius: 1.25rem;
+                overflow: hidden;
+                border: 1px solid #1c1c1c;
+                background: #0d0d0d;
+            }
+
+            .service-summary {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                background: transparent;
+                border: 0;
+                color: #fff;
+                padding: 1.1rem 1rem;
+                text-align: left;
+            }
+
+            .service-summary .summary-copy {
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
+                min-width: 0;
+            }
+
+            .service-summary h3 {
+                margin: 0;
+                font-size: 1.05rem;
+                font-weight: 900;
+                letter-spacing: -0.04em;
+                text-transform: uppercase;
+            }
+
+            .service-summary .summary-kicker {
+                font-size: 0.6rem;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                color: #39FF14;
+                font-weight: 800;
+            }
+
+            .service-summary i {
+                width: 1rem;
+                height: 1rem;
+                color: #39FF14;
+                transition: transform 0.2s ease;
+            }
+
+            .service-card.is-open .service-summary i {
+                transform: rotate(180deg);
+            }
+
+            .service-panel-content {
+                display: none;
+                padding: 0 1rem 1rem;
+            }
+
+            .service-card.is-open .service-panel-content {
+                display: block;
+            }
+
+            .service-panel-content p,
+            .service-panel-content h4,
+            .service-panel-content div,
+            .service-panel-content span,
+            .service-panel-content li {
+                font-size: 0.72rem;
+                line-height: 1.5;
+            }
+
+            .service-panel-content .space-y-3 {
+                border-top: 1px solid #1a1a1a;
+                padding-top: 0.9rem;
+            }
+
+            .service-panel-content .mt-8 {
+                margin-top: 0.9rem;
+                padding-top: 0.9rem;
+                border-top: 1px solid #1a1a1a;
+            }
+
+            .service-panel-content button {
+                width: 100%;
+                min-height: 44px;
+                border-radius: 0.75rem;
+                background: #141414;
+                border: 1px solid #242424;
+                color: #fff;
+                font-size: 0.65rem;
+                font-weight: 900;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+            }
+
+            .work-timeline {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+                padding-left: 1.1rem;
+            }
+
+            .work-timeline::before {
+                content: "";
+                position: absolute;
+                left: 0.35rem;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: linear-gradient(to bottom, rgba(57,255,20,0.7), rgba(57,255,20,0.15));
+            }
+
+            .work-step {
+                position: relative;
+                margin-left: 0.6rem;
+                padding: 1rem 1rem 0.75rem 1rem;
+                border-radius: 1rem;
+                background: #0d0d0d;
+                border: 1px solid #1e1e1e;
+            }
+
+            .work-step::before {
+                content: "";
+                position: absolute;
+                left: -1.15rem;
+                top: 1.25rem;
+                width: 0.6rem;
+                height: 0.6rem;
+                border-radius: 9999px;
+                background: var(--primary);
+                box-shadow: 0 0 0 4px rgba(57,255,20,0.12);
+            }
+
+            .work-step .flex.items-center.justify-between {
+                margin-bottom: 0.45rem;
+            }
+
+            .work-step .text-2xl.font-black.text-brand-green.font-mono {
+                font-size: 1.4rem;
+            }
+
+            .work-step h3 {
+                font-size: 1rem;
+                margin-bottom: 0.35rem;
+            }
+
+            .work-step p {
+                font-size: 0.72rem;
+                line-height: 1.55;
+            }
+
+            .selected-work-card {
+                min-width: 82vw;
+                max-width: 82vw;
+                scroll-snap-align: center;
+            }
+
+            .lab-card {
+                border-radius: 1.25rem;
+                overflow: hidden;
+            }
+
+            .lab-summary {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                background: transparent;
+                border: 0;
+                color: #fff;
+                padding: 1.1rem 1rem;
+                text-align: left;
+            }
+
+            .lab-summary i {
+                width: 1rem;
+                height: 1rem;
+                color: #39FF14;
+                transition: transform 0.2s ease;
+            }
+
+            .lab-card.is-open .lab-summary i {
+                transform: rotate(180deg);
+            }
+
+            .lab-panel {
+                display: none;
+                padding: 0 1rem 1rem;
+            }
+
+            .lab-card.is-open .lab-panel {
+                display: block;
+            }
+
+            .lab-panel > div:last-child {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.75rem;
+            }
+
+            .lab-panel button {
+                width: 100%;
+                min-height: 44px;
+                text-align: left;
+            }
+
+            .pricing-card {
+                border-radius: 1.25rem;
+                overflow: hidden;
+            }
+
+            .pricing-summary {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0.5rem;
+                width: 100%;
+                border: 0;
+                background: transparent;
+                color: #fff;
+                padding: 1.1rem 1rem;
+                text-align: left;
+            }
+
+            .pricing-badge {
+                flex-shrink: 0;
+                margin-left: auto;
+                border-radius: 9999px;
+                background: #39FF14;
+                color: #050505;
+                padding: 0.25rem 0.5rem;
+                font-size: 0.55rem;
+                font-weight: 900;
+                line-height: 1;
+                text-transform: uppercase;
+                white-space: nowrap;
+            }
+
+            .pricing-summary i {
+                width: 1rem;
+                height: 1rem;
+                color: #39FF14;
+                transition: transform 0.2s ease;
+            }
+
+            .pricing-card.is-open .pricing-summary i {
+                transform: rotate(180deg);
+            }
+
+            .pricing-panel {
+                display: none;
+                padding: 0 1rem 1rem;
+            }
+
+            .pricing-card.is-open .pricing-panel {
+                display: block;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="grocrawl.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+    <script src="grocrawl-app.js" defer></script>
+  </head>
+
+<body class="bg-brand-dark text-white selection:bg-brand-green selection:text-black loading">
+
+    <!-- Splash / Loading Screen -->
+    <div id="splash-screen"
+        class="fixed inset-0 z-[200] bg-[#050505] flex flex-col items-center justify-center transition-all duration-1000 ease-in-out">
+        <div class="animate-scan"></div>
+        <svg viewBox="0 0 100 100" class="w-20 h-20 mb-8" fill="none" aria-hidden="true">
+            <path
+                d="M70 20C85 20 95 35 95 50C95 65 85 80 70 80H60V65H70C78 65 83 58 83 50C83 42 78 35 70 35H45L40 20H70Z"
+                fill="#39FF14" />
+            <path d="M30 80C15 80 5 65 5 50C5 35 15 20 30 20H40V35H30C22 35 17 42 17 50C17 58 22 65 30 65H55L60 80H30Z"
+                fill="white" />
+        </svg>
+        <div class="w-48 space-y-4 text-center">
+            <span id="progress-text" class="text-brand-green font-black text-2xl font-mono">0%</span>
+            <div class="h-[2px] w-full bg-[#1F1F1F] rounded-full overflow-hidden relative">
+                <div id="progress-bar" class="absolute top-0 left-0 h-full bg-brand-green transition-all duration-100"
+                    style="width: 0%"></div>
+            </div>
+            <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-muted">Initialising Systems...</p>
+        </div>
+    </div>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZFQDDBR"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Top Notice / Credibility Bar -->
+    <div
+        class="bg-[#090909] border-b border-[#1A1A1A] py-2 px-4 text-center text-[11px] font-medium text-brand-muted tracking-wide flex items-center justify-center gap-3">
+        <span class="inline-flex items-center gap-1.5 text-brand-green font-semibold">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-green animate-pulse"></span>
+            MSME Registered Digital Solutions Practice
+        </span>
+        <span class="text-[#333] hidden sm:inline">•</span>
+        <span class="hidden sm:inline">Built for Emerging Consumer & E-commerce Brands</span>
+        <span class="text-[#333] hidden md:inline">•</span>
+        <a href="/#contact"
+            class="text-white hover:text-brand-green underline hidden md:inline transition-colors">Request a Growth
+            Audit &rarr;</a>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header id="navbar"
+        class="sticky top-0 w-full z-50 transition-all duration-300 py-4 bg-brand-dark/80 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center gap-3">
+            <a href="/" class="flex items-center gap-3 group shrink-0" aria-label="Groniq Digital Solutions Home">
+                <svg viewBox="0 0 100 100" width="32" height="32" class="w-8 h-8 transition-transform group-hover:scale-105 duration-300"
+                    fill="none" aria-hidden="true">
+                    <path
+                        d="M70 20C85 20 95 35 95 50C95 65 85 80 70 80H60V65H70C78 65 83 58 83 50C83 42 78 35 70 35H45L40 20H70Z"
+                        fill="#39FF14" />
+                    <path
+                        d="M30 80C15 80 5 65 5 50C5 35 15 20 30 20H40V35H30C22 35 17 42 17 50C17 58 22 65 30 65H55L60 80H30Z"
+                        fill="white" />
+                </svg>
+                <div class="flex flex-col">
+                    <span class="text-xl font-black uppercase tracking-tight text-white leading-none">GRONIQ</span>
+                    <span class="text-[9px] uppercase tracking-widest text-brand-muted font-bold mt-0.5">Digital
+                        Solutions</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-7" aria-label="Main Navigation">
+                <div class="relative services-dropdown-container flex items-center">
+                    <a href="/services/" class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors py-1">Services</a>
+                    <button type="button" 
+                        class="services-menu-toggle ml-1 p-1 text-brand-muted hover:text-white focus-visible:outline-none focus-visible:text-brand-green transition-colors cursor-pointer" 
+                        aria-expanded="false" 
+                        aria-haspopup="true"
+                        aria-controls="services-dropdown-menu" 
+                        aria-label="Toggle Services submenu">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="toggle-icon transition-transform duration-200"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <!-- Accessible Dropdown Menu -->
+                    <div id="services-dropdown-menu" 
+                        class="services-dropdown-panel absolute top-full left-0 mt-2 w-60 rounded-xl bg-[#0D0D0D] border border-[#222] shadow-[0_16px_36px_rgba(0,0,0,0.8)] p-2 hidden z-50 backdrop-blur-md"
+                        role="menu" 
+                        aria-label="Services Submenu">
+                        <a href="/services/" role="menuitem" class="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white hover:bg-white/5 transition-colors">
+                            <span>All Services</span>
+                            <span class="text-[10px] text-brand-green font-mono">Overview &rarr;</span>
+                        </a>
+                        <a href="/services/paid-acquisition/" role="menuitem" class="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white hover:bg-white/5 transition-colors">
+                            <span>Paid Acquisition</span>
+                            <span class="text-[9px] text-brand-muted font-mono">Ads</span>
+                        </a>
+                        <a href="/services/measurement-tracking/" role="menuitem" class="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white hover:bg-white/5 transition-colors">
+                            <span>Measurement &amp; Tracking</span>
+                            <span class="text-[9px] text-brand-muted font-mono">GA4/GTM</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="/#selected-work"
+                    class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors">Work</a>
+                <a href="/tools/"
+                    class="text-xs font-semibold uppercase tracking-wider text-brand-green transition-colors">Tools</a>
+                <a href="/learn/"
+                    class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors">Learn</a>
+                <a href="/#about"
+                    class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors">About</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="/#contact"
+                    class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-green text-black font-bold text-xs uppercase tracking-wider rounded-lg hover:bg-brand-greenHover hover:shadow-[0_0_20px_rgba(57,255,20,0.3)] transition-all duration-200">
+                    <span>Request a Growth Audit</span>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="lg:hidden flex items-center gap-2 ml-auto">
+                <a id="mobile-project-trigger" href="/#contact"
+                    class="inline-flex items-center justify-center gap-1.5 rounded-lg bg-brand-green px-3 py-2 text-[10px] sm:text-[11px] font-black uppercase tracking-[0.12em] text-black leading-none shadow-[0_0_18px_rgba(57,255,20,0.2)]">
+                    <span>Start a Project</span>
+                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="lg:hidden w-full border-b border-[#181818] bg-brand-dark/95 backdrop-blur supports-[backdrop-filter]:bg-brand-dark/80">
+        <nav aria-label="Mobile navigation" class="mobile-nav-rail py-3 px-6">
+            <div class="flex items-center gap-6 text-[11px] font-bold uppercase tracking-[0.18em] text-brand-muted">
+                <div class="inline-flex items-center shrink-0">
+                    <a href="/services/" class="shrink-0 hover:text-white transition-colors">Services</a>
+                    <button type="button" class="mobile-services-toggle ml-1 p-1 text-brand-muted hover:text-white focus-visible:outline-none cursor-pointer" aria-expanded="false" aria-controls="mobile-services-submenu" aria-label="Toggle Services child links">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-200"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </div>
+                <a href="/#selected-work" class="shrink-0 hover:text-white transition-colors">Work</a>
+                <a href="/tools/" class="shrink-0 hover:text-white transition-colors">Tools</a>
+                <a href="/learn/" class="shrink-0 hover:text-white transition-colors">Learn</a>
+                <a href="/#about" class="shrink-0 hover:text-white transition-colors">About</a>
+                <a href="/#pricing" class="shrink-0 hover:text-white transition-colors">Pricing</a>
+            </div>
+        </nav>
+        <!-- Expandable Mobile Services Submenu -->
+        <div id="mobile-services-submenu" class="hidden px-6 py-2.5 bg-[#0C0C0C] border-t border-[#1C1C1C] flex flex-col gap-2 text-[10px] font-mono uppercase tracking-wider text-brand-muted">
+            <a href="/services/" class="hover:text-brand-green transition-colors flex items-center justify-between py-1">
+                <span>&bull; All Services Overview</span>
+                <span class="text-brand-green">&rarr;</span>
+            </a>
+            <a href="/services/paid-acquisition/" class="hover:text-brand-green transition-colors flex items-center justify-between py-1">
+                <span>&bull; Paid Acquisition (Google &amp; Meta Ads)</span>
+                <span class="text-brand-green">&rarr;</span>
+            </a>
+            <a href="/services/measurement-tracking/" class="hover:text-brand-green transition-colors flex items-center justify-between py-1">
+                <span>&bull; Measurement &amp; Tracking (GA4 / GTM / CAPI)</span>
+                <span class="text-brand-green">&rarr;</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="mobile-project-sheet" class="fixed inset-0 z-[120]" aria-hidden="true">
+        <button type="button" id="project-sheet-backdrop" class="absolute inset-0 bg-black/70 backdrop-blur-[2px]" aria-label="Close project options"></button>
+        <div class="absolute inset-x-0 bottom-0 mx-auto w-full max-w-md rounded-t-[28px] border border-white/10 bg-[#0C0C0C] p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-[0_-12px_40px_rgba(0,0,0,0.45)] sheet-panel" role="dialog" aria-modal="true" aria-labelledby="project-sheet-title">
+            <div class="flex items-center justify-between mb-4">
+                <h2 id="project-sheet-title" class="text-lg font-black uppercase tracking-tight text-white">Start a Project</h2>
+                <button type="button" id="project-sheet-close" class="p-2 text-brand-muted hover:text-white focus-visible:outline-none" aria-label="Close project options">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <div class="space-y-2">
+                <a href="/#contact" class="flex items-center justify-between rounded-2xl border border-[#1F1F1F] bg-[#111111] px-4 py-3 text-left text-sm font-bold uppercase tracking-[0.14em] text-white hover:border-brand-green/40 hover:text-brand-green transition-colors">
+                    <span>Request a Growth Audit</span>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-brand-green"></i>
+                </a>
+                <a href="https://wa.me/918016156537?text=Hi%20Groniq,%20I'd%20like%20to%20discuss%20a%20growth%20audit%20for%20my%20brand." target="_blank" rel="noopener" class="flex items-center justify-between rounded-2xl border border-[#1F1F1F] bg-[#111111] px-4 py-3 text-left text-sm font-bold uppercase tracking-[0.14em] text-white hover:border-brand-green/40 hover:text-brand-green transition-colors">
+                    <span>Chat on WhatsApp</span>
+                    <i data-lucide="message-circle-more" class="w-4 h-4 text-brand-green"></i>
+                </a>
+                <a href="mailto:support@groniqdigital.com?subject=Start%20a%20Project" class="flex items-center justify-between rounded-2xl border border-[#1F1F1F] bg-[#111111] px-4 py-3 text-left text-sm font-bold uppercase tracking-[0.14em] text-white hover:border-brand-green/40 hover:text-brand-green transition-colors">
+                    <span>Send an Email (Support)</span>
+                    <i data-lucide="mail" class="w-4 h-4 text-brand-green"></i>
+                </a>
+                <a href="mailto:contact@mdtavrejansari.com?subject=Direct%20Inquiry%20to%20Founder" class="flex items-center justify-between rounded-2xl border border-[#1F1F1F] bg-[#111111] px-4 py-3 text-left text-sm font-bold uppercase tracking-[0.14em] text-white hover:border-brand-green/40 hover:text-brand-green transition-colors">
+                    <span>Email Founder (Direct)</span>
+                    <i data-lucide="user-check" class="w-4 h-4 text-brand-green"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    
+<main class="grocrawl-wrapper">
+  <!-- Centered Hero Section with Ambient Green Glow (Groniq Theme) -->
+  <section class="gc-hero-section bg-grid">
+    <div class="gc-hero-glow-mat"></div>
+    <div class="gc-hero-content">
+      <nav class="gc-hero-breadcrumb">
+        <a href="/tools/">TOOLS</a>
+        <span>/</span>
+        <span class="accent">WEBSITE CRAWLER & SEO AUDIT</span>
+      </nav>
+      <h1 class="gc-hero-h1">
+        Gro<span class="accent">Crawl</span>
+      </h1>
+      <p class="gc-hero-paragraph">
+        Inspect pages, links, redirects, metadata and performance signals. Review the evidence behind findings and export results to plan your next fixes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tool Workspace Container -->
+  <div class="grocrawl-container">
+    <!-- Top URL & Control Section -->
+    <section class="gc-control-panel">
+      <div id="gc-start-control">
+        <div class="gc-url-row">
+          <div class="gc-url-input-wrap">
+            <span class="gc-url-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></span>
+            <input type="url" class="gc-url-input" id="gc-url-input" list="gc-url-suggestions" required placeholder="Enter website URL (e.g. https://groniqdigital.com)" autocomplete="on" onkeydown="if(event.key==='Enter'){event.preventDefault();event.stopPropagation();window.GroCrawlApp&&window.GroCrawlApp.startCrawl(event);return false;}" oninput="const b=document.getElementById('gc-url-clear-btn');const k=document.getElementById('gc-url-kbd');if(b&&k){if(this.value){b.style.display='flex';k.style.display='none';}else{b.style.display='none';k.style.display='inline-flex';}}">
+            <button type="button" class="gc-url-clear-btn" id="gc-url-clear-btn" title="Clear input" onclick="const i=document.getElementById('gc-url-input');if(i){i.value='';i.focus();this.style.display='none';const k=document.getElementById('gc-url-kbd');if(k)k.style.display='inline-flex';}" aria-label="Clear URL">✕</button>
+            <span class="gc-url-kbd" id="gc-url-kbd">↵ Enter</span>
+            <datalist id="gc-url-suggestions">
+              <option value="https://groniqdigital.com/"></option>
+              <option value="https://groniqdigital.com/tools/"></option>
+              <option value="https://groniqdigital.com/learn/"></option>
+              <option value="https://example.com/"></option>
+            </datalist>
+          </div>
+          <button type="button" class="gc-btn-primary" id="gc-btn-start" onclick="event.preventDefault();event.stopPropagation();window.GroCrawlApp&&window.GroCrawlApp.startCrawl(event);return false;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:4px;"><path d="M8 5v14l11-7z"/></svg>
+            <span>Start Audit</span>
+          </button>
+          <button type="button" class="gc-btn-secondary" id="gc-btn-stop" disabled onclick="event.preventDefault();event.stopPropagation();window.GroCrawlApp&&window.GroCrawlApp.stopCrawl();return false;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12"/></svg>
+            <span>Stop</span>
+          </button>
+          <button type="button" class="gc-btn-secondary" id="gc-btn-clear" onclick="event.preventDefault();event.stopPropagation();window.GroCrawlApp&&window.GroCrawlApp.clearCrawl();return false;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+            <span>Clear</span>
+          </button>
+          <button type="button" class="gc-btn-secondary gc-btn-demo" id="gc-btn-demo" onclick="event.preventDefault();event.stopPropagation();window.GroCrawlApp&&window.GroCrawlApp.loadDemoData();return false;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg><span>Sample Audit</span>
+          </button>
+          <button type="button" class="gc-btn-secondary" id="gc-quick-export-btn" onclick="event.preventDefault();event.stopPropagation();window.GroCrawlApp&&window.GroCrawlApp.openExportModal();return false;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>Export</span>
+          </button>
+          <button type="button" class="gc-btn-secondary" id="gc-quick-settings-btn" onclick="event.preventDefault();event.stopPropagation();window.GroCrawlApp&&window.GroCrawlApp.openSettingsModal();return false;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg><span>Settings</span>
+          </button>
+        </div>
+        <div class="gc-url-suggestions-bar">
+          <span class="gc-suggestions-label">Suggestions:</span>
+          <button type="button" class="gc-suggestion-btn" onclick="event.preventDefault();window.GroCrawlApp&&window.GroCrawlApp.setUrl('https://groniqdigital.com/');return false;">groniqdigital.com</button>
+          <button type="button" class="gc-suggestion-btn" onclick="event.preventDefault();window.GroCrawlApp&&window.GroCrawlApp.setUrl('https://groniqdigital.com/tools/');return false;">groniqdigital.com/tools/</button>
+          <button type="button" class="gc-suggestion-btn" onclick="event.preventDefault();window.GroCrawlApp&&window.GroCrawlApp.setUrl('https://groniqdigital.com/learn/');return false;">groniqdigital.com/learn/</button>
+        </div>
+
+        <div class="gc-settings-row">
+          <input type="hidden" id="gc-setting-engine" value="auto">
+          <div class="gc-setting-item">
+            <label for="gc-setting-max-urls">Max URLs:</label>
+            <input type="number" id="gc-setting-max-urls" class="gc-setting-number" min="1" max="1000" value="50" style="width: 75px;">
+          </div>
+          <div class="gc-setting-item">
+            <label for="gc-setting-max-depth">Max Depth:</label>
+            <input type="number" id="gc-setting-max-depth" class="gc-setting-number" min="1" max="10" value="3" style="width: 60px;">
+            <button type="button" class="gc-help-btn" data-help="crawl-depth-limits" aria-label="Help: Crawl Depth & Page Limits" title="Learn about crawl limits"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
+          </div>
+        </div>
+
+        <div class="gc-progress-track" id="gc-progress-track">
+          <div class="gc-progress-bar" id="gc-progress-bar"></div>
+        </div>
+        <div id="gc-notice-text" style="font-size: 13px; color: #9ca3af; margin-top: 10px;">
+          Ready to audit. Enter website URL or load sample audit.
+        </div>
+      </div>
+    </section>
+
+  <!-- Two-Column Workspace Layout (GroCrawl Spider) -->
+  <div class="gc-workspace-layout">
+    <!-- Left Sidebar: Filters & Stats -->
+    <aside class="gc-sidebar">
+      <div class="gc-sidebar-section">
+        <h3 class="gc-sidebar-title">Filters</h3>
+        <div class="gc-filter-group">
+          <div class="gc-filter-item active" data-filter="all" onclick="window.GroCrawlApp&&window.GroCrawlApp.setFilter('all')">
+            <span>All Crawled URLs</span>
+            <span class="gc-filter-count" id="filter-all-count">0</span>
+          </div>
+          <div class="gc-filter-item" data-filter="internal" onclick="window.GroCrawlApp&&window.GroCrawlApp.setFilter('internal')">
+            <span>Internal URLs</span>
+            <span class="gc-filter-count" id="filter-internal-count">0</span>
+          </div>
+          <div class="gc-filter-item" data-filter="external" onclick="window.GroCrawlApp&&window.GroCrawlApp.setFilter('external')">
+            <span>External URLs</span>
+            <span class="gc-filter-count" id="filter-external-count">0</span>
+          </div>
+        </div>
+
+        <div class="gc-filter-group">
+          <div class="gc-filter-header">Response Codes</div>
+          <div class="gc-filter-item" data-filter="2xx" onclick="window.GroCrawlApp&&window.GroCrawlApp.setFilter('2xx')">
+            <span>2xx Success</span>
+            <span class="gc-filter-count" id="filter-2xx-count">0</span>
+          </div>
+          <div class="gc-filter-item" data-filter="3xx" onclick="window.GroCrawlApp&&window.GroCrawlApp.setFilter('3xx')">
+            <span>3xx Redirect</span>
+            <span class="gc-filter-count" id="filter-3xx-count">0</span>
+          </div>
+          <div class="gc-filter-item" data-filter="4xx" onclick="window.GroCrawlApp&&window.GroCrawlApp.setFilter('4xx')">
+            <span>4xx Client Error</span>
+            <span class="gc-filter-count" id="filter-4xx-count">0</span>
+          </div>
+          <div class="gc-filter-item" data-filter="5xx" onclick="window.GroCrawlApp&&window.GroCrawlApp.setFilter('5xx')">
+            <span>5xx Server Error</span>
+            <span class="gc-filter-count" id="filter-5xx-count">0</span>
+          </div>
+          <div class="gc-filter-item" data-filter="no_response" onclick="window.GroCrawlApp&&window.GroCrawlApp.setFilter('no_response')">
+            <span>No Response</span>
+            <span class="gc-filter-count" id="filter-no-response-count">0</span>
+          </div>
+        </div>
+
+        <div class="gc-filter-group">
+          <div class="gc-filter-header">Content Type</div>
+          <div class="gc-filter-item" data-filter="html" onclick="window.GroCrawlApp&&window.GroCrawlApp.setFilter('html')">
+            <span>HTML Pages</span>
+            <span class="gc-filter-count" id="filter-html-count">0</span>
+          </div>
+          <div class="gc-filter-item" data-filter="css" onclick="window.GroCrawlApp&&window.GroCrawlApp.setFilter('css')">
+            <span>CSS Style</span>
+            <span class="gc-filter-count" id="filter-css-count">0</span>
+          </div>
+          <div class="gc-filter-item" data-filter="js" onclick="window.GroCrawlApp&&window.GroCrawlApp.setFilter('js')">
+            <span>JavaScript</span>
+            <span class="gc-filter-count" id="filter-js-count">0</span>
+          </div>
+          <div class="gc-filter-item" data-filter="images" onclick="window.GroCrawlApp&&window.GroCrawlApp.setFilter('images')">
+            <span>Images</span>
+            <span class="gc-filter-count" id="filter-images-count">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gc-sidebar-section">
+        <h3 class="gc-sidebar-title">Statistics</h3>
+        <div class="gc-stat-list">
+          <div class="gc-stat-row">
+            <span>URLs Discovered</span>
+            <strong id="gc-stat-discovered">0</strong>
+          </div>
+          <div class="gc-stat-row">
+            <span>URLs Crawled</span>
+            <strong id="gc-stat-crawled" style="color: var(--gc-brand);">0</strong>
+          </div>
+          <div class="gc-stat-row">
+            <span>Crawl Depth</span>
+            <strong id="gc-stat-depth">0</strong>
+          </div>
+          <div class="gc-stat-row">
+            <span>Speed</span>
+            <strong id="gc-stat-speed">0 URLs/sec</strong>
+          </div>
+          <div class="gc-stat-row">
+            <span>Health Score</span>
+            <strong id="gc-stat-health" style="color: var(--gc-brand);">100%</strong>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right Column: Tabs & Tables -->
+    <div class="gc-layout-content">
+      <div class="gc-tabs-wrapper">
+        <button type="button" class="gc-sidebar-toggle-btn" id="gc-sidebar-toggle-btn" onclick="window.GroCrawlApp&&window.GroCrawlApp.toggleSidebar()" title="Toggle Sidebar">
+          <span id="gc-toggle-icon">◀</span>
+          <span class="gc-toggle-text">Sidebar</span>
+        </button>
+        <button type="button" class="gc-tab-scroll-btn left" id="gc-tab-scroll-left" onclick="window.GroCrawlApp&&window.GroCrawlApp.scrollTabsLeft()" title="Scroll menu left" aria-label="Scroll menu left">&#10094;</button>
+        <nav class="gc-tabs-header" id="gc-tabs-header">
+          <button type="button" class="gc-tab-btn active" data-tab="overview"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg><span>Overview</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="internal"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>Internal</span> <span class="gc-badge" id="gc-badge-internal">0</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="external"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg><span>External</span> <span class="gc-badge" id="gc-badge-external">0</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="status-codes"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span>Status Codes</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="links"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><span>Links</span> <span class="gc-badge" id="gc-badge-links">0</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="issues"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span>Issues</span> <span class="gc-badge err" id="gc-badge-issues">0</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="images"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Images</span> <span class="gc-badge" id="gc-badge-images">0</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="headings"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg><span>Headings</span> <span class="gc-badge" id="gc-badge-headings">0</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="duplicates"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg><span>Duplicates</span> <span class="gc-badge warn" id="gc-badge-duplicates">0</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="pagespeed"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg><span>PageSpeed</span> <span class="gc-badge" id="gc-badge-pagespeed">0</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="eeat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg><span>Content & Trust (E-E-A-T)</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="visualization"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg><span>Visualization</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="dashboard"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg><span>Saved Crawls</span></button>
+          <button type="button" class="gc-tab-btn" data-tab="settings"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg><span>Settings</span></button>
+        </nav>
+        <button type="button" class="gc-tab-scroll-btn right" id="gc-tab-scroll-right" onclick="window.GroCrawlApp&&window.GroCrawlApp.scrollTabsRight()" title="Scroll menu right" aria-label="Scroll menu right">&#10095;</button>
+      </div>
+
+      <!-- Tab 1: Overview (Executive Audit Dashboard & Spider) -->
+      <div class="gc-tab-pane" id="gc-pane-overview">
+        <!-- Executive KPI Cards -->
+        <div class="gc-kpi-grid">
+          <div class="gc-kpi-card highlight">
+            <div class="gc-kpi-title">Discovered & Crawled</div>
+            <div class="gc-kpi-num" id="overview-kpi-crawled">0</div>
+            <div class="gc-kpi-sub" id="overview-kpi-discovered-sub">0 Discovered</div>
+          </div>
+          <div class="gc-kpi-card">
+            <div class="gc-kpi-title" style="display:flex;align-items:center;justify-content:space-between;">
+              <span>Site Health Score</span>
+              <button type="button" class="gc-help-btn" data-help="health-score-formula" aria-label="Help: SEO Health Score Formula" title="How health score is calculated"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
+            </div>
+            <div class="gc-kpi-num" id="overview-kpi-health" style="color: var(--gc-brand);">100%</div>
+            <div class="gc-kpi-sub" id="overview-kpi-health-sub">Technical SEO Index</div>
+          </div>
+          <div class="gc-kpi-card">
+            <div class="gc-kpi-title">Critical Issues</div>
+            <div class="gc-kpi-num" id="overview-kpi-issues" style="color: #ef4444;">0</div>
+            <div class="gc-kpi-sub" id="overview-kpi-issues-sub">Errors & Warnings</div>
+          </div>
+          <div class="gc-kpi-card">
+            <div class="gc-kpi-title">Trust & E-E-A-T</div>
+            <div class="gc-kpi-num" id="overview-kpi-trust" style="color: #38bdf8;">--</div>
+            <div class="gc-kpi-sub" id="overview-kpi-trust-sub">Quality Rater Score</div>
+          </div>
+        </div>
+
+        <!-- HTTP Status Distribution Bar -->
+        <div class="gc-status-dist-wrap">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--gc-text-muted);">HTTP Status Distribution</span>
+            <span id="overview-dist-summary" style="font-size:12px; color:var(--gc-text-dim);">0 responses</span>
+          </div>
+          <div class="gc-status-dist-bar">
+            <div class="gc-dist-seg c2xx" id="dist-2xx" style="width: 100%;" title="2xx Success"></div>
+            <div class="gc-dist-seg c3xx" id="dist-3xx" style="width: 0%;" title="3xx Redirect"></div>
+            <div class="gc-dist-seg c4xx" id="dist-4xx" style="width: 0%;" title="4xx Client Error"></div>
+            <div class="gc-dist-seg c5xx" id="dist-5xx" style="width: 0%;" title="5xx Server Error"></div>
+          </div>
+          <div class="gc-status-legend">
+            <div class="gc-legend-item"><span class="gc-legend-dot" style="background:var(--gc-2xx);"></span> 2xx Success: <strong id="overview-dist-2xx" style="margin-left:4px;">0</strong></div>
+            <div class="gc-legend-item"><span class="gc-legend-dot" style="background:var(--gc-3xx);"></span> 3xx Redirect: <strong id="overview-dist-3xx" style="margin-left:4px;">0</strong></div>
+            <div class="gc-legend-item"><span class="gc-legend-dot" style="background:var(--gc-4xx);"></span> 4xx Error: <strong id="overview-dist-4xx" style="margin-left:4px;">0</strong></div>
+            <div class="gc-legend-item"><span class="gc-legend-dot" style="background:var(--gc-5xx);"></span> 5xx Error: <strong id="overview-dist-5xx" style="margin-left:4px;">0</strong></div>
+          </div>
+        </div>
+
+        <!-- Diagnostic Snapshots Grid -->
+        <div class="gc-diagnostic-grid">
+          <div class="gc-diag-card" onclick="window.GroCrawlApp&&window.GroCrawlApp.switchTab('pagespeed')">
+            <div class="gc-diag-header">
+              <span class="gc-diag-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+              <h4>Core Web Vitals & Speed</h4>
+              <span class="gc-diag-link">View Tab →</span>
+            </div>
+            <div class="gc-diag-body" id="overview-snapshot-pagespeed">
+              <div class="gc-diag-metric"><span>LCP Performance:</span> <strong id="snapshot-lcp-val">--</strong></div>
+              <div class="gc-diag-metric"><span>CLS Stability:</span> <strong id="snapshot-cls-val">--</strong></div>
+              <div class="gc-diag-metric"><span>INP Interactivity:</span> <strong id="snapshot-inp-val">--</strong></div>
+            </div>
+          </div>
+          <div class="gc-diag-card" onclick="window.GroCrawlApp&&window.GroCrawlApp.switchTab('issues')">
+            <div class="gc-diag-header">
+              <span class="gc-diag-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+              <h4>Critical SEO Health</h4>
+              <span class="gc-diag-link">View Tab →</span>
+            </div>
+            <div class="gc-diag-body" id="overview-snapshot-issues">
+              <div class="gc-diag-metric"><span>Broken Links (4xx/5xx):</span> <strong id="snapshot-broken-val">0</strong></div>
+              <div class="gc-diag-metric"><span>Missing Meta Titles:</span> <strong id="snapshot-missing-titles">0</strong></div>
+              <div class="gc-diag-metric"><span>Missing H1 Headings:</span> <strong id="snapshot-missing-h1">0</strong></div>
+            </div>
+          </div>
+          <div class="gc-diag-card" onclick="window.GroCrawlApp&&window.GroCrawlApp.switchTab('eeat')">
+            <div class="gc-diag-header">
+              <span class="gc-diag-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span>
+              <h4>E-E-A-T Quality Signals</h4>
+              <span class="gc-diag-link">View Tab →</span>
+            </div>
+            <div class="gc-diag-body" id="overview-snapshot-eeat">
+              <div class="gc-diag-metric"><span>Author & Persona Schema:</span> <strong id="snapshot-author-val">--</strong></div>
+              <div class="gc-diag-metric"><span>HTTPS & SSL Security:</span> <strong id="snapshot-https-val">Valid</strong></div>
+              <div class="gc-diag-metric"><span>Trust & Policy Pages:</span> <strong id="snapshot-policies-val">--</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Master URL Explorer Header & Table -->
+        <div class="gc-master-explorer-header">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <h3 style="margin:0; font-size:15px; font-weight:700; color:#fff;">Master URL Explorer</h3>
+            <span class="gc-badge success" id="gc-master-badge">0 URLs</span>
+            <button type="button" class="gc-help-btn" data-help="canonicals-indexability" aria-label="Help: Canonicals and Indexability" title="Learn about canonicals and indexability"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
+          </div>
+          <div class="gc-table-controls">
+            <div class="gc-search-box">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" id="gc-table-search" placeholder="Filter address, title, meta..." oninput="this.parentElement.classList.toggle('has-val', !!this.value)">
+              <button type="button" class="gc-search-clear" id="gc-table-search-clear" title="Clear filter" onclick="const i=document.getElementById('gc-table-search');if(i){i.value='';i.dispatchEvent(new Event('input'));this.parentElement.classList.remove('has-val');i.focus();}">✕</button>
+            </div>
+            <span id="gc-urls-count-label" style="font-size: 13px; color: #9ca3af; font-weight: 500;">0 URLs</span>
+          </div>
+        </div>
+
+        <div class="gc-table-wrap">
+          <table class="gc-data-table">
+            <thead>
+              <tr>
+                <th>Address</th>
+                <th>Status</th>
+                <th>Title</th>
+                <th>Meta Desc</th>
+                <th>H1</th>
+                <th>Words</th>
+                <th>Resp (ms)</th>
+                <th>Analytics</th>
+                <th>OG Tags</th>
+                <th>Links (Int/Ext)</th>
+                <th>Images</th>
+                <th>Inspect</th>
+              </tr>
+            </thead>
+            <tbody id="gc-overview-tbody">
+              <tr><td colspan="12" class="gc-empty-state"><p>No audit data yet. Start an audit or load sample data.</p></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 2: Internal -->
+      <div class="gc-tab-pane" id="gc-pane-internal" style="display: none;">
+        <div class="gc-table-wrap">
+          <table class="gc-data-table">
+            <thead>
+              <tr>
+                <th>Address</th>
+                <th>Status</th>
+                <th>Content Type</th>
+                <th>Title</th>
+                <th>Depth</th>
+                <th>Response Time</th>
+              </tr>
+            </thead>
+            <tbody id="gc-internal-tbody">
+              <tr><td colspan="6" class="gc-empty-state"><p>No internal URLs recorded.</p></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 3: External -->
+      <div class="gc-tab-pane" id="gc-pane-external" style="display: none;">
+        <div class="gc-table-wrap">
+          <table class="gc-data-table">
+            <thead>
+              <tr>
+                <th>Destination URL</th>
+                <th>Observed Status</th>
+                <th>Linked From</th>
+                <th>Anchor Text</th>
+              </tr>
+            </thead>
+            <tbody id="gc-external-tbody">
+              <tr><td colspan="4" class="gc-empty-state"><p>No external URLs recorded.</p></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 4: Status Codes -->
+      <div class="gc-tab-pane" id="gc-pane-status-codes" style="display: none;">
+        <div class="gc-pane-header" style="margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between;">
+          <h3 class="gc-pane-heading" style="margin: 0; font-size: 15px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 6px;">
+            <span>HTTP Response Status Codes</span>
+            <button type="button" class="gc-help-btn" data-help="response-codes" aria-label="Help: Status Codes & Redirects" title="Learn about HTTP status codes"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
+          </h3>
+        </div>
+        <div class="gc-table-wrap">
+          <table class="gc-data-table">
+            <thead>
+              <tr>
+                <th>Status Code</th>
+                <th>Status Meaning</th>
+                <th>Count</th>
+                <th>Percentage</th>
+              </tr>
+            </thead>
+            <tbody id="gc-status-codes-tbody">
+              <tr><td colspan="4" class="gc-empty-state"><p>No status codes recorded.</p></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 5: Links (Dual Section: Internal & External Links) -->
+      <div class="gc-tab-pane" id="gc-pane-links" style="display: none;">
+        <div class="gc-links-split-grid">
+          <div class="gc-links-sub-panel">
+            <div class="gc-links-sub-head">
+              <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><span style="margin-left:6px;">Internal Links</span></h4>
+              <div class="gc-search-box sm">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" placeholder="Filter internal links..." oninput="window.GroCrawlApp&&window.GroCrawlApp.searchInternalLinks(this.value)">
+              </div>
+            </div>
+            <div class="gc-table-wrap" style="max-height: 440px;">
+              <table class="gc-data-table">
+                <thead>
+                  <tr>
+                    <th>Source Page</th>
+                    <th>Destination URL</th>
+                    <th>Anchor Text</th>
+                    <th>Status</th>
+                    <th>Placement</th>
+                  </tr>
+                </thead>
+                <tbody id="gc-internal-links-tbody">
+                  <tr><td colspan="5" class="gc-empty-state"><p>No internal links.</p></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="gc-links-sub-panel">
+            <div class="gc-links-sub-head">
+              <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg><span style="margin-left:6px;">External Links</span></h4>
+              <div class="gc-search-box sm">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" placeholder="Filter external links..." oninput="window.GroCrawlApp&&window.GroCrawlApp.searchExternalLinks(this.value)">
+              </div>
+            </div>
+            <div class="gc-table-wrap" style="max-height: 440px;">
+              <table class="gc-data-table">
+                <thead>
+                  <tr>
+                    <th>Source Page</th>
+                    <th>Destination URL</th>
+                    <th>Anchor Text</th>
+                    <th>Status</th>
+                    <th>Placement</th>
+                  </tr>
+                </thead>
+                <tbody id="gc-external-links-tbody">
+                  <tr><td colspan="5" class="gc-empty-state"><p>No external links.</p></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 6: Issues -->
+      <div class="gc-tab-pane" id="gc-pane-issues" style="display: none;">
+        <div style="display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap;">
+          <button type="button" class="gc-btn-secondary" onclick="window.GroCrawlApp&&window.GroCrawlApp.filterIssues('all')">All Issues <span id="issues-all-count">(0)</span></button>
+          <button type="button" class="gc-btn-secondary" style="border-color:#7f1d1d;color:#ef4444;" onclick="window.GroCrawlApp&&window.GroCrawlApp.filterIssues('error')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span style="margin-left:4px;">Errors</span> <span id="issues-error-count">(0)</span></button>
+          <button type="button" class="gc-btn-secondary" style="border-color:#78350f;color:#f59e0b;" onclick="window.GroCrawlApp&&window.GroCrawlApp.filterIssues('warning')"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span style="margin-left:4px;">Warnings</span> <span id="issues-warning-count">(0)</span></button>
+          <button type="button" class="gc-btn-secondary" style="border-color:#1e3a8a;color:#3b82f6;" onclick="window.GroCrawlApp&&window.GroCrawlApp.filterIssues('info')"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span style="margin-left:4px;">Info</span> <span id="issues-info-count">(0)</span></button>
+        </div>
+        <div class="gc-table-wrap">
+          <table class="gc-data-table">
+            <thead>
+              <tr>
+                <th style="width: 32%;">URL</th>
+                <th style="width: 10%;">Priority</th>
+                <th style="width: 15%;">Category</th>
+                <th style="width: 20%;">Finding</th>
+                <th style="width: 23%;">Details / Evidence</th>
+              </tr>
+            </thead>
+            <tbody id="gc-issues-tbody">
+              <tr><td colspan="5" class="gc-empty-state"><p>No issues detected.</p></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 7: Images -->
+      <div class="gc-tab-pane" id="gc-pane-images" style="display: none;">
+        <div class="gc-table-wrap">
+          <table class="gc-data-table">
+            <thead>
+              <tr>
+                <th>Image URL</th>
+                <th>Found On Page</th>
+                <th>Alt Attribute</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="gc-images-tbody">
+              <tr><td colspan="4" class="gc-empty-state"><p>No images found.</p></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 8: Headings -->
+      <div class="gc-tab-pane" id="gc-pane-headings" style="display: none;">
+        <div class="gc-table-wrap">
+          <table class="gc-data-table">
+            <thead>
+              <tr>
+                <th>URL</th>
+                <th>H1 Tag</th>
+                <th>H1 Count</th>
+                <th>H2 Sample Tags</th>
+              </tr>
+            </thead>
+            <tbody id="gc-headings-tbody">
+              <tr><td colspan="4" class="gc-empty-state"><p>No headings analyzed.</p></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 9: Duplicates -->
+      <div class="gc-tab-pane" id="gc-pane-duplicates" style="display: none;">
+        <div class="gc-pane-header" style="margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between;">
+          <h3 class="gc-pane-heading" style="margin: 0; font-size: 15px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 6px;">
+            <span>Duplicate Content &amp; Title Collisions</span>
+            <button type="button" class="gc-help-btn" data-help="duplicate-detection" aria-label="Help: Duplicate Content Detection" title="How duplicate content is detected"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
+          </h3>
+        </div>
+        <div class="gc-table-wrap">
+          <table class="gc-data-table">
+            <thead>
+              <tr>
+                <th>Duplicate Title / Item</th>
+                <th>Occurrences</th>
+                <th>Affected URLs</th>
+              </tr>
+            </thead>
+            <tbody id="gc-duplicates-tbody">
+              <tr><td colspan="3" class="gc-empty-state"><p>No duplicate titles found.</p></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab: PageSpeed Insights & Core Web Vitals -->
+      <div class="gc-tab-pane" id="gc-pane-pagespeed" style="display: none;">
+        <div class="gc-pagespeed-wrap">
+          <div class="gc-pane-header">
+            <div>
+              <h3 class="gc-pane-heading" style="display:flex;align-items:center;gap:6px;">
+                <span>Google PageSpeed Insights &amp; Core Web Vitals</span>
+                <button type="button" class="gc-help-btn" data-help="pagespeed-metrics" aria-label="Help: PageSpeed Lab vs Field Data" title="Lighthouse lab vs CrUX field data"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
+              </h3>
+              <p class="gc-pane-subheading">Analyze real-world Core Web Vitals (CrUX Field Observations) and Lighthouse Lab diagnostics for any crawled URL or entered address.</p>
+            </div>
+            <div id="gc-pagespeed-key-indicator" class="gc-badge-indicator unverified">
+              <span class="gc-dot"></span>
+              <span id="gc-pagespeed-key-label">Public Quota (API Key Not Configured)</span>
+              <button type="button" onclick="window.GroCrawlApp&&window.GroCrawlApp.switchTab('settings')" style="background:none;border:none;color:var(--gc-brand);margin-left:6px;cursor:pointer;text-decoration:underline;">Configure Key in Settings</button>
+            </div>
+          </div>
+
+          <div class="gc-pagespeed-control-bar">
+            <div class="gc-ps-input-wrap">
+              <span class="gc-url-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+              <input type="url" id="gc-pagespeed-url" class="gc-url-input" placeholder="Enter URL to audit with PageSpeed (e.g. https://groniqdigital.com)">
+            </div>
+            <div class="gc-ps-select-wrap">
+              <label for="gc-pagespeed-strategy-select">Device:</label>
+              <select id="gc-pagespeed-strategy-select" class="gc-setting-select">
+                <option value="both" selected>Mobile &amp; Desktop</option>
+                <option value="mobile">Mobile Only</option>
+                <option value="desktop">Desktop Only</option>
+              </select>
+            </div>
+            <button type="button" class="gc-btn-primary" id="gc-btn-run-ps" onclick="window.GroCrawlApp&&window.GroCrawlApp.runPageSpeedForInput()">
+              <span>Run PageSpeed</span>
+            </button>
+          </div>
+
+          <div id="gc-pagespeed-loading" class="gc-loading-banner" style="display: none;">
+            <div class="gc-spinner"></div>
+            <div>
+              <strong>Querying Google PageSpeed Insights API...</strong>
+              <div style="font-size: 12px; color: var(--gc-text-muted);">Simulating mobile and desktop Lighthouse diagnostics and querying Chrome UX Report field data. This may take 10–25 seconds.</div>
+            </div>
+          </div>
+
+          <div id="gc-pagespeed-error-banner" class="gc-alert-banner error" style="display: none;"></div>
+
+          <div id="gc-pagespeed-empty" class="gc-empty-card">
+            <div style="margin-bottom: 12px; color: var(--gc-brand);"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+            <h4>No PageSpeed Results Yet</h4>
+            <p>Enter any URL above and click <strong>Run PageSpeed</strong>, inspect any row's URL Details, or enable automatic post-crawl PageSpeed in Settings.</p>
+          </div>
+
+          <div id="gc-pagespeed-results-container" style="display: none;">
+            <div id="gc-pagespeed-active-card"></div>
+            <div id="gc-pagespeed-history-section" style="margin-top: 24px;">
+              <h4 style="font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 12px;">Audited Pages in this Session</h4>
+              <div id="gc-pagespeed-cards-list" class="gc-ps-cards-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Content & Trust Checks (Heuristic E-E-A-T) -->
+      <div class="gc-tab-pane" id="gc-pane-eeat" style="display: none;">
+        <div class="gc-eeat-wrap">
+          <div class="gc-pane-header">
+            <div>
+              <h3 class="gc-pane-heading" style="display:flex;align-items:center;gap:6px;">
+                <span>Content &amp; Trust Checks (Heuristic E-E-A-T Signals)</span>
+                <button type="button" class="gc-help-btn" data-help="content-trust-eeat" aria-label="Help: Content & Trust Heuristics" title="How Content & Trust heuristics work"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
+              </h3>
+              <p class="gc-pane-subheading">Automated heuristic analysis of author attribution, structured data schema, external citation outlinks, HTTPS integrity, and content depth.</p>
+            </div>
+          </div>
+
+          <div class="gc-alert-banner info">
+            <strong>Heuristic Audit Notice & Limitations:</strong>
+            These checks evaluate automated on-page indicators (author metadata, structured data, outbound citations, HTTPS encryption, and content depth). These are technical heuristics to assist editorial audits. They do <strong>NOT</strong> represent Google's proprietary E-E-A-T score, ranking predictions, or verification of real-world human expertise.
+          </div>
+
+          <div class="gc-eeat-kpi-grid">
+            <div class="gc-eeat-kpi-card highlight">
+              <div class="gc-kpi-label">Heuristic Trust Index</div>
+              <div class="gc-kpi-value" id="gc-eeat-score-val">0</div>
+              <div class="gc-kpi-sub" id="gc-eeat-score-sub">Awaiting crawl data</div>
+            </div>
+            <div class="gc-eeat-kpi-card">
+              <div class="gc-kpi-label">Author Attribution</div>
+              <div class="gc-kpi-value" id="gc-eeat-author-val">0 / 0</div>
+              <div class="gc-kpi-sub" id="gc-eeat-author-pct">0% of pages</div>
+            </div>
+            <div class="gc-eeat-kpi-card">
+              <div class="gc-kpi-label">Structured Data Schema</div>
+              <div class="gc-kpi-value" id="gc-eeat-schema-val">0 / 0</div>
+              <div class="gc-kpi-sub" id="gc-eeat-schema-pct">0% of pages</div>
+            </div>
+            <div class="gc-eeat-kpi-card">
+              <div class="gc-kpi-label">External Citations</div>
+              <div class="gc-kpi-value" id="gc-eeat-citations-val">0</div>
+              <div class="gc-kpi-sub" id="gc-eeat-citations-sub">Outbound reference links</div>
+            </div>
+          </div>
+
+          <!-- Signals Progress Breakdown -->
+          <div class="gc-card-panel" style="margin-top: 20px;">
+            <h4 class="gc-card-title">Observed Trust Signals Breakdown</h4>
+            <div class="gc-signals-grid" id="gc-eeat-signals-grid"></div>
+          </div>
+
+          <!-- Top Audited Pages Table -->
+          <div class="gc-card-panel" style="margin-top: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <h4 class="gc-card-title" style="margin: 0;">Audited Pages & Signal Observations</h4>
+              <span id="gc-eeat-pages-count" style="font-size: 13px; color: var(--gc-text-muted);">0 URLs</span>
+            </div>
+            <div class="gc-table-wrap">
+              <table class="gc-data-table">
+                <thead>
+                  <tr>
+                    <th>URL Address</th>
+                    <th>Signal Score</th>
+                    <th>Author Info</th>
+                    <th>Schema Markup</th>
+                    <th>External Citations</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="gc-eeat-tbody">
+                  <tr><td colspan="6" class="gc-empty-state"><p>Run or load a crawl to evaluate content & trust signals.</p></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Recommendations -->
+          <div class="gc-card-panel" style="margin-top: 20px;">
+            <h4 class="gc-card-title">Actionable Heuristic Recommendations</h4>
+            <div id="gc-eeat-recommendations-list" class="gc-recommendations-list">
+              <div class="gc-empty-state"><p>Recommendations will appear once crawl evidence is analyzed.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 10: Visualization (Cytoscape Graph) -->
+      <div class="gc-tab-pane" id="gc-pane-visualization" style="display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+          <h3 style="font-size: 15px; font-weight: 700; margin: 0; color: #fff;">Site Structure Network Visualization</h3>
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <select id="gc-viz-layout" class="gc-setting-select" onchange="window.GroCrawlApp&&window.GroCrawlApp.changeVizLayout(this.value)">
+              <option value="cose">Force-Directed</option>
+              <option value="breadthfirst">Hierarchical Tree</option>
+              <option value="circle">Circle</option>
+              <option value="concentric">Concentric</option>
+            </select>
+            <button type="button" class="gc-btn-secondary" onclick="window.GroCrawlApp&&window.GroCrawlApp.resetViz()">Reset View</button>
+          </div>
+        </div>
+        <div id="gc-cytoscape"></div>
+        <div class="gc-graph-legend">
+          <span style="font-weight: 600;">Legend:</span>
+          <span><span style="display:inline-block;width:10px;height:10px;background:#10b981;border-radius:50%;margin-right:4px;"></span> 2xx Success</span>
+          <span><span style="display:inline-block;width:10px;height:10px;background:#3b82f6;border-radius:50%;margin-right:4px;"></span> 3xx Redirect</span>
+          <span><span style="display:inline-block;width:10px;height:10px;background:#f59e0b;border-radius:50%;margin-right:4px;"></span> 4xx Error</span>
+          <span><span style="display:inline-block;width:10px;height:10px;background:#ef4444;border-radius:50%;margin-right:4px;"></span> 5xx Error</span>
+        </div>
+      </div>
+
+      <!-- Tab 11: Dashboard / Saved History -->
+      <div class="gc-tab-pane" id="gc-pane-dashboard" style="display: none;">
+        <div style="background: var(--gc-card-bg); border: 1px solid var(--gc-border); border-radius: 14px; padding: 20px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <h3 style="font-size: 15px; font-weight: 700; margin: 0; color: #fff;">Saved Audits Dashboard</h3>
+            <button type="button" class="gc-btn-secondary" onclick="window.GroCrawlApp&&window.GroCrawlApp.clearHistory()">Clear All</button>
+          </div>
+          <div id="gc-history-list"></div>
+        </div>
+      </div>
+
+            <!-- Tab 12: Settings Workspace Overview -->
+      <div class="gc-tab-pane" id="gc-pane-settings" style="display: none;">
+        <div style="background: var(--gc-card-surface); border: 1px solid var(--gc-border); border-radius: var(--gc-radius-lg); padding: 26px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 14px;">
+            <div>
+              <h3 style="font-size: 18px; font-weight: 700; color: #fff; margin: 0 0 4px 0;">GroCrawl Preferences &amp; Engine Configuration</h3>
+              <p style="font-size: 13px; color: var(--gc-text-muted); margin: 0;">Configure frontier limits, HTTP request headers, headless JavaScript rendering, filters, and diagnostics.</p>
+            </div>
+            <button type="button" class="gc-btn-primary" onclick="window.GroCrawlApp&&window.GroCrawlApp.openSettingsModal()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg><span style="margin-left:6px;">Open Settings Workspace</span>
+            </button>
+          </div>
+          <div class="gc-kpi-grid">
+            <div class="gc-kpi-card">
+              <div class="gc-kpi-title">Active Crawl Depth</div>
+              <div class="gc-kpi-num" id="gc-set-stat-depth">3</div>
+              <div class="gc-kpi-sub">Levels from seed URL</div>
+            </div>
+            <div class="gc-kpi-card">
+              <div class="gc-kpi-title">Max URL Frontier</div>
+              <div class="gc-kpi-num" id="gc-set-stat-urls">50</div>
+              <div class="gc-kpi-sub">Pages per audit session</div>
+            </div>
+            <div class="gc-kpi-card">
+              <div class="gc-kpi-title">JS Rendering Engine</div>
+              <div class="gc-kpi-num" id="gc-set-stat-js" style="font-size:1.4rem;color:#f59e0b;">Disabled</div>
+              <div class="gc-kpi-sub">Fast HTTP stream mode</div>
+            </div>
+            <div class="gc-kpi-card">
+              <div class="gc-kpi-title">PageSpeed Integration</div>
+              <div class="gc-kpi-num" id="gc-set-stat-ps" style="font-size:1.4rem;color:var(--gc-brand);">Ready</div>
+              <div class="gc-kpi-sub">CrUX & Lighthouse</div>
+            </div>
+          </div>
+          <div style="margin-top: 14px; text-align: center;">
+            <button type="button" class="gc-btn-secondary" style="padding: 10px 24px;" onclick="window.GroCrawlApp&&window.GroCrawlApp.openSettingsModal()">
+              Launch Detailed Master-Category Settings Dialog ↗
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Dedicated Professional Settings Modal (Master-Detail Architecture) -->
+  <div class="gc-modal-backdrop" id="gc-settings-modal" style="display: none;">
+    <div class="gc-settings-modal-dialog">
+      <!-- Modal Header -->
+      <div class="gc-settings-modal-header">
+        <div class="gc-settings-modal-title">
+          <div class="gc-settings-badge-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>
+          <div>
+            <h3>Crawler Settings</h3>
+          </div>
+        </div>
+        <button type="button" class="gc-modal-close-btn" onclick="window.GroCrawlApp&&window.GroCrawlApp.closeModals()">✕</button>
+      </div>
+
+      <!-- Modal Body (2-Column Category Navigation + Content) -->
+      <div class="gc-settings-modal-body">
+        <!-- Left Sidebar Categories -->
+        <nav class="gc-settings-sidebar">
+          <button type="button" class="gc-settings-nav-item active" data-cat="limits" onclick="window.GroCrawlApp&&window.GroCrawlApp.switchSettingsCategory('limits')">
+            <span class="gc-settings-nav-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg></span>
+            <span class="gc-settings-nav-title">Limits & Scope</span>
+          </button>
+          <button type="button" class="gc-settings-nav-item" data-cat="http" onclick="window.GroCrawlApp&&window.GroCrawlApp.switchSettingsCategory('http')">
+            <span class="gc-settings-nav-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></span>
+            <span class="gc-settings-nav-title">HTTP & Robots.txt</span>
+          </button>
+          <button type="button" class="gc-settings-nav-item" data-cat="js" onclick="window.GroCrawlApp&&window.GroCrawlApp.switchSettingsCategory('js')">
+            <span class="gc-settings-nav-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+            <span class="gc-settings-nav-title">JavaScript Rendering</span>
+          </button>
+          <button type="button" class="gc-settings-nav-item" data-cat="filters" onclick="window.GroCrawlApp&&window.GroCrawlApp.switchSettingsCategory('filters')">
+            <span class="gc-settings-nav-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></span>
+            <span class="gc-settings-nav-title">URL Filters</span>
+          </button>
+          <button type="button" class="gc-settings-nav-item" data-cat="exclusions" onclick="window.GroCrawlApp&&window.GroCrawlApp.switchSettingsCategory('exclusions')">
+            <span class="gc-settings-nav-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg></span>
+            <span class="gc-settings-nav-title">Issue Exclusions</span>
+          </button>
+          <button type="button" class="gc-settings-nav-item" data-cat="export" onclick="window.GroCrawlApp&&window.GroCrawlApp.switchSettingsCategory('export')">
+            <span class="gc-settings-nav-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span>
+            <span class="gc-settings-nav-title">Export Fields</span>
+          </button>
+          <button type="button" class="gc-settings-nav-item" data-cat="pagespeed" onclick="window.GroCrawlApp&&window.GroCrawlApp.switchSettingsCategory('pagespeed')">
+            <span class="gc-settings-nav-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>
+            <span class="gc-settings-nav-title">PageSpeed API</span>
+          </button>
+          <button type="button" class="gc-settings-nav-item" data-cat="advanced" onclick="window.GroCrawlApp&&window.GroCrawlApp.switchSettingsCategory('advanced')">
+            <span class="gc-settings-nav-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></span>
+            <span class="gc-settings-nav-title">Advanced</span>
+          </button>
+        </nav>
+
+        <!-- Right Content Area: Category Panes -->
+        <div class="gc-settings-content">
+          <div id="gc-settings-feedback" class="gc-alert-banner success" style="display: none;"></div>
+
+          <!-- Category 1: Limits & Scope -->
+          <div class="gc-settings-pane active" id="gc-cat-pane-limits">
+            <div class="gc-settings-pane-head" style="display:flex;align-items:center;justify-content:space-between;">
+              <h4>Limits &amp; Scope</h4>
+              <button type="button" class="gc-help-btn" data-help="concurrency-delays" aria-label="Help: Concurrency & Delays" title="Learn about worker concurrency and delays"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
+            </div>
+            <div class="gc-form-grid-2">
+              <div class="gc-field-group">
+                <label for="gc-cfg-max-depth">Maximum Crawl Depth</label>
+                <input type="number" id="gc-cfg-max-depth" class="gc-input" min="1" max="10" value="3">
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-max-urls">Maximum URLs to Crawl</label>
+                <input type="number" id="gc-cfg-max-urls" class="gc-input" min="1" max="5000000" value="50">
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-crawl-delay">Crawl Delay (seconds)</label>
+                <input type="number" id="gc-cfg-crawl-delay" class="gc-input" min="0" max="60" step="0.1" value="1.0">
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-concurrency">Concurrent Worker Threads</label>
+                <input type="number" id="gc-cfg-concurrency" class="gc-input" min="1" max="50" value="5">
+              </div>
+            </div>
+            <div class="gc-field-checkbox">
+              <label>
+                <input type="checkbox" id="gc-cfg-follow-redirects" checked>
+                <span>Follow HTTP 3xx Redirect Chains</span>
+              </label>
+            </div>
+            <div class="gc-field-checkbox">
+              <label>
+                <input type="checkbox" id="gc-cfg-crawl-external">
+                <span>Crawl External Destination Links</span>
+              </label>
+            </div>
+            <div class="gc-field-checkbox">
+              <label>
+                <input type="checkbox" id="gc-cfg-crawl-images">
+                <span>Crawl & Download Images as Targets</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Category 2: HTTP & Robots.txt -->
+          <div class="gc-settings-pane" id="gc-cat-pane-http">
+            <div class="gc-settings-pane-head">
+              <h4>HTTP Requests & Robots Compliance</h4>
+              <button type="button" class="gc-help-btn" data-help="robots-js" aria-label="Help: Robots.txt & JS Rendering" title="Learn about robots compliance and rendering"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
+            </div>
+            <div class="gc-field-group" style="margin-bottom: 14px;">
+              <label for="gc-cfg-user-agent">User-Agent Header</label>
+              <input type="text" id="gc-cfg-user-agent" class="gc-input" value="GroCrawl/2.0 (compatible; GroniqSpider/2.0; +https://groniqdigital.com)">
+            </div>
+            <div class="gc-form-grid-2">
+              <div class="gc-field-group">
+                <label for="gc-cfg-timeout">Request Timeout (seconds)</label>
+                <input type="number" id="gc-cfg-timeout" class="gc-input" min="1" max="120" value="10">
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-retries">Retry Attempts</label>
+                <input type="number" id="gc-cfg-retries" class="gc-input" min="0" max="10" value="3">
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-accept-lang">Accept-Language</label>
+                <input type="text" id="gc-cfg-accept-lang" class="gc-input" value="en-US,en;q=0.9">
+              </div>
+            </div>
+            <div class="gc-field-checkbox">
+              <label>
+                <input type="checkbox" id="gc-cfg-respect-robots" checked>
+                <span>Respect robots.txt Directives</span>
+              </label>
+            </div>
+            <div class="gc-field-checkbox">
+              <label>
+                <input type="checkbox" id="gc-cfg-allow-cookies" checked>
+                <span>Preserve Session Cookies</span>
+              </label>
+            </div>
+            <div class="gc-field-checkbox">
+              <label>
+                <input type="checkbox" id="gc-cfg-discover-sitemaps" checked>
+                <span>Automatically Discover XML Sitemaps</span>
+              </label>
+            </div>
+            <div class="gc-field-group" style="margin-top: 14px;">
+              <label for="gc-cfg-custom-headers">Custom HTTP Headers (one per line)</label>
+              <textarea id="gc-cfg-custom-headers" class="gc-textarea" rows="2" placeholder="X-Custom-Auth: token&#10;Authorization: Bearer xyz"></textarea>
+            </div>
+          </div>
+
+          <!-- Category 3: Headless JavaScript Rendering -->
+          <div class="gc-settings-pane" id="gc-cat-pane-js">
+            <div class="gc-settings-pane-head">
+              <h4>JavaScript Rendering</h4>
+              <button type="button" class="gc-help-btn" data-help="robots-js" aria-label="Help: Robots.txt & JS Rendering" title="Learn about JavaScript rendering limitations"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
+            </div>
+            <div class="gc-field-checkbox" style="margin-bottom: 16px;">
+              <label>
+                <input type="checkbox" id="gc-cfg-enable-js">
+                <span>Enable JavaScript Rendering (Playwright Engine)</span>
+              </label>
+            </div>
+            <div class="gc-form-grid-2">
+              <div class="gc-field-group">
+                <label for="gc-cfg-js-browser">Browser Engine</label>
+                <select id="gc-cfg-js-browser" class="gc-input">
+                  <option value="chromium" selected>Chromium (Google Chrome)</option>
+                  <option value="firefox">Firefox (Gecko)</option>
+                  <option value="webkit">WebKit (Apple Safari)</option>
+                </select>
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-js-wait">Post-Load Script Wait (seconds)</label>
+                <input type="number" id="gc-cfg-js-wait" class="gc-input" min="0" max="30" step="0.5" value="3.0">
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-js-timeout">Page Timeout (seconds)</label>
+                <input type="number" id="gc-cfg-js-timeout" class="gc-input" min="5" max="120" value="30">
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-js-concurrency">Concurrent Browser Pages</label>
+                <input type="number" id="gc-cfg-js-concurrency" class="gc-input" min="1" max="10" value="3">
+              </div>
+            </div>
+            <div class="gc-form-grid-2">
+              <div class="gc-field-group">
+                <label for="gc-cfg-js-vp-w">Viewport Width (px)</label>
+                <input type="number" id="gc-cfg-js-vp-w" class="gc-input" min="800" max="3840" value="1920">
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-js-vp-h">Viewport Height (px)</label>
+                <input type="number" id="gc-cfg-js-vp-h" class="gc-input" min="600" max="2160" value="1080">
+              </div>
+            </div>
+            <div class="gc-field-checkbox">
+              <label>
+                <input type="checkbox" id="gc-cfg-js-headless" checked>
+                <span>Run Headless Mode</span>
+              </label>
+            </div>
+            <div class="gc-field-group" style="margin-top: 10px;">
+              <label for="gc-cfg-js-user-agent">JavaScript User Agent</label>
+              <input type="text" id="gc-cfg-js-user-agent" class="gc-input" value="GroCrawl/2.0 (compatible; GroniqSpider/2.0; JavaScript; +https://groniqdigital.com)">
+            </div>
+          </div>
+
+          <!-- Category 4: Filters -->
+          <div class="gc-settings-pane" id="gc-cat-pane-filters">
+            <div class="gc-settings-pane-head">
+              <h4>URL & File Filtering</h4>
+            </div>
+            <div class="gc-form-grid-2">
+              <div class="gc-field-group">
+                <label for="gc-cfg-include-ext">Include Extensions (comma-separated)</label>
+                <input type="text" id="gc-cfg-include-ext" class="gc-input" value="html,htm,php,asp,aspx,jsp">
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-exclude-ext">Exclude Extensions (comma-separated)</label>
+                <input type="text" id="gc-cfg-exclude-ext" class="gc-input" value="pdf,doc,docx,zip,exe,dmg">
+              </div>
+            </div>
+            <div class="gc-form-grid-2">
+              <div class="gc-field-group">
+                <label for="gc-cfg-include-patterns">Include Regex / Substring Patterns</label>
+                <textarea id="gc-cfg-include-patterns" class="gc-textarea" rows="3" placeholder="^/blog/&#10;^/products/"></textarea>
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-exclude-patterns">Exclude Regex / Substring Patterns</label>
+                <textarea id="gc-cfg-exclude-patterns" class="gc-textarea" rows="3" placeholder="^/cart/&#10;?sort=&#10;^/tag/"></textarea>
+              </div>
+            </div>
+            <div class="gc-form-grid-2" style="margin-top: 10px;">
+              <div class="gc-field-group">
+                <label for="gc-cfg-max-file-size">Maximum Response Size (MB)</label>
+                <input type="number" id="gc-cfg-max-file-size" class="gc-input" min="1" max="1000" value="50">
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-duplication-thresh">Duplicate Similarity Threshold (0.5 – 1.0)</label>
+                <input type="number" id="gc-cfg-duplication-thresh" class="gc-input" min="0.5" max="1.0" step="0.05" value="0.85">
+              </div>
+            </div>
+            <div class="gc-field-checkbox">
+              <label>
+                <input type="checkbox" id="gc-cfg-enable-duplication" checked>
+                <span>Near-Duplicate Content Detection</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Category 5: Issue Exclusions -->
+          <div class="gc-settings-pane" id="gc-cat-pane-exclusions">
+            <div class="gc-settings-pane-head">
+              <h4>Issue Exclusion Patterns</h4>
+            </div>
+            <div class="gc-field-group">
+              <label for="gc-cfg-issue-exclusions">Exclusion Regex Rules (one per line)</label>
+              <textarea id="gc-cfg-issue-exclusions" class="gc-textarea" rows="7"></textarea>
+            </div>
+            <div style="margin-top: 12px;">
+              <button type="button" class="gc-btn-secondary" style="font-size: 12px; padding: 6px 14px;" onclick="window.GroCrawlApp&&window.GroCrawlApp.resetIssueExclusions()">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg><span style="margin-left:5px;">Reset Exclusion Patterns</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Category 6: Export Configuration -->
+          <div class="gc-settings-pane" id="gc-cat-pane-export">
+            <div class="gc-settings-pane-head">
+              <h4>Export Configuration</h4>
+            </div>
+            <div class="gc-field-group" style="margin-bottom: 16px;">
+              <label for="gc-cfg-export-format">Default Export Format</label>
+              <select id="gc-cfg-export-format" class="gc-input" style="max-width: 320px;">
+                <option value="csv" selected>CSV (Comma Separated Values)</option>
+                <option value="xlsx">Excel Workbook (.xlsx)</option>
+                <option value="json">JSON (Structured Data)</option>
+                <option value="xml">XML (Extensible Markup)</option>
+              </select>
+            </div>
+            <div class="gc-field-group">
+              <label>Export Columns (30 Fields)</label>
+              <div class="gc-checkbox-grid" id="gc-export-fields-grid"></div>
+            </div>
+          </div>
+
+          <!-- Category 7: Google PageSpeed Insights -->
+          <div class="gc-settings-pane" id="gc-cat-pane-pagespeed">
+            <div class="gc-settings-pane-head">
+              <h4>Google PageSpeed API</h4>
+            </div>
+            <div class="gc-field-checkbox" style="margin-bottom: 16px;">
+              <label>
+                <input type="checkbox" id="gc-cfg-enable-pagespeed">
+                <span>Enable Google PageSpeed Insights</span>
+              </label>
+            </div>
+            <div class="gc-field-group">
+              <label for="gc-cfg-google-api-key">PageSpeed API Key</label>
+              <input type="password" id="gc-cfg-google-api-key" class="gc-input" placeholder="AIzaSy..." autocomplete="off">
+            </div>
+          </div>
+
+          <!-- Category 8: Advanced & Diagnostics -->
+          <div class="gc-settings-pane" id="gc-cat-pane-advanced">
+            <div class="gc-settings-pane-head">
+              <h4>Advanced Engine</h4>
+            </div>
+            <div class="gc-form-grid-2">
+              <div class="gc-field-group">
+                <label for="gc-cfg-memory-limit">Memory Cap (MB)</label>
+                <input type="number" id="gc-cfg-memory-limit" class="gc-input" min="64" max="4096" value="512">
+              </div>
+              <div class="gc-field-group">
+                <label for="gc-cfg-log-level">Logger Verbosity</label>
+                <select id="gc-cfg-log-level" class="gc-input">
+                  <option value="DEBUG">Debug (Detailed trace)</option>
+                  <option value="INFO" selected>Info (Standard events)</option>
+                  <option value="WARNING">Warning (Anomalies only)</option>
+                  <option value="ERROR">Error (Critical failures only)</option>
+                </select>
+              </div>
+            </div>
+            <div class="gc-field-group" style="margin-top: 12px;">
+              <label for="gc-cfg-custom-css">Custom Workspace CSS</label>
+              <textarea id="gc-cfg-custom-css" class="gc-textarea" rows="3" placeholder="/* Injected custom styling rules */"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Sticky Footer -->
+      <div class="gc-settings-modal-footer">
+        <div class="gc-settings-footer-info">
+          <span>Settings apply to new crawl sessions.</span>
+        </div>
+        <div class="gc-settings-footer-actions">
+          <button type="button" class="gc-btn-secondary" onclick="window.GroCrawlApp&&window.GroCrawlApp.resetSettings()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg><span style="margin-left:5px;">Reset Defaults</span></button>
+          <button type="button" class="gc-btn-primary" onclick="window.GroCrawlApp&&window.GroCrawlApp.saveSettings()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg><span style="margin-left:5px;">Save Settings</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- URL Detail Modal -->
+  <div class="gc-modal-backdrop" id="gc-url-modal" style="display: none;">
+    <div class="gc-modal">
+      <div class="gc-modal-head">
+        <h3 class="gc-modal-title" id="gc-modal-url-title">URL Inspection</h3>
+        <button type="button" class="gc-modal-close" onclick="window.GroCrawlApp&&window.GroCrawlApp.closeModals()">✕</button>
+      </div>
+      <div id="gc-modal-url-body"></div>
+    </div>
+  </div>
+
+  <!-- Export Modal -->
+  <div class="gc-modal-backdrop" id="gc-export-modal" style="display: none;">
+    <div class="gc-modal" style="max-width: 440px;">
+      <div class="gc-modal-head">
+        <h3 class="gc-modal-title">Export Audit Data</h3>
+        <button type="button" class="gc-modal-close" onclick="window.GroCrawlApp&&window.GroCrawlApp.closeModals()">✕</button>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; font-size: 14px;">
+        <label>
+          Data Scope:
+          <select id="gc-export-type" class="gc-setting-select" style="width: 100%; margin-top: 6px;">
+            <option value="urls">All Crawled URLs</option>
+            <option value="internal">Internal Pages</option>
+            <option value="external">External Links</option>
+            <option value="issues">SEO Issues & Findings</option>
+            <option value="images">Extracted Images</option>
+            <option value="links">All Link Connections</option>
+          </select>
+        </label>
+        <label>
+          Format:
+          <select id="gc-export-fmt" class="gc-setting-select" style="width: 100%; margin-top: 6px;">
+            <option value="csv">CSV (Spreadsheet / Excel)</option>
+            <option value="json">JSON</option>
+          </select>
+        </label>
+        <button type="button" class="gc-btn-primary" style="margin-top: 10px; justify-content: center;" onclick="window.GroCrawlApp&&window.GroCrawlApp.executeExport()">
+          Download Export File ↓
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contextual (i) Field Help Modal -->
+  <div class="gc-modal-backdrop" id="gc-field-help-modal" style="display: none;" role="presentation" onclick="if(event.target===this)window.GroCrawlApp&&window.GroCrawlApp.closeHelpModal();">
+    <div class="gc-field-help-dialog" role="dialog" aria-modal="true" aria-labelledby="gc-help-modal-title">
+      <div class="gc-field-help-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div class="gc-help-badge-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          </div>
+          <h3 class="gc-modal-title" id="gc-help-modal-title" style="margin: 0; font-size: 15px; font-weight: 700;">Contextual Technical Guide</h3>
+        </div>
+        <button type="button" class="gc-modal-close" id="gc-help-modal-close" aria-label="Close Help Modal" onclick="window.GroCrawlApp&&window.GroCrawlApp.closeHelpModal()">✕</button>
+      </div>
+      <div class="gc-field-help-body">
+        <div class="gc-help-section">
+          <div class="gc-help-label">What it is</div>
+          <p class="gc-help-text" id="gc-help-what"></p>
+        </div>
+        <div class="gc-help-section">
+          <div class="gc-help-label">Why it matters</div>
+          <p class="gc-help-text" id="gc-help-why"></p>
+        </div>
+        <div class="gc-help-section gc-help-highlight">
+          <div class="gc-help-label">Example &amp; Common Misunderstanding</div>
+          <p class="gc-help-text" id="gc-help-example"></p>
+        </div>
+      </div>
+      <div class="gc-field-help-footer">
+        <a href="/learn/technical-seo-audit/" class="gc-help-learn-btn" id="gc-help-learn-link">
+          <span>Read in Technical SEO Guide &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</main>
+
+
+    <!-- Contextual Inquiry Modal / Drawer -->
+    <div id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-subtitle" tabindex="-1"
+        class="fixed inset-0 bg-black/80 backdrop-blur-md z-[150] hidden-state flex items-center justify-center p-4">
+        <div
+            class="max-w-xl w-full bg-[#0E0E0E] border border-[#222] p-8 sm:p-10 rounded-3xl relative shadow-2xl overflow-y-auto max-h-[90vh]">
+            <button onclick="toggleServiceOverlay()"
+                class="absolute top-6 right-6 text-brand-muted hover:text-white p-2" aria-label="Close dialog">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <!-- Modal Confirmation Screen -->
+            <div id="modal-status" role="status" aria-live="polite" aria-atomic="true"
+                class="hidden flex-col items-center justify-center py-10 text-center text-white">
+                <div class="w-16 h-16 bg-brand-green text-black rounded-full flex items-center justify-center mb-6">
+                    <i data-lucide="check" width="32" height="32" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-black uppercase mb-2">Inquiry Received</h3>
+                <p class="text-brand-muted text-xs font-bold uppercase tracking-widest max-w-sm">We will review your scope and get back to you within 24 hours.</p>
+                <button type="button" onclick="toggleServiceOverlay()"
+                    class="mt-8 px-6 py-3 bg-brand-green text-black font-extrabold uppercase tracking-wider text-xs rounded-xl hover:bg-brand-greenHover transition-all cursor-pointer">
+                    Close
+                </button>
+            </div>
+
+            <div id="modal-form-container">
+                <span class="text-[10px] font-black uppercase tracking-widest text-brand-green mb-1 block">Contextual
+                    Inquiry</span>
+                <h2 id="modal-title" class="text-2xl font-black uppercase text-white tracking-tight mb-2">Discuss Scope</h2>
+                <p id="modal-subtitle" class="text-xs text-brand-muted leading-relaxed mb-6">Tell us about your requirements
+                    and we will review how to structure the engagement.</p>
+
+                <form id="modal-form" name="modal-contact" method="POST" data-netlify="true" netlify-honeypot="_honey" class="space-y-4">
+                    <input type="hidden" name="form-name" value="modal-contact">
+                    <input type="hidden" name="Inquiry Type" value="Contextual Service Inquiry">
+                    <input type="hidden" name="Selected Scope" id="modal-hidden-scope">
+                    <input type="hidden" name="_subject" value="New Groniq Scope Inquiry">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                    <div class="space-y-1.5">
+                        <label for="modal-name" class="text-[10px] font-black uppercase text-brand-muted tracking-wider">Your Name *</label>
+                        <input type="text" name="Client Name" id="modal-name" required
+                            class="w-full bg-black border border-[#222] rounded-xl px-4 py-3 text-white focus:border-brand-green outline-none text-xs"
+                            placeholder="Full Name">
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <label for="modal-business" class="text-[10px] font-black uppercase text-brand-muted tracking-wider">Business / Brand
+                            Name *</label>
+                        <input type="text" name="Business Name" id="modal-business" required
+                            class="w-full bg-black border border-[#222] rounded-xl px-4 py-3 text-white focus:border-brand-green outline-none text-xs"
+                            placeholder="Company Name">
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="space-y-1.5">
+                            <label for="modal-email" class="text-[10px] font-black uppercase text-brand-muted tracking-wider">Email Address
+                                *</label>
+                            <input type="email" name="Email Address" id="modal-email" required
+                                class="w-full bg-black border border-[#222] rounded-xl px-4 py-3 text-white focus:border-brand-green outline-none text-xs"
+                                placeholder="email@company.com">
+                        </div>
+                        <div class="space-y-1.5">
+                            <label for="modal-website" class="text-[10px] font-black uppercase text-brand-muted tracking-wider">Website URL / Domain</label>
+                            <input type="text" inputmode="url" name="Website URL" id="modal-website"
+                                class="w-full bg-black border border-[#222] rounded-xl px-4 py-3 text-white focus:border-brand-green outline-none text-xs"
+                                placeholder="spacia.com or https://spacia.com" autocomplete="url" autocapitalize="none" spellcheck="false">
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <label for="modal-message" class="text-[10px] font-black uppercase text-brand-muted tracking-wider">Project Specifics /
+                            Goals *</label>
+                        <textarea name="Client Message" id="modal-message" rows="3" required
+                            class="w-full bg-black border border-[#222] rounded-xl px-4 py-3 text-white focus:border-brand-green outline-none resize-none text-xs"
+                            placeholder="Specific goals, timelines, or constraints..."></textarea>
+                    </div>
+
+                    <div id="modal-error" role="alert" class="hidden p-3 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs">
+                        <p class="font-bold flex items-center gap-2">
+                            <i data-lucide="alert-circle" class="w-4 h-4 shrink-0"></i>
+                            <span id="modal-error-text">Submission failed. Please try again.</span>
+                        </p>
+                    </div>
+
+                    <button type="submit" id="modal-submit-btn"
+                        class="w-full py-4 bg-brand-green text-black font-extrabold uppercase tracking-wider text-xs rounded-xl hover:bg-brand-greenHover transition-all flex items-center justify-center gap-2 mt-4 cursor-pointer">
+                        <span id="modal-btn-text">Send Inquiry</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4" id="modal-btn-icon"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-16 bg-[#040404] border-t border-[#181818] text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-[#181818]">
+
+                <!-- Logo & Positioning -->
+                <div class="flex flex-col items-center md:items-start gap-2">
+                    <a href="/" class="flex items-center gap-3">
+                        <svg viewBox="0 0 100 100" width="32" height="32" class="w-8 h-8" fill="none">
+                            <path
+                                d="M70 20C85 20 95 35 95 50C95 65 85 80 70 80H60V65H70C78 65 83 58 83 50C83 42 78 35 70 35H45L40 20H70Z"
+                                fill="#39FF14" />
+                            <path
+                                d="M30 80C15 80 5 65 5 50C5 35 15 20 30 20H40V35H30C22 35 17 42 17 50C17 58 22 65 30 65H55L60 80H30Z"
+                                fill="white" />
+                        </svg>
+                        <div class="flex flex-col">
+                            <span
+                                class="text-2xl font-black uppercase tracking-tight text-white leading-none">GRONIQ</span>
+                            <span class="text-[9px] uppercase tracking-widest text-brand-muted font-bold mt-0.5">Digital
+                                Solutions</span>
+                        </div>
+                    </a>
+                    <p class="text-xs text-brand-muted text-center md:text-left max-w-sm">
+                        Performance marketing, SEO, conversion-focused websites, and measurable marketing systems for
+                        emerging brands.
+                    </p>
+                </div>
+
+                <!-- Navigation Quick Links -->
+                <div class="flex flex-wrap justify-center gap-6 text-xs font-semibold text-brand-muted">
+                    <a href="/#what-we-do" class="hover:text-white transition-colors">What We Do</a>
+                    <a href="/#growth-system" class="hover:text-white transition-colors">Growth System</a>
+                    <a href="/#how-we-work" class="hover:text-white transition-colors">How We Work</a>
+                    <a href="/#selected-work" class="hover:text-white transition-colors">Real Work</a>
+                    <a href="/#groniq-labs" class="hover:text-brand-green transition-colors">Groniq Labs</a>
+                    <a href="/#insights" class="hover:text-white transition-colors">Insights</a>
+                    <a href="/#about" class="hover:text-white transition-colors">About</a>
+                    <a href="/#pricing" class="hover:text-white transition-colors">Engagements</a>
+                    <a href="/#contact" class="hover:text-brand-green transition-colors font-bold">Growth Audit</a>
+                </div>
+
+                <!-- Social Channels -->
+                <div class="flex items-center gap-4">
+                    <a href="https://www.linkedin.com/company/groniq-digital-solutions" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin text-sm"></i>
+                    </a>
+                    <a href="https://instagram.com/groniq_digiital_solutions" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@mdtavrejansari" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="YouTube">
+                        <i class="fa-brands fa-youtube text-sm"></i>
+                    </a>
+                    <a href="https://www.behance.net/md-tavrej-ansari" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="Behance">
+                        <i class="fa-brands fa-behance text-sm"></i>
+                    </a>
+                    <a href="mailto:support@groniqdigital.com"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="Email">
+                        <i class="fa-solid fa-envelope text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-medium text-brand-muted">
+                <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-green"></span>
+                    <span class="uppercase tracking-widest text-brand-mutedLight font-bold">Performance • SEO •
+                        E-commerce • Tracking • Growth Systems</span>
+                </div>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="mailto:support@groniqdigital.com" class="hover:text-white transition-colors">support@groniqdigital.com</a>
+                    <span class="text-[#333] hidden sm:inline">&bull;</span>
+                    <a href="mailto:contact@mdtavrejansari.com" class="hover:text-brand-green transition-colors">Founder: contact@mdtavrejansari.com</a>
+                    <span class="text-[#333] hidden sm:inline">&bull;</span>
+                    <span>© 2025–2026 Groniq Digital Solutions. MSME Registered.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        // Initialize Splash Screen (0-100% System) and Icons
+        function initSplashScreen() {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            const splash = document.getElementById('splash-screen');
+            if (!splash) {
+                document.body.classList.remove('loading');
+                return;
+            }
+
+            let progress = 0;
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+
+            const progressInterval = setInterval(() => {
+                progress += 5;
+                if (progressBar) progressBar.style.width = progress + '%';
+                if (progressText) progressText.innerText = progress + '%';
+
+                if (progress >= 100) {
+                    clearInterval(progressInterval);
+                    setTimeout(() => {
+                        splash.style.opacity = '0';
+                        splash.style.pointerEvents = 'none';
+                        setTimeout(() => splash.remove(), 600);
+                        document.body.classList.remove('loading');
+
+                        // Auto-scroll handler for deep links (e.g., #contact or #growth-system)
+                        if (window.location.hash) {
+                            const target = document.querySelector(window.location.hash);
+                            if (target) target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }, 350);
+                }
+            }, 25);
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initSplashScreen);
+        } else {
+            initSplashScreen();
+        }
+
+        const originalMobileCardContent = new WeakMap();
+
+        function setupPhase2MobileInteractions() {
+            const isMobile = window.innerWidth < 768;
+
+            document.querySelectorAll('#what-we-do .service-grid > div').forEach((card) => card.classList.add('service-card'));
+            const workGrid = document.querySelector('#how-we-work .work-grid');
+            if (workGrid) workGrid.classList.add('work-timeline');
+            document.querySelectorAll('#how-we-work .work-grid > div').forEach((card) => card.classList.add('work-step'));
+            document.querySelectorAll('#selected-work-grid > div').forEach((card) => card.classList.add('selected-work-card'));
+            document.querySelectorAll('#groniq-labs .labs-grid > div').forEach((card) => card.classList.add('lab-card'));
+            document.querySelectorAll('#pricing .pricing-grid > div').forEach((card) => card.classList.add('pricing-card'));
+
+            const setupCarousel = (rootSelector, dotSelector, itemClass) => {
+                const root = document.querySelector(rootSelector);
+                if (!root) return;
+
+                const existingList = root.parentElement.querySelector('.mobile-snap-list');
+                const existingDots = root.parentElement.querySelector(dotSelector);
+
+                if (isMobile) {
+                    if (existingList || existingDots) return;
+                    const cards = Array.from(root.children);
+                    cards.forEach((card) => card.classList.add(itemClass));
+
+                    const list = document.createElement('div');
+                    list.className = 'mobile-snap-list';
+                    cards.forEach((card) => list.appendChild(card));
+
+                    const dots = document.createElement('div');
+                    dots.className = dotSelector.replace('.', '');
+                    cards.forEach((_, index) => {
+                        const dot = document.createElement('button');
+                        dot.type = 'button';
+                        dot.className = `${dotSelector === '.selected-work-dots' ? 'selected-work-dot' : 'growth-system-dot'}${index === 0 ? ' is-active' : ''}`;
+                        dot.setAttribute('aria-label', `View card ${index + 1}`);
+                        dot.addEventListener('click', () => list.scrollTo({ left: list.clientWidth * index, behavior: 'smooth' }));
+                        dots.appendChild(dot);
+                    });
+
+                    root.parentElement.appendChild(list);
+                    root.parentElement.appendChild(dots);
+                    root.style.display = 'none';
+
+                    const update = () => {
+                        const index = Math.min(Math.max(Math.round(list.scrollLeft / Math.max(list.clientWidth, 1)), 0), cards.length - 1);
+                        Array.from(dots.children).forEach((dot, dotIndex) => dot.classList.toggle('is-active', dotIndex === index));
+                    };
+                    list.addEventListener('scroll', update, { passive: true });
+                    update();
+                } else {
+                    if (existingList) {
+                        const cards = Array.from(existingList.children);
+                        cards.forEach((card) => root.appendChild(card));
+                        existingList.remove();
+                    }
+                    if (existingDots) existingDots.remove();
+                    root.style.display = '';
+                }
+            };
+
+            const setupServiceAccordions = () => {
+                const cards = document.querySelectorAll('#what-we-do .service-card');
+                cards.forEach((card) => {
+                    if (card.dataset.mobileReady) return;
+                    if (!originalMobileCardContent.has(card)) {
+                        originalMobileCardContent.set(card, Array.from(card.childNodes, (node) => node.cloneNode(true)));
+                    }
+                    card.dataset.mobileReady = 'true';
+
+                    const title = card.querySelector('h3');
+                    const header = card.querySelector(':scope > div > div:first-child');
+                    const label = header ? header.querySelector('span') : null;
+                    const summary = document.createElement('button');
+                    summary.type = 'button';
+                    summary.className = 'service-summary';
+                    summary.setAttribute('aria-expanded', 'false');
+                    summary.innerHTML = `
+                        <span class="summary-copy">
+                            <span class="summary-kicker">${label ? label.textContent.trim() : 'Service'}</span>
+                            <span>${title ? title.textContent.trim() : 'Service'}</span>
+                        </span>
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    `;
+
+                    const panel = document.createElement('div');
+                    panel.className = 'service-panel-content';
+                    const mainBody = card.querySelector(':scope > div');
+                    if (mainBody) {
+                        Array.from(mainBody.children).forEach((node) => {
+                            if (node === mainBody.children[0]) return;
+                            if (node.tagName === 'H3' || node.tagName === 'P' || node.classList.contains('space-y-3') || node.classList.contains('pt-5')) {
+                                panel.appendChild(node.cloneNode(true));
+                            }
+                        });
+                    }
+                    const footer = card.querySelector(':scope > div:last-child');
+                    if (footer) panel.appendChild(footer.cloneNode(true));
+
+                    card.innerHTML = '';
+                    card.appendChild(summary);
+                    card.appendChild(panel);
+                    if (window.lucide) lucide.createIcons();
+
+                    summary.addEventListener('click', () => {
+                        const open = card.classList.toggle('is-open');
+                        summary.setAttribute('aria-expanded', String(open));
+                        if (open) {
+                            cards.forEach((otherCard) => {
+                                if (otherCard === card) return;
+                                otherCard.classList.remove('is-open');
+                                otherCard.querySelector('.service-summary')?.setAttribute('aria-expanded', 'false');
+                            });
+                        }
+                    });
+                });
+            };
+
+            const setupLabs = () => {
+                const cards = document.querySelectorAll('#groniq-labs .lab-card');
+                cards.forEach((card) => {
+                    if (card.dataset.labReady) return;
+                    if (!originalMobileCardContent.has(card)) {
+                        originalMobileCardContent.set(card, Array.from(card.childNodes, (node) => node.cloneNode(true)));
+                    }
+                    card.dataset.labReady = 'true';
+
+                    const title = card.querySelector('h3');
+                    const summary = document.createElement('button');
+                    summary.type = 'button';
+                    summary.className = 'lab-summary';
+                    summary.setAttribute('aria-expanded', 'false');
+                    summary.innerHTML = `<span>${title ? title.textContent.trim() : 'Lab'}</span><i data-lucide="chevron-down" class="w-4 h-4"></i>`;
+                    const panel = document.createElement('div');
+                    panel.className = 'lab-panel';
+                    const body = card.querySelector(':scope > div');
+                    if (body) {
+                        Array.from(body.children).forEach((node) => {
+                            if (node === body.children[0]) return;
+                            if (node.tagName === 'P' || node.tagName === 'DIV' || node.tagName === 'H3') {
+                                panel.appendChild(node.cloneNode(true));
+                            }
+                        });
+                    }
+                    const footer = card.querySelector(':scope > div:last-child');
+                    if (footer) panel.appendChild(footer.cloneNode(true));
+                    card.innerHTML = '';
+                    card.appendChild(summary);
+                    card.appendChild(panel);
+                    if (window.lucide) lucide.createIcons();
+                    summary.addEventListener('click', () => {
+                        const open = card.classList.toggle('is-open');
+                        summary.setAttribute('aria-expanded', String(open));
+                    });
+                });
+            };
+
+            const setupPricing = () => {
+                const cards = document.querySelectorAll('#pricing .pricing-card');
+                cards.forEach((card) => {
+                    if (card.dataset.pricingReady) return;
+                    if (!originalMobileCardContent.has(card)) {
+                        originalMobileCardContent.set(card, Array.from(card.childNodes, (node) => node.cloneNode(true)));
+                    }
+                    card.dataset.pricingReady = 'true';
+
+                    const title = card.querySelector('h3');
+                    const badge = card.querySelector(':scope > .absolute');
+                    const summary = document.createElement('button');
+                    summary.type = 'button';
+                    summary.className = 'pricing-summary';
+                    summary.setAttribute('aria-expanded', 'false');
+                    summary.innerHTML = `<span>${title ? title.textContent.trim() : 'Package'}</span>${badge ? `<span class="pricing-badge">${badge.textContent.trim()}</span>` : ''}<i data-lucide="chevron-down" class="w-4 h-4"></i>`;
+                    const panel = document.createElement('div');
+                    panel.className = 'pricing-panel';
+                    const mainBody = card.querySelector(':scope > div:not(.absolute)');
+                    if (mainBody) {
+                        Array.from(mainBody.children).forEach((node) => {
+                            if (node === mainBody.children[0]) return;
+                            if (node.tagName === 'P' || node.tagName === 'DIV' || node.tagName === 'H3') {
+                                panel.appendChild(node.cloneNode(true));
+                            }
+                        });
+                    }
+                    const button = card.querySelector('button.w-full');
+                    if (button) panel.appendChild(button.cloneNode(true));
+                    card.innerHTML = '';
+                    card.appendChild(summary);
+                    card.appendChild(panel);
+                    if (window.lucide) lucide.createIcons();
+                    summary.addEventListener('click', () => {
+                        const open = card.classList.toggle('is-open');
+                        summary.setAttribute('aria-expanded', String(open));
+                    });
+                });
+            };
+
+            const restoreCards = (selector, readyKey) => {
+                document.querySelectorAll(selector).forEach((card) => {
+                    const originalNodes = originalMobileCardContent.get(card);
+                    if (!originalNodes) return;
+                    card.replaceChildren(...originalNodes.map((node) => node.cloneNode(true)));
+                    card.classList.remove('is-open');
+                    delete card.dataset[readyKey];
+                });
+            };
+
+            setupCarousel('#growth-system .growth-system-grid', '.growth-system-dots', 'mobile-snap-item');
+            setupCarousel('#selected-work-grid', '.selected-work-dots', 'selected-work-card');
+
+            if (isMobile) {
+                setupServiceAccordions();
+                setupLabs();
+                setupPricing();
+            } else {
+                restoreCards('#what-we-do .service-card', 'mobileReady');
+                restoreCards('#groniq-labs .lab-card', 'labReady');
+                restoreCards('#pricing .pricing-card', 'pricingReady');
+                if (window.lucide) lucide.createIcons();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setupPhase2MobileInteractions();
+            window.addEventListener('resize', setupPhase2MobileInteractions);
+        });
+
+        // Mobile project sheet
+        const projectSheet = document.getElementById('mobile-project-sheet');
+        const mobileProjectTrigger = document.getElementById('mobile-project-trigger');
+        let lastFocusedElement = null;
+
+        function openProjectSheet() {
+            if (!projectSheet) return;
+            lastFocusedElement = document.activeElement;
+            projectSheet.classList.add('is-open');
+            projectSheet.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+                document.getElementById('project-sheet-close')?.focus();
+            }, 50);
+        }
+
+        function closeProjectSheet() {
+            if (!projectSheet) return;
+            projectSheet.classList.remove('is-open');
+            projectSheet.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            if (lastFocusedElement) {
+                lastFocusedElement.focus();
+            }
+        }
+
+        document.addEventListener('click', (event) => {
+            if (event.target && event.target.id === 'project-sheet-backdrop') {
+                closeProjectSheet();
+            }
+        });
+
+        document.getElementById('project-sheet-close')?.addEventListener('click', closeProjectSheet);
+
+        mobileProjectTrigger?.addEventListener('click', (event) => {
+            const isMobile = window.innerWidth < 1024;
+            if (isMobile && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
+                event.preventDefault();
+                openProjectSheet();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && projectSheet && projectSheet.classList.contains('is-open')) {
+                closeProjectSheet();
+            }
+        });
+
+        // Contextual Plan Inquiry Overlay
+        let inquiryReturnFocus = null;
+
+        window.openPlanInquiry = (category) => {
+            const overlay = document.getElementById('modal-overlay');
+            const titleEl = document.getElementById('modal-title');
+            const hiddenScope = document.getElementById('modal-hidden-scope');
+            const modalFormContainer = document.getElementById('modal-form-container');
+            const modalStatus = document.getElementById('modal-status');
+            const modalError = document.getElementById('modal-error');
+
+            if (modalFormContainer) modalFormContainer.classList.remove('hidden');
+            if (modalStatus) {
+                modalStatus.classList.remove('flex');
+                modalStatus.classList.add('hidden');
+            }
+            if (modalError) modalError.classList.add('hidden');
+
+            inquiryReturnFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+            if (titleEl) titleEl.innerText = `${category}`;
+            if (hiddenScope) hiddenScope.value = category;
+
+            overlay.classList.remove('hidden-state');
+            overlay.classList.add('active-state');
+            document.body.style.overflow = 'hidden';
+            window.groniqDialogOpened?.(overlay);
+            if (window.lucide) lucide.createIcons();
+        };
+
+        window.toggleServiceOverlay = () => {
+            const overlay = document.getElementById('modal-overlay');
+            overlay.classList.remove('active-state');
+            overlay.classList.add('hidden-state');
+            window.groniqDialogClosed?.(overlay);
+            document.body.style.overflow = '';
+            const returnTarget = inquiryReturnFocus;
+            inquiryReturnFocus = null;
+            requestAnimationFrame(() => {
+                if (returnTarget?.isConnected) returnTarget.focus({ preventScroll: true });
+            });
+        };
+
+        // Domain & URL Validator: Accepts spacia.com, www.spacia.com, https://spacia.com, http://spacia.com, etc.
+        function isValidDomainOrUrl(val) {
+            if (!val || typeof val !== 'string') return false;
+            const trimmed = val.trim();
+            const pattern = /^(https?:\/\/)?([a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}(:\d+)?(\/[^\s]*)?$/i;
+            return pattern.test(trimmed);
+        }
+
+        // Helper: Ensure domain has https:// prefix for active email linking
+        function normalizeUrl(val) {
+            if (!val) return '';
+            const trimmed = String(val).trim();
+            if (!trimmed) return '';
+            return /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
+        }
+
+        // Asynchronous Form Submissions
+        async function handleFormSubmit(e, btnId, textId, iconId, isModal = false) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = document.getElementById(btnId);
+            const btnText = document.getElementById(textId);
+            const btnIcon = document.getElementById(iconId);
+            const originalText = btnText ? btnText.innerText : "Submit";
+            const originalIconHTML = btnIcon ? btnIcon.innerHTML : "";
+
+            const errorContainer = document.getElementById(isModal ? 'modal-error' : 'form-error');
+            const errorText = document.getElementById(isModal ? 'modal-error-text' : 'form-error-text');
+            if (errorContainer) errorContainer.classList.add('hidden');
+
+            // Custom domain / URL validation for Website field (allows spacia.com, www.spacia.com, https://spacia.com)
+            const websiteInput = form.querySelector('[name="Website URL"]');
+            if (websiteInput) {
+                const websiteVal = (websiteInput.value || '').trim();
+                const isRequired = websiteInput.hasAttribute('required');
+                if (websiteVal) {
+                    if (!isValidDomainOrUrl(websiteVal)) {
+                        websiteInput.setCustomValidity('Please enter a valid website address (e.g. spacia.com or https://spacia.com)');
+                        websiteInput.reportValidity();
+                        return;
+                    } else {
+                        websiteInput.setCustomValidity('');
+                    }
+                } else if (isRequired) {
+                    websiteInput.setCustomValidity('Please enter your website address.');
+                    websiteInput.reportValidity();
+                    return;
+                } else {
+                    websiteInput.setCustomValidity('');
+                }
+            }
+
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            btn.disabled = true;
+            if (btnText) btnText.innerText = "Transmitting...";
+            if (btnIcon) btnIcon.innerHTML = '<div class="spinner"></div>';
+
+            const formData = new FormData(form);
+            const payload = {};
+            formData.forEach((value, key) => {
+                payload[key] = value;
+            });
+
+            // Normalize website URL if entered without protocol (e.g., spacia.com -> https://spacia.com)
+            const rawWebsite = (payload['Website URL'] || '').trim();
+            if (rawWebsite) {
+                payload['Website URL'] = normalizeUrl(rawWebsite);
+                payload['Website Domain'] = rawWebsite.replace(/^https?:\/\//i, '').replace(/^www\./i, '');
+            }
+
+            // Map client email to _replyto for direct email replying
+            const clientEmail = (payload['Email Address'] || '').trim();
+            if (clientEmail) payload['_replyto'] = clientEmail;
+
+            const recipientEmail = 'tavrej@groniqdigital.com';
+            let submittedSuccessfully = false;
+            let lastErrorMsg = '';
+
+            try {
+                // Tier 1: Try local/Netlify serverless function route (/api/contact)
+                try {
+                    const apiResponse = await fetch("/api/contact", {
+                        method: "POST",
+                        headers: {
+                            "Accept": "application/json",
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(payload)
+                    });
+                    
+                    if (apiResponse.ok) {
+                        const apiResult = await apiResponse.json().catch(() => ({}));
+                        if (apiResult && (apiResult.success === true || apiResult.success === 'true' || apiResult.needsActivation)) {
+                            submittedSuccessfully = true;
+                        } else if (apiResult && apiResult.fallbackToClient) {
+                            console.info('Serverless proxy indicated client fallback, attempting direct client delivery...');
+                        }
+                    }
+                } catch (apiErr) {
+                    console.warn("Serverless route attempt deferred to direct client fallback:", apiErr);
+                }
+
+                // Tier 2: Direct FormSubmit AJAX delivery to tavrej@groniqdigital.com
+                if (!submittedSuccessfully) {
+                    try {
+                        const directPayload = { ...payload };
+                        delete directPayload._honey;
+                        if (!directPayload._subject) {
+                            directPayload._subject = isModal ? 'New Groniq Scope Inquiry' : 'New Groniq Growth Audit Inquiry';
+                        }
+                        directPayload._template = 'table';
+                        directPayload._captcha = 'false';
+
+                        const directResponse = await fetch(`https://formsubmit.co/ajax/${recipientEmail}`, {
+                            method: "POST",
+                            headers: {
+                                "Accept": "application/json",
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify(directPayload)
+                        });
+
+                        const directResult = await directResponse.json().catch(() => ({}));
+                        const isDirectSuccess = directResponse.ok && directResult && (
+                            directResult.success === true ||
+                            directResult.success === "true" ||
+                            (directResult.message && directResult.message.includes("Activation")) ||
+                            directResult.needsActivation
+                        );
+
+                        if (isDirectSuccess) {
+                            submittedSuccessfully = true;
+                        } else if (directResult && directResult.message) {
+                            lastErrorMsg = directResult.message;
+                        }
+                    } catch (directErr) {
+                        console.warn("Direct FormSubmit attempt deferred to Netlify Forms fallback:", directErr);
+                    }
+                }
+
+                // Tier 3: Netlify Forms native POST fallback (works when deployed on Netlify)
+                if (!submittedSuccessfully && (window.location.protocol === 'http:' || window.location.protocol === 'https:')) {
+                    try {
+                        const formParams = new URLSearchParams();
+                        for (const [key, val] of Object.entries(payload)) {
+                            formParams.append(key, val);
+                        }
+                        if (!formParams.has('form-name')) {
+                            formParams.append('form-name', form.getAttribute('name') || (isModal ? 'modal-contact' : 'contact'));
+                        }
+
+                        const netlifyResponse = await fetch("/", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                            body: formParams.toString()
+                        });
+
+                        if (netlifyResponse.ok) {
+                            submittedSuccessfully = true;
+                        }
+                    } catch (nErr) {
+                        console.warn("Netlify Forms POST fallback attempt deferred:", nErr);
+                    }
+                }
+
+                if (!submittedSuccessfully) {
+                    throw new Error(lastErrorMsg || "Unable to transmit inquiry automatically.");
+                }
+
+                window.groniqTrack?.('generate_lead', {
+                    form_id: form.id,
+                    method: 'web_form'
+                });
+
+                if (isModal) {
+                    const modalFormContainer = document.getElementById('modal-form-container');
+                    const modalStatus = document.getElementById('modal-status');
+                    if (modalFormContainer && modalStatus) {
+                        modalFormContainer.classList.add('hidden');
+                        modalStatus.classList.remove('hidden');
+                        modalStatus.classList.add('flex');
+                    } else {
+                        alert("Inquiry Received! We will review your scope and respond within 24 hours.");
+                        toggleServiceOverlay();
+                    }
+                } else {
+                    const formStatus = document.getElementById('form-status');
+                    if (formStatus) {
+                        formStatus.classList.remove('hidden');
+                        formStatus.classList.add('flex');
+                    }
+                }
+                form.reset();
+            } catch (err) {
+                const message = err.message && !err.message.includes('fetch') 
+                    ? err.message 
+                    : "Unable to transmit inquiry. Please contact us directly at support@groniqdigital.com or via WhatsApp.";
+                if (errorContainer && errorText) {
+                    errorText.innerHTML = `<span>${message}</span> <a href="mailto:support@groniqdigital.com?subject=Groniq%20Inquiry" class="underline font-bold text-brand-green ml-1">Email support@groniqdigital.com</a>`;
+                    errorContainer.classList.remove('hidden');
+                } else {
+                    alert(message);
+                }
+            } finally {
+                btn.disabled = false;
+                if (btnText) btnText.innerText = originalText;
+                if (btnIcon) btnIcon.innerHTML = originalIconHTML;
+                if (window.lucide) lucide.createIcons();
+            }
+        }
+
+        // Attach Form Handlers & Input Listeners
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                handleFormSubmit(e, 'audit-submit-btn', 'audit-btn-text', 'audit-btn-icon', false);
+            });
+        }
+
+        const contactWebsiteInput = document.getElementById('contact-website');
+        if (contactWebsiteInput) {
+            contactWebsiteInput.addEventListener('input', () => contactWebsiteInput.setCustomValidity(''));
+        }
+
+        const resetFormBtn = document.getElementById('reset-form-btn');
+        if (resetFormBtn) {
+            resetFormBtn.addEventListener('click', () => {
+                const formStatus = document.getElementById('form-status');
+                if (formStatus) {
+                    formStatus.classList.remove('flex');
+                    formStatus.classList.add('hidden');
+                }
+                const contactName = document.getElementById('contact-name');
+                if (contactName) contactName.focus();
+            });
+        }
+
+        const modalForm = document.getElementById('modal-form');
+        if (modalForm) {
+            modalForm.addEventListener('submit', (e) => {
+                handleFormSubmit(e, 'modal-submit-btn', 'modal-btn-text', 'modal-btn-icon', true);
+            });
+        }
+
+        const modalWebsiteInput = document.getElementById('modal-website');
+        if (modalWebsiteInput) {
+            modalWebsiteInput.addEventListener('input', () => modalWebsiteInput.setCustomValidity(''));
+        }
+
+        // Scroll Observer for Navbar & Reveal Animations
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 30) {
+                navbar.classList.add('glass');
+            } else {
+                navbar.classList.remove('glass');
+            }
+        });
+
+        // Intersection Observer for Reveal Elements
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
