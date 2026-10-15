@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WXK2DD69');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Ads Search & Performance Max Campaign for Dental Clinic | Md Tavrej Ansari</title>
+  <meta name="description" content="High-intent Google Ads Search and Performance Max campaigns with tight geo-targeting, negative keyword pruning, and GA4 primary conversion tracking.">
+  <link rel="canonical" href="https://mdtavrejansari.com/projects/google-ads-dental-clinic-campaign/">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Google Ads Search & Performance Max Campaign for Dental Clinic | Md Tavrej Ansari">
+  <meta property="og:description" content="High-intent Google Ads Search and Performance Max campaigns with tight geo-targeting, negative keyword pruning, and GA4 primary conversion tracking.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mdtavrejansari.com/projects/google-ads-dental-clinic-campaign/">
+  <meta property="og:image" content="https://mdtavrejansari.com/images/og-default.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Google Ads Search & Performance Max Campaign for Dental Clinic | Md Tavrej Ansari">
+  <meta name="twitter:description" content="High-intent Google Ads Search and Performance Max campaigns with tight geo-targeting, negative keyword pruning, and GA4 primary conversion tracking.">
+  <meta name="twitter:image" content="https://mdtavrejansari.com/images/og-default.jpg">
+  
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mdtavrejansari.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects",
+      "item": "https://mdtavrejansari.com/projects/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Google Ads Search & Performance Max Campaign for Dental Clinic",
+      "item": "https://mdtavrejansari.com/projects/google-ads-dental-clinic-campaign/"
+    }
+  ]
+}
+  </script>
+  <!-- Structured Data: Main Entity -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Google Ads Search & Performance Max Campaign for Dental Clinic",
+  "description": "High-intent Google Ads Search and Performance Max campaigns with tight geo-targeting, negative keyword pruning, and GA4 primary conversion tracking.",
+  "image": "https://mdtavrejansari.com/images/og-default.jpg",
+  "datePublished": "12 September 2026",
+  "author": {
+    "@type": "Person",
+    "name": "Md Tavrej Ansari",
+    "url": "https://mdtavrejansari.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mdtavrejansari.com/projects/google-ads-dental-clinic-campaign/"
+  }
+}
+  </script>
+
+  <!-- Stylesheets -->
+    <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600&family=Space+Grotesque:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXK2DD69"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <global-navbar></global-navbar>
+
+  <main class="cms-detail-page cms-detail-page--project">
+
+  <article
+    id="project-detail-container"
+    class="cms-detail__container"
+  >
+    <!-- Details Header Banner -->
+    <div style="margin-bottom: var(--space-lg);" class="flow flow-xs">
+      <div class="breadcrumbs">
+        <a href="../../">Home</a>
+        <span class="breadcrumbs-separator"></span>
+        <a href="../../projects/">Projects</a>
+        <span class="breadcrumbs-separator"></span>
+        <span>Google Ads Search & Performance Max Campaign for Dental Clinic</span>
+      </div>
+      <h1 style="font-size: var(--font-size-xxl); font-family: var(--font-heading); font-weight: var(--fw-bold); color: var(--color-text-primary); margin-top: var(--space-xs); line-height: var(--lh-heading); max-width: 25ch;">
+        Google Ads Search & Performance Max Campaign for Dental Clinic
+      </h1>
+      
+      <div style="display: flex; gap: var(--space-xs); flex-wrap: wrap; margin-top: var(--space-sm);">
+        <span class="badge" style="background: var(--color-bg-secondary); border: 1px solid var(--color-border); font-size: 10px; color: var(--color-text-secondary); padding: 2px 8px; border-radius: var(--radius-xs);">12 September 2026</span>
+        <span class="badge" style="background: var(--color-bg-secondary); border: 1px solid var(--color-border); font-size: 10px; color: var(--color-text-secondary); padding: 2px 8px; border-radius: var(--radius-xs);">1 min read</span>
+        <span class="badge" style="background: var(--color-bg-secondary); border: 1px solid var(--color-border); font-size: 10px; color: var(--color-text-secondary); padding: 2px 8px; border-radius: var(--radius-xs);">General</span>
+      </div>
+    </div>
+
+    <!-- Main Rich Body HTML -->
+    <div class="cms-rich-content flow" style="margin-top: var(--space-lg); line-height: var(--lh-body); font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+      <section class="project-section" style="margin-bottom: var(--space-xl);">
+        <h2 style="font-size: var(--font-size-xl); font-weight: var(--fw-bold); margin-bottom: var(--space-sm); color: var(--color-text-primary);">Objective</h2>
+        <p class="cms-prose-p">The primary goal was to acquire high-intent patient enquiries for high-value dental treatments (Implants, Invisalign, and Cosmetic Dentistry) while reducing cost-per-lead and eliminating wasteful ad spend on non-commercial search queries.</p>
+      </section><section class="project-section" style="margin-bottom: var(--space-xl);">
+        <h2 style="font-size: var(--font-size-xl); font-weight: var(--fw-bold); margin-bottom: var(--space-sm); color: var(--color-text-primary);">What I Built</h2>
+        <p class="cms-prose-p">Architected a multi-tiered Google Ads Search structure segmented by treatment category and intent level. Built a 250+ negative keyword library to filter out general queries, employment searches, and DIY medical questions. Configured primary conversion actions in Google Tag Manager for verified form submits and phone calls with 60+ seconds duration.</p>
+      </section><section class="project-section" style="margin-bottom: var(--space-xl);">
+        <h2 style="font-size: var(--font-size-xl); font-weight: var(--fw-bold); margin-bottom: var(--space-sm); color: var(--color-text-primary);">The Process</h2>
+        <div class="cms-process-stage" style="margin-bottom: var(--space-lg); border-left: 2px solid var(--color-border); padding-left: var(--space-md);">
+          <h3 style="font-size: var(--font-size-md); color: var(--color-text-primary); margin-bottom: var(--space-xs);">Intent &amp; Competitor Research</h3>
+          <p style="font-weight: var(--fw-semibold); margin-bottom: var(--space-xs);">Discovered high-intent commercial keywords and audited local competitors.</p>
+          
+        </div>
+      
+        <div class="cms-process-stage" style="margin-bottom: var(--space-lg); border-left: 2px solid var(--color-border); padding-left: var(--space-md);">
+          <h3 style="font-size: var(--font-size-md); color: var(--color-text-primary); margin-bottom: var(--space-xs);">Campaign Structuring &amp; Negative Framework</h3>
+          <p style="font-weight: var(--fw-semibold); margin-bottom: var(--space-xs);">Single-Theme Ad Groups (STAGs) paired with aggressive negative keyword exclusions.</p>
+          
+        </div>
+      
+        <div class="cms-process-stage" style="margin-bottom: var(--space-lg); border-left: 2px solid var(--color-border); padding-left: var(--space-md);">
+          <h3 style="font-size: var(--font-size-md); color: var(--color-text-primary); margin-bottom: var(--space-xs);">Tracking &amp; Conversion Architecture</h3>
+          <p style="font-weight: var(--fw-semibold); margin-bottom: var(--space-xs);">Clean GA4 + GTM tracking layer ensuring Google Ads smart bidding optimizes for real qualified bookings.</p>
+          
+        </div>
+      </section>
+    </div>
+
+    <!-- Metadata Banner Footer -->
+    <div style="margin-top: var(--space-xl); padding: var(--space-md); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); font-size: 11px; color: var(--color-text-muted); display: flex; flex-wrap: wrap; gap: var(--space-md); background: var(--color-bg-secondary); border-radius: var(--radius-xs);">
+      <div><strong>Published:</strong> 12 September 2026</div>
+      <div><strong>Category:</strong> General</div>
+      <div><strong>Reading Time:</strong> 1 min</div>
+      <div><strong>Tags:</strong> </div>
+    </div>
+  </article>
+
+  
+    <section class="cms-detail__related cms-detail__container" aria-label="Related Publications" style="margin-top: var(--space-3xl); border-top: 1px solid var(--color-border); padding-top: var(--space-2xl);">
+      <div class="cms-detail__related-header" style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-xl);">
+        <div>
+          <span class="cms-detail__eyebrow" style="font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; color: var(--color-text-muted); letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+            More Work &amp; Insights
+          </span>
+          <h2 style="font-size: var(--font-size-xl); font-weight: var(--fw-bold); color: var(--color-text-primary); margin: 0;">
+            Related Work
+          </h2>
+        </div>
+      </div>
+      <div class="grid-12" style="gap: var(--grid-gap);">
+  
+      <article class="col-span-12 col-span-6 card dynamic-card" style="display: flex; flex-direction: column; justify-content: space-between; background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); cursor: pointer;" onclick="window.location.href='../../projects/multi-client-seo-implementation/'">
+        <div class="card-header-visual" style="height: 140px; width: 100%; position: relative; background: linear-gradient(135deg, #180c2e 0%, #311042 100%);; display: flex; align-items: flex-end; padding: var(--space-sm);">
+          <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);"></div>
+          <span class="badge" style="position: relative; z-index: 2; font-size: 8px; text-transform: uppercase; background: var(--color-accent); color: var(--color-bg-primary); padding: 3px 8px; border-radius: var(--radius-full); font-weight: var(--fw-bold); letter-spacing: 0.5px;">General</span>
+        </div>
+        <div class="card-body" style="padding: var(--space-md); flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; gap: var(--space-xs); font-size: 9px; color: var(--color-text-secondary); margin-bottom: var(--space-xs);">
+              <span>20 August 2026</span>
+              <span>•</span>
+              <span>2 min read</span>
+            </div>
+            <h3 style="font-size: var(--font-size-sm); font-weight: var(--fw-bold); color: var(--color-text-primary); margin: 0 0 var(--space-xs) 0; line-height: 1.4;">
+              Multi-Client SEO Implementation for Service and Product Businesses
+            </h3>
+            <p style="font-size: var(--font-size-xs); color: var(--color-text-secondary); line-height: var(--lh-body); margin: 0 0 var(--space-md) 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+              Executed off-page SEO activities across client websites in the dental, solar, roofing, childcare, e-commerce and automotive sectors during an internship, using multiple link-building methods and keyword tracking.
+            </p>
+          </div>
+          <div class="card-footer" style="margin-top: auto; border-top: 1px solid var(--color-border); padding-top: var(--space-sm); display: flex; align-items: center; justify-content: space-between;">
+            <span style="font-size: 9px; color: var(--color-text-muted); font-weight: var(--fw-semibold);">Md Tavrej Ansari</span>
+            <a href="../../projects/multi-client-seo-implementation/" class="btn-text" style="display: inline-flex; align-items: center; gap: 4px; font-size: var(--font-size-xs); font-weight: var(--fw-bold); text-decoration: none; color: var(--color-text-accent);">
+              <span>View Project</span>
+              <span style="font-size: 12px;" class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      </div>
+    </section>
+  
+
+  <discuss-work></discuss-work>
+
+</main>
+
+  <global-footer></global-footer>
+
+  <script defer src="../../js/tracking.js"></script>
+  <script defer src="../../js/components.js"></script>
+  <script defer src="../../js/main.js"></script>
+</body>
+</html>

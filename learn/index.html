@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Marketing Guides & Analytics Knowledge Base | Groniq</title>
+    <meta name="description"
+        content="Practical guides on performance marketing, SEO, analytics, attribution, CRO, tracking, websites and digital growth from Groniq.">
+
+    <link rel="canonical" href="https://groniqdigital.com/learn/" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://groniqdigital.com/learn/">
+    <meta property="og:title" content="Marketing Guides & Analytics Knowledge Base | Groniq">
+    <meta property="og:description"
+        content="Practical guides on performance marketing, SEO, analytics, attribution, CRO, tracking, websites and digital growth from Groniq.">
+    <meta property="og:image" content="https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marketing Guides & Analytics Knowledge Base | Groniq">
+    <meta name="twitter:description"
+        content="Practical guides on performance marketing, SEO, analytics, attribution, CRO, tracking, websites and digital growth from Groniq.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png">
+
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png">
+
+    <link rel="stylesheet" href="/tailwind.css">
+    <!-- Google Fonts & Icon Libraries -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@0.469.0"></script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WZFQDDBR');</script>
+    <!-- End Google Tag Manager -->
+    <script src="/analytics.js" defer></script>
+    <script src="/accessibility.js" defer></script>
+    <style>
+        :root {
+            --primary: #39FF14;
+            --bg: #050505;
+            --card: #0D0D0D;
+            --border: #1E1E1E;
+        }
+
+        .animate-scan {
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to right, transparent, var(--primary), transparent);
+            animation: scan 3s linear infinite;
+        }
+
+        @keyframes scan {
+            0% {
+                top: 0%;
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                top: 100%;
+                opacity: 0;
+            }
+        }
+
+        body.loading {
+            overflow: hidden;
+        }
+
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+
+        .glow-effect {
+            box-shadow: 0 0 50px -15px rgba(57, 255, 20, 0.15);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 110px;
+        }
+
+        section[id],
+        [id] {
+            scroll-margin-top: 110px;
+        }
+
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        textarea:focus-visible {
+            outline: 2px solid rgba(57, 255, 20, 0.9);
+            outline-offset: 2px;
+            box-shadow: 0 0 0 4px rgba(57, 255, 20, 0.14);
+        }
+
+        .mobile-nav-rail {
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            position: relative;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .mobile-nav-rail::-webkit-scrollbar {
+            display: none;
+        }
+
+        .mobile-nav-rail::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 32px;
+            height: 100%;
+            background: linear-gradient(to left, rgba(5, 5, 5, 1), rgba(5, 5, 5, 0));
+            pointer-events: none;
+        }
+
+        #mobile-project-sheet {
+            display: none;
+        }
+
+        #mobile-project-sheet.is-open {
+            display: block;
+        }
+
+        .sheet-panel {
+            transform: translateY(18px);
+            opacity: 0;
+            transition: transform 0.25s ease, opacity 0.25s ease;
+        }
+
+        #mobile-project-sheet.is-open .sheet-panel {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-brand-dark text-white selection:bg-brand-green selection:text-black min-h-screen flex flex-col loading">
+
+    <!-- Splash / Loading Screen -->
+    <div id="splash-screen"
+        class="fixed inset-0 z-[200] bg-[#050505] flex flex-col items-center justify-center transition-all duration-1000 ease-in-out">
+        <div class="animate-scan"></div>
+        <svg viewBox="0 0 100 100" class="w-20 h-20 mb-8" fill="none" aria-hidden="true">
+            <path
+                d="M70 20C85 20 95 35 95 50C95 65 85 80 70 80H60V65H70C78 65 83 58 83 50C83 42 78 35 70 35H45L40 20H70Z"
+                fill="#39FF14" />
+            <path d="M30 80C15 80 5 65 5 50C5 35 15 20 30 20H40V35H30C22 35 17 42 17 50C17 58 22 65 30 65H55L60 80H30Z"
+                fill="white" />
+        </svg>
+        <div class="w-48 space-y-4 text-center">
+            <span id="progress-text" class="text-brand-green font-black text-2xl font-mono">0%</span>
+            <div class="h-[2px] w-full bg-[#1F1F1F] rounded-full overflow-hidden relative">
+                <div id="progress-bar" class="absolute top-0 left-0 h-full bg-brand-green transition-all duration-100"
+                    style="width: 0%"></div>
+            </div>
+            <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-muted">Initialising Systems...</p>
+        </div>
+    </div>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZFQDDBR" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- NAVIGATION BAR -->
+    <header id="navbar"
+        class="sticky top-0 w-full z-50 transition-all duration-300 py-4 bg-brand-dark/80 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center gap-3">
+            <a href="/" class="flex items-center gap-3 group shrink-0" aria-label="Groniq Digital Solutions Home">
+                <svg viewBox="0 0 100 100" class="w-8 h-8 transition-transform group-hover:scale-105 duration-300"
+                    fill="none" aria-hidden="true">
+                    <path
+                        d="M70 20C85 20 95 35 95 50C95 65 85 80 70 80H60V65H70C78 65 83 58 83 50C83 42 78 35 70 35H45L40 20H70Z"
+                        fill="#39FF14" />
+                    <path
+                        d="M30 80C15 80 5 65 5 50C5 35 15 20 30 20H40V35H30C22 35 17 42 17 50C17 58 22 65 30 65H55L60 80H30Z"
+                        fill="white" />
+                </svg>
+                <div class="flex flex-col">
+                    <span class="text-xl font-black uppercase tracking-tight text-white leading-none">GRONIQ</span>
+                    <span class="text-[9px] uppercase tracking-widest text-brand-muted font-bold mt-0.5">Digital
+                        Solutions</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-7">
+                <div class="relative services-dropdown-container flex items-center">
+                    <a href="/services/"
+                        class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors py-1">Services</a>
+                    <button type="button"
+                        class="services-menu-toggle ml-1 p-1 text-brand-muted hover:text-white focus-visible:outline-none focus-visible:text-brand-green transition-colors cursor-pointer"
+                        aria-expanded="false" aria-haspopup="true" aria-controls="services-dropdown-menu"
+                        aria-label="Toggle Services submenu">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="toggle-icon transition-transform duration-200">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <!-- Accessible Dropdown Menu -->
+                    <div id="services-dropdown-menu"
+                        class="services-dropdown-panel absolute top-full left-0 mt-2 w-60 rounded-xl bg-[#0D0D0D] border border-[#222] shadow-[0_16px_36px_rgba(0,0,0,0.8)] p-2 hidden z-50 backdrop-blur-md"
+                        role="menu" aria-label="Services Submenu">
+                        <a href="/services/" role="menuitem"
+                            class="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white hover:bg-white/5 transition-colors">
+                            <span>All Services</span>
+                            <span class="text-[10px] text-brand-green font-mono">Overview &rarr;</span>
+                        </a>
+                        <a href="/services/paid-acquisition/" role="menuitem"
+                            class="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white hover:bg-white/5 transition-colors">
+                            <span>Paid Acquisition</span>
+                            <span class="text-[9px] text-brand-muted font-mono">Ads</span>
+                        </a>
+                        <a href="/services/measurement-tracking/" role="menuitem"
+                            class="flex items-center justify-between px-3 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white hover:bg-white/5 transition-colors">
+                            <span>Measurement &amp; Tracking</span>
+                            <span class="text-[9px] text-brand-muted font-mono">GA4/GTM</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="/#selected-work"
+                    class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors">Work</a>
+                <a href="/tools/"
+                    class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors">Tools</a>
+                <a href="/learn/"
+                    class="text-xs font-semibold uppercase tracking-wider text-brand-green transition-colors">Learn</a>
+                <a href="/#about"
+                    class="text-xs font-semibold uppercase tracking-wider text-brand-muted hover:text-white transition-colors">About</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="/#contact"
+                    class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-green text-black font-bold text-xs uppercase tracking-wider rounded-lg hover:bg-[#32e012] transition-all">
+                    <span>Request a Growth Audit</span>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="lg:hidden flex items-center gap-2 ml-auto">
+                <a id="mobile-project-trigger" href="/#contact"
+                    class="inline-flex items-center justify-center gap-1.5 rounded-lg bg-brand-green px-3 py-2 text-[10px] sm:text-[11px] font-black uppercase tracking-[0.12em] text-black leading-none shadow-[0_0_18px_rgba(57,255,20,0.2)]">
+                    <span>Start a Project</span>
+                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div
+        class="lg:hidden w-full border-b border-[#181818] bg-brand-dark/95 backdrop-blur supports-[backdrop-filter]:bg-brand-dark/80">
+        <nav aria-label="Mobile navigation" class="mobile-nav-rail py-3 px-6">
+            <div class="flex items-center gap-6 text-[11px] font-bold uppercase tracking-[0.18em] text-brand-muted">
+                <div class="inline-flex items-center shrink-0">
+                    <a href="/services/" class="shrink-0 hover:text-white transition-colors">Services</a>
+                    <button type="button"
+                        class="mobile-services-toggle ml-1 p-1 text-brand-muted hover:text-white focus-visible:outline-none cursor-pointer"
+                        aria-expanded="false" aria-controls="mobile-services-submenu"
+                        aria-label="Toggle Services child links">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="transition-transform duration-200">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <a href="/tools/" class="shrink-0 hover:text-white transition-colors">Tools</a>
+                <a href="/learn/" class="shrink-0 text-brand-green transition-colors">Learn</a>
+                <a href="/#selected-work" class="shrink-0 hover:text-white transition-colors">Work</a>
+                <a href="/#about" class="shrink-0 hover:text-white transition-colors">About</a>
+                <a href="/#pricing" class="shrink-0 hover:text-white transition-colors">Pricing</a>
+            </div>
+        </nav>
+        <!-- Expandable Mobile Services Submenu -->
+        <div id="mobile-services-submenu"
+            class="hidden px-6 py-2.5 bg-[#0C0C0C] border-t border-[#1C1C1C] flex flex-col gap-2 text-[10px] font-mono uppercase tracking-wider text-brand-muted">
+            <a href="/services/"
+                class="hover:text-brand-green transition-colors flex items-center justify-between py-1">
+                <span>&bull; All Services Overview</span>
+                <span class="text-brand-green">&rarr;</span>
+            </a>
+            <a href="/services/paid-acquisition/"
+                class="hover:text-brand-green transition-colors flex items-center justify-between py-1">
+                <span>&bull; Paid Acquisition (Google &amp; Meta Ads)</span>
+                <span class="text-brand-green">&rarr;</span>
+            </a>
+            <a href="/services/measurement-tracking/"
+                class="hover:text-brand-green transition-colors flex items-center justify-between py-1">
+                <span>&bull; Measurement &amp; Tracking (GA4 / GTM / CAPI)</span>
+                <span class="text-brand-green">&rarr;</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="mobile-project-sheet" class="fixed inset-0 z-[120]" aria-hidden="true">
+        <button type="button" id="project-sheet-backdrop" class="absolute inset-0 bg-black/70 backdrop-blur-[2px]"
+            aria-label="Close project options"></button>
+        <div class="absolute inset-x-0 bottom-0 mx-auto w-full max-w-md rounded-t-[28px] border border-white/10 bg-[#0C0C0C] p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-[0_-12px_40px_rgba(0,0,0,0.45)] sheet-panel"
+            role="dialog" aria-modal="true" aria-labelledby="project-sheet-title">
+            <div class="flex items-center justify-between mb-4">
+                <h2 id="project-sheet-title" class="text-lg font-black uppercase tracking-tight text-white">Start a
+                    Project</h2>
+                <button type="button" id="project-sheet-close"
+                    class="p-2 text-brand-muted hover:text-white focus-visible:outline-none"
+                    aria-label="Close project options">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            <div class="space-y-2">
+                <a href="/#contact"
+                    class="flex items-center justify-between rounded-2xl border border-[#1F1F1F] bg-[#111111] px-4 py-3 text-left text-sm font-bold uppercase tracking-[0.14em] text-white hover:border-brand-green/40 hover:text-brand-green transition-colors"><span>Request
+                        a Growth Audit</span><i data-lucide="arrow-up-right" class="w-4 h-4 text-brand-green"></i></a>
+                <a href="https://wa.me/918016156537?text=Hi%20Groniq,%20I'd%20like%20to%20discuss%20a%20growth%20audit%20for%20my%20brand."
+                    target="_blank" rel="noopener"
+                    class="flex items-center justify-between rounded-2xl border border-[#1F1F1F] bg-[#111111] px-4 py-3 text-left text-sm font-bold uppercase tracking-[0.14em] text-white hover:border-brand-green/40 hover:text-brand-green transition-colors"><span>Chat
+                        on WhatsApp</span><i data-lucide="message-circle-more" class="w-4 h-4 text-brand-green"></i></a>
+                <a href="mailto:support@groniqdigital.com?subject=Start%20a%20Project"
+                    class="flex items-center justify-between rounded-2xl border border-[#1F1F1F] bg-[#111111] px-4 py-3 text-left text-sm font-bold uppercase tracking-[0.14em] text-white hover:border-brand-green/40 hover:text-brand-green transition-colors"><span>Send
+                        an Email (Support)</span><i data-lucide="mail" class="w-4 h-4 text-brand-green"></i></a>
+                <a href="mailto:contact@mdtavrejansari.com?subject=Direct%20Inquiry%20to%20Founder"
+                    class="flex items-center justify-between rounded-2xl border border-[#1F1F1F] bg-[#111111] px-4 py-3 text-left text-sm font-bold uppercase tracking-[0.14em] text-white hover:border-brand-green/40 hover:text-brand-green transition-colors"><span>Email
+                        Founder (Direct)</span><i data-lucide="user-check" class="w-4 h-4 text-brand-green"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow">
+        <!-- HERO SECTION -->
+        <section class="relative pt-12 pb-14 md:pt-20 md:pb-20 px-6 bg-grid border-b border-[#181818] overflow-hidden">
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[280px] bg-brand-green/10 rounded-full blur-[140px] pointer-events-none">
+            </div>
+            <div class="max-w-4xl mx-auto relative z-10 text-center">
+                <span class="text-xs font-black uppercase tracking-[0.25em] text-brand-green mb-3 block">Groniq Learning
+                    Hub</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight text-white leading-[1.05] mb-4">
+                    <span class="text-white">Learn</span>
+                </h1>
+                <p class="text-sm sm:text-base text-brand-muted max-w-xl mx-auto leading-relaxed">
+                    Practical marketing knowledge, connected to the tools you use.
+                </p>
+            </div>
+        </section>
+
+        <!-- LEARNING LIBRARY SECTION -->
+        <section class="py-12 md:py-20 px-6 bg-[#050505] flex-grow">
+            <div class="max-w-3xl mx-auto space-y-12" id="learning-categories-container">
+                <!-- RENDERED BY SCRIPT BELOW -->
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-16 bg-[#040404] border-t border-[#181818] text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-[#181818]">
+
+                <!-- Logo & Positioning -->
+                <div class="flex flex-col items-center md:items-start gap-2">
+                    <a href="/" class="flex items-center gap-3">
+                        <svg viewBox="0 0 100 100" class="w-8 h-8" fill="none">
+                            <path
+                                d="M70 20C85 20 95 35 95 50C95 65 85 80 70 80H60V65H70C78 65 83 58 83 50C83 42 78 35 70 35H45L40 20H70Z"
+                                fill="#39FF14" />
+                            <path
+                                d="M30 80C15 80 5 65 5 50C5 35 15 20 30 20H40V35H30C22 35 17 42 17 50C17 58 22 65 30 65H55L60 80H30Z"
+                                fill="white" />
+                        </svg>
+                        <div class="flex flex-col">
+                            <span
+                                class="text-2xl font-black uppercase tracking-tight text-white leading-none">GRONIQ</span>
+                            <span class="text-[9px] uppercase tracking-widest text-brand-muted font-bold mt-0.5">Digital
+                                Solutions</span>
+                        </div>
+                    </a>
+                    <p class="text-xs text-brand-muted text-center md:text-left max-w-sm">
+                        Performance marketing, SEO, conversion-focused websites, and measurable marketing systems for
+                        emerging brands.
+                    </p>
+                </div>
+
+                <!-- Navigation Quick Links -->
+                <div class="flex flex-wrap justify-center gap-6 text-xs font-semibold text-brand-muted">
+                    <a href="/#what-we-do" class="hover:text-white transition-colors">What We Do</a>
+                    <a href="/#growth-system" class="hover:text-white transition-colors">Growth System</a>
+                    <a href="/#how-we-work" class="hover:text-white transition-colors">How We Work</a>
+                    <a href="/#selected-work" class="hover:text-white transition-colors">Real Work</a>
+                    <a href="/#groniq-labs" class="hover:text-brand-green transition-colors">Groniq Labs</a>
+                    <a href="/#insights" class="hover:text-white transition-colors">Insights</a>
+                    <a href="/#about" class="hover:text-white transition-colors">About</a>
+                    <a href="/#pricing" class="hover:text-white transition-colors">Engagements</a>
+                    <a href="/#contact" class="hover:text-brand-green transition-colors font-bold">Growth Audit</a>
+                </div>
+
+                <!-- Social Channels -->
+                <div class="flex items-center gap-4">
+                    <a href="https://www.linkedin.com/company/groniq-digital-solutions" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin text-sm"></i>
+                    </a>
+                    <a href="https://instagram.com/groniq_digiital_solutions" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@mdtavrejansari" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="YouTube">
+                        <i class="fa-brands fa-youtube text-sm"></i>
+                    </a>
+                    <a href="https://www.behance.net/md-tavrej-ansari" target="_blank" rel="noopener"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="Behance">
+                        <i class="fa-brands fa-behance text-sm"></i>
+                    </a>
+                    <a href="mailto:support@groniqdigital.com"
+                        class="w-9 h-9 rounded-lg bg-[#111] border border-[#222] hover:border-brand-green text-brand-muted hover:text-brand-green flex items-center justify-center transition-colors"
+                        aria-label="Email">
+                        <i class="fa-solid fa-envelope text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-medium text-brand-muted">
+                <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-green"></span>
+                    <span class="uppercase tracking-widest text-brand-mutedLight font-bold">Performance • SEO •
+                        E-commerce • Tracking • Growth Systems</span>
+                </div>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="mailto:support@groniqdigital.com"
+                        class="hover:text-white transition-colors">support@groniqdigital.com</a>
+                    <span class="text-[#333] hidden sm:inline">&bull;</span>
+                    <a href="mailto:contact@mdtavrejansari.com"
+                        class="hover:text-brand-green transition-colors">Founder: contact@mdtavrejansari.com</a>
+                    <span class="text-[#333] hidden sm:inline">&bull;</span>
+                    <span>© 2025–2026 Groniq Digital Solutions. MSME Registered.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FUTURE-READY DATA CONTRACT & RENDER ENGINE -->
+    <script>
+        // FUTURE-READY DATA STRUCTURE (Contains real, standalone learning resources)
+        const LEARN_RESOURCES = [
+            {
+                id: 'technical-seo-audit',
+                title: 'Technical SEO Audit & Crawling',
+                description: 'How to configure website crawls, interpret response codes and canonicals, diagnose duplicate content and Core Web Vitals, and prioritize verified fixes.',
+                category: 'SEO & Technical Audits',
+                icon: 'network',
+                href: '/learn/technical-seo-audit/',
+                readingTime: '16 min read',
+                toolHref: '/tools/grocrawl/',
+                toolLabel: 'Open GroCrawl'
+            },
+            {
+                id: 'business-marketing-research',
+                title: 'Business & Marketing Research',
+                description: 'A comprehensive methodology for researching businesses, customers, markets, competitors, and evidence to make disciplined marketing decisions.',
+                category: 'Strategy & Research',
+                icon: 'compass',
+                href: '/learn/business-marketing-research/',
+                readingTime: '18 min read',
+                toolHref: '/tools/business-competitor-research/',
+                toolLabel: 'Open Research Tool'
+            },
+            {
+                id: 'utm-tracking',
+                title: 'UTM Tracking',
+                description: 'Understand campaign source, medium, naming, attribution, and how to build clean tracking URLs.',
+                category: 'Analytics & Tracking',
+                icon: 'link',
+                href: '/learn/utm-tracking/',
+                readingTime: '5 min read',
+                toolHref: '/tools/utm-builder/',
+                toolLabel: 'Open UTM Builder'
+            }
+        ];
+
+        const projectSheet = document.getElementById('mobile-project-sheet');
+        const mobileProjectTrigger = document.getElementById('mobile-project-trigger');
+        let lastFocusedElement = null;
+
+        function openProjectSheet() {
+            if (!projectSheet) return;
+            lastFocusedElement = document.activeElement;
+            projectSheet.classList.add('is-open');
+            projectSheet.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => document.getElementById('project-sheet-close')?.focus(), 50);
+        }
+
+        function closeProjectSheet() {
+            if (!projectSheet) return;
+            projectSheet.classList.remove('is-open');
+            projectSheet.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            if (lastFocusedElement) lastFocusedElement.focus();
+        }
+
+        mobileProjectTrigger?.addEventListener('click', (event) => {
+            const isMobile = window.innerWidth < 1024;
+            if (isMobile && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
+                event.preventDefault();
+                openProjectSheet();
+            }
+        });
+
+        document.getElementById('project-sheet-backdrop')?.addEventListener('click', closeProjectSheet);
+        document.getElementById('project-sheet-close')?.addEventListener('click', closeProjectSheet);
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && projectSheet && projectSheet.classList.contains('is-open')) closeProjectSheet();
+        });
+
+        // RENDER STANDALONE RESOURCES BY CATEGORY
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('learning-categories-container');
+            if (!container) return;
+
+            const categories = {};
+            LEARN_RESOURCES.forEach(res => {
+                if (!categories[res.category]) categories[res.category] = [];
+                categories[res.category].push(res);
+            });
+
+            container.innerHTML = Object.entries(categories).map(([categoryName, items]) => `
+                <div class="space-y-6">
+                    <div class="flex items-center justify-between border-b border-[#1C1C1C] pb-4">
+                        <h2 class="text-base sm:text-lg font-black uppercase tracking-tight text-white flex items-center gap-3">
+                            <span class="w-2.5 h-2.5 rounded-full bg-brand-green"></span>
+                            ${categoryName}
+                        </h2>
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-brand-muted bg-[#111] px-2.5 py-1 rounded border border-[#222]">
+                            ${items.length} ${items.length === 1 ? 'Resource' : 'Resources'}
+                        </span>
+                    </div>
+
+                    <div class="space-y-6">
+                        ${items.map(item => `
+                            <article class="group p-6 sm:p-8 rounded-2xl bg-[#0D0D0D] border border-[#1C1C1C] hover:border-brand-green/40 hover:bg-[#111] transition-all duration-300 relative overflow-hidden glow-effect">
+                                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-green/0 via-brand-green/30 to-brand-green/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                
+                                <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-xl bg-[#141414] border border-[#222] flex items-center justify-center group-hover:border-brand-green/40 transition-colors shrink-0">
+                                            <i data-lucide="${item.icon || 'file-text'}" class="w-5 h-5 text-brand-green"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl sm:text-2xl font-black uppercase tracking-tight text-white group-hover:text-brand-green transition-colors">
+                                                ${item.title}
+                                            </h3>
+                                            <span class="text-[10px] font-mono text-brand-muted"><i data-lucide="clock" class="w-3 h-3 inline mr-1"></i>${item.readingTime}</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-xs sm:text-sm text-brand-muted leading-relaxed mb-8 max-w-xl">
+                                    ${item.description}
+                                </p>
+
+                                <div class="pt-5 border-t border-[#1C1C1C] flex flex-wrap items-center justify-between gap-4">
+                                    <a href="${item.href}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-green text-black font-extrabold text-xs uppercase tracking-wider rounded-xl hover:bg-[#32e012] transition-colors">
+                                        <span>Read guide</span>
+                                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                    </a>
+
+                                    ${item.toolHref ? `
+                                        <a href="${item.toolHref}" class="inline-flex items-center gap-2 px-4 py-2.5 bg-[#141414] border border-[#222] text-brand-muted hover:text-white hover:border-brand-green/40 transition-colors text-xs font-bold uppercase tracking-wider rounded-xl">
+                                            <i data-lucide="terminal" class="w-3.5 h-3.5 text-brand-green"></i>
+                                            <span>${item.toolLabel}</span>
+                                        </a>
+                                    ` : ''}
+                                </div>
+                            </article>
+                        `).join('')}
+                    </div>
+                </div>
+            `).join('');
+
+            if (window.lucide) { lucide.createIcons(); }
+        });
+
+        // Initialize Splash Screen (0-100% System) and Icons
+        function initSplashScreen() {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            const splash = document.getElementById('splash-screen');
+            if (!splash) {
+                document.body.classList.remove('loading');
+                return;
+            }
+
+            let progress = 0;
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+
+            const progressInterval = setInterval(() => {
+                progress += 5;
+                if (progressBar) progressBar.style.width = progress + '%';
+                if (progressText) progressText.innerText = progress + '%';
+
+                if (progress >= 100) {
+                    clearInterval(progressInterval);
+                    setTimeout(() => {
+                        splash.style.opacity = '0';
+                        splash.style.pointerEvents = 'none';
+                        setTimeout(() => splash.remove(), 600);
+                        document.body.classList.remove('loading');
+
+                        // Auto-scroll handler for deep links (e.g., #contact or #growth-system)
+                        if (window.location.hash) {
+                            const target = document.querySelector(window.location.hash);
+                            if (target) target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }, 350);
+                }
+            }, 25);
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initSplashScreen);
+        } else {
+            initSplashScreen();
+        }
+    </script>
+</body>
+
+</html>

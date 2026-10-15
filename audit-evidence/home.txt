@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WXK2DD69');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md Tavrej Ansari | Performance Marketer & Marketing Systems Builder</title>
+  <meta name="description"
+    content="Md Tavrej Ansari is a performance marketer building marketing systems that turn web traffic into revenue. Google Ads, GA4/GTM tracking, landing pages and AI marketing workflows.">
+  <link rel="canonical" href="https://mdtavrejansari.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Md Tavrej Ansari | Performance Marketer">
+  <meta property="og:description"
+    content="Building marketing systems that help businesses grow. Google Ads, GA4 tracking, landing pages and AI workflows.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mdtavrejansari.com/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Md Tavrej Ansari | Performance Marketer">
+  <meta name="twitter:description" content="Building marketing systems that help businesses grow.">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Md Tavrej Ansari",
+    "jobTitle": "Performance Marketer",
+    "url": "https://mdtavrejansari.com",
+    "sameAs": [
+      "https://linkedin.com/in/md-tavrej-ansari",
+      "https://instagram.com/md_tavrej_ansari"
+    ],
+    "address": { "@type": "PostalAddress", "addressLocality": "Delhi", "addressCountry": "IN" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Md Tavrej Ansari",
+    "alternateName": "Md Tavrej Ansari",
+    "url": "https://mdtavrejansari.com/"
+  }
+  </script>
+
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600&family=Space+Grotesque:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <style>
+    /* ==============================================
+       HOMEPAGE — LOCAL STYLES
+       ============================================== */
+
+    /* ---- Hero layout: sticky sidebar + scrollable right ---- */
+    .homepage-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: start;
+    }
+
+    @media (min-width: 992px) {
+      .homepage-layout {
+        grid-template-columns: 5fr 7fr;
+      }
+    }
+
+    /* Sticky sidebar on desktop */
+    .hero-sidebar {
+      padding-top: var(--space-section);
+      padding-bottom: var(--space-section);
+    }
+
+    @media (min-width: 992px) {
+      .hero-sidebar {
+        position: sticky;
+        top: 72px;
+        /* height of navbar */
+        max-height: calc(100vh - 72px);
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-right: var(--space-xl);
+        scrollbar-width: none;
+      }
+
+      .hero-sidebar::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    /* Scrollable right column */
+    .hero-content {
+      padding-top: var(--space-section);
+      padding-bottom: var(--space-section);
+    }
+
+    @media (min-width: 992px) {
+      .hero-content {
+        border-left: 1px solid var(--color-border);
+        padding-left: var(--space-xl);
+      }
+    }
+
+    /* ---- Hero title ---- */
+    .hero-title-display {
+      font-family: var(--font-heading);
+      font-size: clamp(2.4rem, 3.4vw, 3.6rem);
+      font-weight: 600;
+      line-height: 0.94;
+      letter-spacing: -0.06em;
+      color: var(--color-text-primary);
+      max-width: 7ch;
+    }
+
+    /* ---- Capability signal tags ---- */
+    .capability-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: var(--space-md);
+    }
+
+    .capability-tag {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-text-secondary);
+      border: 1px solid var(--color-border);
+      padding: 4px 10px;
+      border-radius: var(--radius-xs);
+    }
+
+    /* ---- Proof strip (quick credentials) ---- */
+    .proof-strip {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--color-border);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      margin-top: var(--space-xl);
+    }
+
+    .proof-cell {
+      padding: var(--space-sm) var(--space-md);
+      background: var(--color-bg-primary);
+    }
+
+    .proof-cell-label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .proof-cell-value {
+      font-family: var(--font-heading);
+      font-size: var(--font-size-sm);
+      font-weight: var(--fw-semibold);
+      color: var(--color-text-primary);
+    }
+
+    /* ---- Section label (editorial chapter marks) ---- */
+    .section-chapter {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-xs);
+      display: block;
+    }
+
+    /* ---- Content section dividers ---- */
+    .content-section {
+      padding: var(--space-xl) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .content-section:last-of-type {
+      border-bottom: none;
+    }
+
+    /* ---- Dynamic cards (project/case study cards) ---- */
+    .dynamic-card {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color var(--transition-normal), transform var(--transition-normal);
+      cursor: pointer;
+      background: var(--color-bg-secondary);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dynamic-card:hover {
+      border-color: var(--color-text-muted);
+      transform: translateY(-2px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .dynamic-card {
+        transition: border-color var(--transition-normal);
+      }
+
+      .dynamic-card:hover {
+        transform: none;
+      }
+    }
+
+    .dynamic-card .card-visual {
+      height: 140px;
+      background: var(--color-bg-secondary);
+      display: flex;
+      align-items: flex-end;
+      padding: var(--space-sm);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dynamic-card .card-body-inner {
+      padding: var(--space-md);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dynamic-card .card-title-link {
+      font-size: var(--font-size-sm);
+      font-weight: var(--fw-semibold);
+      color: var(--color-text-primary);
+      line-height: 1.35;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    .dynamic-card:hover .card-title-link {
+      color: var(--color-text-accent);
+    }
+
+    .dynamic-card .card-excerpt {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-secondary);
+      line-height: var(--lh-body);
+      margin-top: 6px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .dynamic-card .card-footer-row {
+      margin-top: auto;
+      padding-top: var(--space-sm);
+      border-top: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ---- Process steps ---- */
+    .process-step {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: var(--space-md);
+      align-items: start;
+    }
+
+    .process-step-num {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--color-text-muted);
+      font-weight: var(--fw-bold);
+      letter-spacing: 0.04em;
+      padding-top: 2px;
+    }
+
+    /* ---- Competency grid ---- */
+    .competency-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-sm);
+    }
+
+    @media (max-width: 640px) {
+      .competency-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .competency-card {
+      padding: var(--space-md);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      background: var(--color-bg-secondary);
+    }
+
+    .competency-label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-xs);
+      display: block;
+    }
+
+    .competency-name {
+      font-size: var(--font-size-sm);
+      font-weight: var(--fw-semibold);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-xs);
+    }
+
+    .competency-tools {
+      font-size: 11px;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ---- Testimonial ---- */
+    .testimonial-quote {
+      font-size: var(--font-size-sm);
+      line-height: var(--lh-body);
+      color: var(--color-text-primary);
+      font-style: italic;
+      border-left: 2px solid var(--color-border);
+      padding-left: var(--space-md);
+    }
+
+    .testimonial-meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin-top: var(--space-md);
+    }
+
+    .testimonial-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-full);
+      object-fit: cover;
+      border: 1px solid var(--color-border);
+      flex-shrink: 0;
+    }
+
+    /* ---- Final CTA band ---- */
+    .cta-band {
+      padding: var(--space-xl);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+    }
+
+    /* ---- Shimmer skeleton (while CMS content loads) ---- */
+    .card-skeleton {
+      height: 240px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(90deg, var(--color-shimmer-start) 25%, var(--color-shimmer-middle) 50%, var(--color-shimmer-end) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s ease infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .card-skeleton {
+        animation: none;
+        background: var(--color-shimmer-start);
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: 200% 0;
+      }
+
+      100% {
+        background-position: -200% 0;
+      }
+    }
+
+    /* ---- Section-level view-all link ---- */
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+    }
+
+    .section-view-all {
+      font-size: var(--font-size-xs);
+      font-weight: var(--fw-semibold);
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color var(--transition-fast);
+      white-space: nowrap;
+    }
+
+    .section-view-all:hover {
+      color: var(--color-text-primary);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXK2DD69" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <global-navbar></global-navbar>
+
+  <main>
+    <div class="container">
+      <div class="homepage-layout">
+
+        <!-- ============================================================
+             STICKY LEFT SIDEBAR — HERO / IDENTITY
+             ============================================================ -->
+        <aside class="hero-sidebar" aria-label="Profile Introduction">
+          <div class="flow flow-lg">
+
+            <!-- Breadcrumb -->
+            <div class="breadcrumbs">
+              <span>Home</span>
+            </div>
+
+            <!-- Primary Positioning Statement -->
+            <div class="flow flow-sm">
+              <h1 class="hero-title-display">
+                Performance<br>Marketer.
+              </h1>
+              <p class="paragraph-lg" style="margin-top: var(--space-sm);">
+                Building marketing systems that turn web traffic into measurable revenue - Google Ads, advanced
+                tracking, landing pages and AI-powered workflows.
+              </p>
+            </div>
+
+            <!-- Capability Tags -->
+            <div class="capability-tags">
+              <span class="capability-tag">Google Ads</span>
+              <span class="capability-tag">GA4 / GTM</span>
+              <span class="capability-tag">Landing Pages</span>
+              <span class="capability-tag">Meta Ads</span>
+              <span class="capability-tag">AI Workflows</span>
+              <span class="capability-tag">CRO</span>
+            </div>
+
+            <!-- Quick Proof Strip -->
+            <div class="proof-strip" aria-label="Quick credentials summary">
+              <div class="proof-cell">
+                <span class="proof-cell-label">Current Role</span>
+                <span class="proof-cell-value">Digital Marketing Executive</span>
+              </div>
+              <div class="proof-cell">
+                <span class="proof-cell-label">Location</span>
+                <span class="proof-cell-value">Delhi, India</span>
+              </div>
+              <div class="proof-cell">
+                <span class="proof-cell-label">Availability</span>
+                <span class="proof-cell-value" style="color: var(--color-success);">Open to Opportunities</span>
+              </div>
+              <div class="proof-cell">
+                <span class="proof-cell-label">Focus</span>
+                <span class="proof-cell-value">Revenue Systems</span>
+              </div>
+            </div>
+
+
+            <!-- Primary CTAs -->
+            <div class="flex-group" style="gap: var(--space-sm); flex-wrap: wrap; margin-top: var(--space-md);">
+              <a href="https://wa.me/918016156537?text=Hi%20Md%20Tavrej,%20I'd%20like%20to%20discuss%20customer%20acquisition%20and%20paid%20media."
+                target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-track="cta"
+                data-cta-name="whatsapp_hero" data-cta-location="hero">
+                Chat on WhatsApp
+              </a>
+              <a href="case-studies/" class="btn btn-secondary" data-track="cta" data-cta-name="view_case_studies"
+                data-cta-location="hero">
+                View Case Studies
+              </a>
+            </div>
+
+            <!-- LinkedIn verification link -->
+            <a href="https://linkedin.com/in/md-tavrej-ansari" target="_blank" rel="noopener noreferrer"
+              style="display: inline-flex; align-items: center; gap: 6px; font-size: 11px; color: var(--color-text-muted); text-decoration: none; margin-top: var(--space-sm);"
+              data-track="cta" data-cta-name="linkedin_hero" data-cta-location="hero">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>linkedin.com/in/md-tavrej-ansari</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+
+          </div>
+        </aside>
+
+        <!-- ============================================================
+             RIGHT COLUMN — SCROLLABLE CONTENT SECTIONS
+             ============================================================ -->
+        <div class="hero-content flow flow-xxl" aria-label="Portfolio Content Sections">
+
+          <!-- ── 01 SELECTED WORK ── -->
+          <section class="content-section" aria-label="Selected Work">
+            <div class="section-header">
+              <div>
+                <span class="section-chapter">01 / Work</span>
+                <h2
+                  style="font-size: var(--font-size-lg); font-weight: var(--fw-bold); color: var(--color-text-primary); margin: 0;">
+                  Selected Projects</h2>
+              </div>
+              <a href="projects/" class="section-view-all" data-track="cta" data-cta-name="view_all_projects"
+                data-cta-location="homepage_work">
+                View All <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <!-- Skeleton placeholders while JS loads content -->
+            <div class="grid-12" id="home-latest-projects" style="gap: var(--grid-gap);">
+              <div class="col-span-12 col-span-6 card-skeleton" aria-hidden="true"></div>
+              <div class="col-span-12 col-span-6 card-skeleton" aria-hidden="true"></div>
+            </div>
+          </section>
+
+          <!-- ── 02 CASE STUDIES ── -->
+          <section class="content-section" aria-label="Featured Case Studies">
+            <div class="section-header">
+              <div>
+                <span class="section-chapter">02 / Proof</span>
+                <h2
+                  style="font-size: var(--font-size-lg); font-weight: var(--fw-bold); color: var(--color-text-primary); margin: 0;">
+                  Case Studies</h2>
+              </div>
+              <a href="case-studies/" class="section-view-all" data-track="cta" data-cta-name="view_all_cases"
+                data-cta-location="homepage_cases">
+                View All <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="grid-12" id="home-latest-cases" style="gap: var(--grid-gap);">
+              <div class="col-span-12 col-span-6 card-skeleton" aria-hidden="true"></div>
+              <div class="col-span-12 col-span-6 card-skeleton" aria-hidden="true"></div>
+            </div>
+          </section>
+
+          <!-- ── 03 HOW I WORK ── -->
+          <section class="content-section" aria-label="Marketing Approach and Process">
+            <span class="section-chapter">03 / Process</span>
+            <h2
+              style="font-size: var(--font-size-lg); font-weight: var(--fw-bold); color: var(--color-text-primary); margin-bottom: var(--space-xl);">
+              How I Approach Work</h2>
+
+            <div class="flow flow-lg">
+
+              <div class="process-step">
+                <span class="process-step-num">01</span>
+                <div class="flow flow-xs">
+                  <h3
+                    style="font-size: var(--font-size-sm); font-weight: var(--fw-semibold); color: var(--color-text-primary);">
+                    Research &amp; Audit</h3>
+                  <p
+                    style="font-size: var(--font-size-xs); color: var(--color-text-secondary); line-height: var(--lh-body);">
+                    Understanding the business, customers, competitors and identifying where current marketing is losing
+                    performance.
+                  </p>
+                </div>
+              </div>
+
+              <div class="process-step">
+                <span class="process-step-num">02</span>
+                <div class="flow flow-xs">
+                  <h3
+                    style="font-size: var(--font-size-sm); font-weight: var(--fw-semibold); color: var(--color-text-primary);">
+                    Strategy &amp; System Design</h3>
+                  <p
+                    style="font-size: var(--font-size-xs); color: var(--color-text-secondary); line-height: var(--lh-body);">
+                    Planning the customer journey, landing page structure, tracking setup and acquisition strategy
+                    before any ad spend goes live.
+                  </p>
+                </div>
+              </div>
+
+              <div class="process-step">
+                <span class="process-step-num">03</span>
+                <div class="flow flow-xs">
+                  <h3
+                    style="font-size: var(--font-size-sm); font-weight: var(--fw-semibold); color: var(--color-text-primary);">
+                    Execution &amp; Optimization</h3>
+                  <p
+                    style="font-size: var(--font-size-xs); color: var(--color-text-secondary); line-height: var(--lh-body);">
+                    Building and running the system. Measuring real outcomes, running tests and making decisions from
+                    data, not assumptions.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ── 04 COMPETENCIES ── -->
+          <section class="content-section" aria-label="Core Competencies">
+            <span class="section-chapter">04 / Capabilities</span>
+            <h2
+              style="font-size: var(--font-size-lg); font-weight: var(--fw-bold); color: var(--color-text-primary); margin-bottom: var(--space-xl);">
+              What I Work With</h2>
+
+            <div class="competency-grid">
+              <div class="competency-card">
+                <span class="competency-label">Acquisition</span>
+                <div class="competency-name">Customer Acquisition</div>
+                <div class="competency-tools">Google Ads · Meta Ads · Landing Pages · Marketing Research · Customer
+                  Journey</div>
+              </div>
+              <div class="competency-card">
+                <span class="competency-label">Analytics</span>
+                <div class="competency-name">Tracking &amp; Analytics</div>
+                <div class="competency-tools">Google Analytics 4 · Google Tag Manager · Search Console · Meta Pixel ·
+                  Microsoft Clarity</div>
+              </div>
+              <div class="competency-card">
+                <span class="competency-label">AI Workflows</span>
+                <div class="competency-name">AI-Powered Marketing</div>
+                <div class="competency-tools">ChatGPT · Claude · Gemini · Perplexity · Leonardo AI · Prompt Engineering
+                </div>
+              </div>
+              <div class="competency-card">
+                <span class="competency-label">Web &amp; Design</span>
+                <div class="competency-name">Website &amp; Conversion</div>
+                <div class="competency-tools">CRO · Landing Pages · Website Optimization · UX Fundamentals · Canva</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ── 05 INSIGHTS / ARTICLES ── -->
+          <section class="content-section" aria-label="Recent Insights and Articles">
+            <div class="section-header">
+              <div>
+                <span class="section-chapter">05 / Thinking</span>
+                <h2
+                  style="font-size: var(--font-size-lg); font-weight: var(--fw-bold); color: var(--color-text-primary); margin: 0;">
+                  Insights &amp; Articles</h2>
+              </div>
+              <a href="articles/" class="section-view-all" data-track="cta" data-cta-name="view_all_articles"
+                data-cta-location="homepage_articles">
+                View All <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="grid-12" id="home-latest-articles" style="gap: var(--grid-gap);">
+              <div class="col-span-12 col-span-6 card-skeleton" aria-hidden="true"></div>
+              <div class="col-span-12 col-span-6 card-skeleton" aria-hidden="true"></div>
+            </div>
+          </section>
+
+          <!-- ── 06 TESTIMONIALS ── -->
+          <section class="content-section" aria-label="Client Testimonials">
+            <span class="section-chapter">06 / Social Proof</span>
+            <h2
+              style="font-size: var(--font-size-lg); font-weight: var(--fw-bold); color: var(--color-text-primary); margin-bottom: var(--space-xl);">
+              What Clients &amp; Colleagues Say</h2>
+
+            <div class="flow flow-xl">
+
+              <!-- Testimonial 1 -->
+              <div>
+                <blockquote class="testimonial-quote">
+                  "Tavrej is a valuable part of our digital marketing team. He handles social media, contributes to
+                  website optimization, Google Business Profile, tracking and performance marketing initiatives. He is
+                  proactive, quick to learn and always willing to take on new challenges. I appreciate his commitment
+                  and wish him continued success in his career."
+                </blockquote>
+                <div class="testimonial-meta">
+                  <img src="images/maninder-gulati-logo.png" alt="Maninder Gulati logo" class="testimonial-avatar"
+                    style="object-fit: contain; background: #ffffff; padding: 2px;" loading="lazy" width="40"
+                    height="40"
+                    onerror="this.onerror=null;this.src='https://www.manindergulatiofficial.com/cdn/shop/files/Beige_Black_Minimal_Simple_Modern_Handwritten_Graffiti_Typographic_Arts_and_Design_Logo_1.png?crop=center&height=180&v=1787505094&width=180';">
+                  <div>
+                    <div
+                      style="font-size: var(--font-size-xs); font-weight: var(--fw-semibold); color: var(--color-text-primary);">
+                      Maninder Gulati</div>
+                    <div style="font-size: 11px; color: var(--color-text-secondary);">Custom Bridal &amp; Indo-Western
+                      Designer, Delhi</div>
+                    <a href="https://manindergulatiofficial.com" target="_blank" rel="noopener noreferrer"
+                      class="inline-link"
+                      style="font-size: 10px; display: inline-flex; align-items: center; gap: 2px; margin-top: 3px;"
+                      data-track="cta" data-cta-name="testimonial_website_maninder"
+                      data-cta-location="homepage_testimonials">
+                      manindergulatiofficial.com ↗
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div style="border-top: 1px solid var(--color-border); padding-top: var(--space-xl);">
+                <blockquote class="testimonial-quote">
+                  "I highly recommend Md Tavrej Ansari for his work in Digital Marketing. He worked with Label Maninder Gulati and handled the digital development of the brand very professionally. He also supported me on various fashion projects and understood the creative requirements very well. His dedication, creativity and professionalism make him a reliable digital marketing professional."
+                </blockquote>
+                <div class="testimonial-meta">
+                  <img src="images/saheb-jana.jpg" alt="Saheb Jana" class="testimonial-avatar" loading="lazy" width="40" height="40">
+                  <div>
+                    <div
+                      style="font-size: var(--font-size-xs); font-weight: var(--fw-semibold); color: var(--color-text-primary);">
+                      Saheb Jana</div>
+                    <div style="font-size: 11px; color: var(--color-text-secondary);">1st Assistant Fashion Designer at Label Maninder Gulati</div>
+                    <a href="https://www.linkedin.com/in/saheb-jana-7768122b1/" target="_blank" rel="noopener noreferrer"
+                      class="inline-link"
+                      style="font-size: 10px; display: inline-flex; align-items: center; gap: 2px; margin-top: 3px;"
+                      data-track="cta" data-cta-name="testimonial_linkedin_saheb_jana"
+                      data-cta-location="homepage_testimonials">
+                      LinkedIn Profile ↗
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div style="border-top: 1px solid var(--color-border); padding-top: var(--space-xl);">
+                <blockquote class="testimonial-quote">
+                  "I like your work and you have done a good job by making my offline work to online."
+                </blockquote>
+                <div class="testimonial-meta">
+                  <img
+                    src="https://res.cloudinary.com/deaammmyy/image/upload/w_80,f_auto,q_auto/v1762666884/logo%202%20of%20Ala%20Hazrat%20Boutique.png"
+                    alt="Ala Hazrat Boutique logo" class="testimonial-avatar"
+                    style="object-fit: contain; background: #ffffff; padding: 4px;" loading="lazy" width="40"
+                    height="40">
+                  <div>
+                    <div
+                      style="font-size: var(--font-size-xs); font-weight: var(--fw-semibold); color: var(--color-text-primary);">
+                      Abdul Sattar Ansari</div>
+                    <div style="font-size: 11px; color: var(--color-text-secondary);">Founder, Ala Hazrat Boutique</div>
+                    <a href="https://alahazratboutique.store" target="_blank" rel="noopener noreferrer"
+                      class="inline-link"
+                      style="font-size: 10px; display: inline-flex; align-items: center; gap: 2px; margin-top: 3px;"
+                      data-track="cta" data-cta-name="testimonial_website_alahazrat"
+                      data-cta-location="homepage_testimonials">
+                      alahazratboutique.store ↗
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ── 07 FINAL CTA BAND ── -->
+          <section class="content-section" style="border-bottom: none;" aria-label="Call to Action">
+            <div class="cta-band">
+              <span class="section-chapter" style="margin-bottom: var(--space-sm); display: block;">Ready to Work
+                Together?</span>
+              <h2
+                style="font-size: var(--font-size-xl); font-weight: var(--fw-bold); color: var(--color-text-primary); line-height: var(--lh-heading); letter-spacing: var(--ls-tight); max-width: 30ch;">
+                Let's Build a Marketing System That Grows Your Business
+              </h2>
+              <p
+                style="font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--lh-body); margin-top: var(--space-sm); max-width: 50ch;">
+                Whether you need high-converting landing pages, robust analytics tracking, optimized ad campaigns or AI
+                marketing workflows — I'm ready to help.
+              </p>
+              <div class="flex-group" style="gap: var(--space-sm); flex-wrap: wrap; margin-top: var(--space-xl);">
+                <a href="https://wa.me/918016156537?text=Hi%20Md%20Tavrej,%20I'd%20like%20to%20discuss%20customer%20acquisition%20and%20paid%20media."
+                  target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-track="cta"
+                  data-cta-name="whatsapp_final" data-cta-location="homepage_final_cta">
+                  Chat on WhatsApp
+                </a>
+                <a href="contact/" class="btn btn-secondary" data-track="cta" data-cta-name="contact_final"
+                  data-cta-location="homepage_final_cta">
+                  Send a Message
+                </a>
+              </div>
+            </div>
+          </section>
+
+        </div>
+        <!-- end right column -->
+
+      </div>
+      <!-- end homepage-layout -->
+    </div>
+    <!-- end container -->
+  </main>
+
+  <global-footer></global-footer>
+
+  <!-- Scripts -->
+  <script defer src="js/tracking.js"></script>
+  <script defer src="js/components.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="data/db.js"></script>
+  <script defer src="js/cms-loader.js"></script>
+</body>
+
+</html>

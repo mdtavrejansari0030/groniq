@@ -1,0 +1,338 @@
+{
+  "query": "*[_type in [\"project\",\"article\",\"resource\",\"caseStudy\",\"case_study\",\"technology\"]]",
+  "result": [
+    {
+      "_createdAt": "2026-10-12T04:28:37Z",
+      "_id": "07c6a751-8ef4-4ff0-9ff4-4f21eb981b66",
+      "_rev": "TeSdYQNARVs1kDoQ3oWPOl",
+      "_type": "technology",
+      "_updatedAt": "2026-10-12T04:30:07Z",
+      "icon": {
+        "_type": "image",
+        "alt": "Groniq UTM Builder - made for marketing campaign purpose",
+        "asset": {
+          "_ref": "image-574f63c1828bc4a7bf008d48c993c6b1a697cbd5-1920x1020-png",
+          "_type": "reference"
+        }
+      },
+      "slug": {
+        "_type": "slug",
+        "current": "groniq-utm-builder"
+      },
+      "title": "Groniq UTM Builder",
+      "websiteUrl": "https://groniqdigital.com/tools/utm-builder"
+    },
+    {
+      "_createdAt": "2026-09-12T04:25:42Z",
+      "_id": "7BFJOwll8u80YQvAZo97d8",
+      "_rev": "hF5u2IUXpCEmxXXJKKpfTO",
+      "_system": {
+        "base": {
+          "id": "7BFJOwll8u80YQvAZo97d8",
+          "rev": "7BFJOwll8u80YQvAZo97YN"
+        }
+      },
+      "_type": "project",
+      "_updatedAt": "2026-09-14T18:48:38Z",
+      "category": "Google Ads",
+      "client": "Apex Dental Care",
+      "featured": true,
+      "industry": "Healthcare / Local Services",
+      "objective": [
+        {
+          "_key": "obj1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "obj1_span",
+              "_type": "span",
+              "text": "The primary goal was to acquire high-intent patient enquiries for high-value dental treatments (Implants, Invisalign, and Cosmetic Dentistry) while reducing cost-per-lead and eliminating wasteful ad spend on non-commercial search queries."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "outcome": [
+        {
+          "_key": "out1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "out1_span",
+              "_type": "span",
+              "text": "Delivered a consistent, measurable flow of qualified patient consultations. The clinic gained clear visibility into which campaigns and search terms drove actual clinic revenue rather than vanity clicks."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "process": [
+        {
+          "_key": "stage1",
+          "_type": "processStage",
+          "description": "Discovered high-intent commercial keywords and audited local competitors.",
+          "order": 1,
+          "title": "Intent & Competitor Research"
+        },
+        {
+          "_key": "stage2",
+          "_type": "processStage",
+          "description": "Single-Theme Ad Groups (STAGs) paired with aggressive negative keyword exclusions.",
+          "order": 2,
+          "title": "Campaign Structuring & Negative Framework"
+        },
+        {
+          "_key": "stage3",
+          "_type": "processStage",
+          "description": "Clean GA4 + GTM tracking layer ensuring Google Ads smart bidding optimizes for real qualified bookings.",
+          "order": 3,
+          "title": "Tracking & Conversion Architecture"
+        }
+      ],
+      "publishedAt": "2026-09-12T04:25:39.754Z",
+      "role": "Paid Media Specialist",
+      "services": [
+        "Google Search Ads",
+        "Performance Max",
+        "Conversion Tracking",
+        "Negative Keyword Framework",
+        "Landing Page CRO"
+      ],
+      "shortDescription": "High-intent Google Ads Search and Performance Max campaigns with tight geo-targeting, negative keyword pruning, and GA4 primary conversion tracking.",
+      "slug": {
+        "_type": "slug",
+        "current": "google-ads-dental-clinic-campaign"
+      },
+      "tags": [
+        "Google Ads",
+        "Paid Search",
+        "Conversion Tracking",
+        "Lead Generation",
+        "Healthcare"
+      ],
+      "timeline": "3 Months",
+      "title": "Google Ads Search & Performance Max Campaign for Dental Clinic",
+      "tools": [
+        "Google Ads",
+        "Google Tag Manager",
+        "Google Analytics 4",
+        "Google Keyword Planner",
+        "Looker Studio"
+      ],
+      "updatedDate": "2026-09-12T04:25:39.766Z",
+      "whatIBuilt": [
+        {
+          "_key": "wib1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "wib1_span",
+              "_type": "span",
+              "text": "Architected a multi-tiered Google Ads Search structure segmented by treatment category and intent level. Built a 250+ negative keyword library to filter out general queries, employment searches, and DIY medical questions. Configured primary conversion actions in Google Tag Manager for verified form submits and phone calls with 60+ seconds duration."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "whatILearned": [
+        {
+          "_key": "wil1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "wil1_span",
+              "_type": "span",
+              "text": "In local healthcare paid search, negative keyword hygiene and call tracking verification matter just as much as ad copy. Feeding only qualified booking events into Google Ads bidding algorithms prevents automated bidding from pursuing cheap, irrelevant clicks."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "_createdAt": "2026-08-20T03:01:31Z",
+      "_id": "ada678f1-5507-4a02-b54b-e8c0aaae0381",
+      "_rev": "sZarkGCWKodXiPseaWpvns",
+      "_system": {
+        "base": {
+          "id": "ada678f1-5507-4a02-b54b-e8c0aaae0381",
+          "rev": "otUyWOFVcxQBV4wYWusAT5"
+        }
+      },
+      "_type": "project",
+      "_updatedAt": "2026-08-20T05:25:19Z",
+      "category": "SEO",
+      "client": "Multiple Client Businesses - Internship Projects",
+      "completedAt": "2026-01-02",
+      "description": [
+        {
+          "_key": "a3446d2ac194",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "6d69996e29db",
+              "_type": "span",
+              "marks": [],
+              "text": "Executed off-page SEO activities across client websites in the dental, solar, roofing, childcare, e-commerce and automotive sectors during an internship, using multiple link-building methods and keyword tracking."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "featured": true,
+      "industry": "Multiple Industries",
+      "objective": [
+        {
+          "_key": "40aeb8760aa7",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "26db58fb3d68",
+              "_type": "span",
+              "marks": [],
+              "text": "The goal was to support the SEO work of different client websites through off-page activities. Depending on the project, I looked for backlink opportunities, worked on citations and other link-building methods, checked competitor backlinks and tracked target keywords."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "process": [
+        {
+          "_key": "efe81a3cf853",
+          "_type": "processStage",
+          "description": "Started by understanding the website, business and the keywords I was assigned to work on.",
+          "detailedContent": [
+            {
+              "_key": "ba8d7a3878bc",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "09db4b555753",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Before starting the off-page work, I first looked at the website and the keywords being targeted. Since the clients were from different industries, the approach and opportunities were not exactly the same for every project."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            }
+          ],
+          "order": 1,
+          "title": "Understanding the Project"
+        },
+        {
+          "_key": "00fe579b5f1f",
+          "_type": "processStage",
+          "description": "Looked for relevant backlink and off-page SEO opportunities for the website.",
+          "detailedContent": [
+            {
+              "_key": "87e7fcc97dc6",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "688cd5e1eeb9",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "I searched for different opportunities based on the website and industry. This included checking competitor backlinks, finding relevant directories, citation opportunities, profile links, guest posting opportunities and other places where suitable links could be created."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            }
+          ],
+          "order": 2,
+          "title": "Finding Opportunities"
+        }
+      ],
+      "publishedAt": "2026-08-20T05:12:00.000Z",
+      "role": "Digital Marketing Intern",
+      "services": [
+        "Off-Page SEO",
+        "Link Building",
+        "Business Citations",
+        "Directory Submissions",
+        "Keyword Tracking"
+      ],
+      "shortDescription": "Executed off-page SEO activities across client websites in the dental, solar, roofing, childcare, e-commerce and automotive sectors during an internship, using multiple link-building methods and keyword tracking.",
+      "slug": {
+        "_type": "slug",
+        "current": "multi-client-seo-implementation"
+      },
+      "tags": [
+        "SEO",
+        "Off-Page SEO",
+        "Link Building",
+        "Local SEO",
+        "Search Visibility"
+      ],
+      "timeline": "6 months",
+      "title": "Multi-Client SEO Implementation for Service and Product Businesses",
+      "tools": [
+        "Google Search Console",
+        "Google Sheets",
+        "Ahrefs",
+        "Ubbersuggest"
+      ],
+      "updatedDate": "2026-08-20T05:12:00.000Z",
+      "whatIBuilt": [
+        {
+          "_key": "899f9353d895",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "7a9b211b7c67",
+              "_type": "span",
+              "marks": [],
+              "text": "I worked on the off-page SEO side of multiple client websites during my internship. This included finding and creating backlink opportunities through citations, directories, profile links, guest posting and Web 2.0 submissions."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "13be3233db29",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "45ffd8ad7d7c",
+              "_type": "span",
+              "marks": [],
+              "text": "I also checked competitor backlinks to find relevant opportunities and tracked target keywords to see how they were performing over time."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "da17eeb0e8f5",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "955aff361d6e",
+              "_type": "span",
+              "marks": [],
+              "text": "The work was done across businesses in dental, solar, roofing, childcare, e-commerce and automotive paint & panel."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ]
+    }
+  ],
+  "syncTags": [
+    "s1:AQ8A4w",
+    "s1:AHaWSg",
+    "s1:soOMMQ",
+    "s1:ylF6HQ",
+    "s1:93v7Sg",
+    "s1:Qlyxkg"
+  ],
+  "ms": 3
+}

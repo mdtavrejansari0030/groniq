@@ -1,0 +1,577 @@
+
+test_cross_domain_redirect:
+Submitting task for: http://127.0.0.1:8911/
+Starting crawl of http://127.0.0.1:8911/
+Submitting task for: http://127.0.0.1:8911/go
+Submitting task for: http://127.0.0.1:8911/local.html
+Starting crawl of http://127.0.0.1:8911/go
+Starting crawl of http://127.0.0.1:8911/local.html
+Added URL to results: http://127.0.0.1:8911/ - Total in results: 1
+Added URL to results: http://127.0.0.1:8911/local.html - Total in results: 2
+Added URL to results: http://127.0.0.1:8911/go - Total in results: 5
+No more URLs to crawl
+Updating linked_from data for all URLs...
+Updated linked_from data for 0 URLs
+Running duplication detection...
+Duplication detection complete. Total issues: 33
+Crawl completed. Discovered: 1, Crawled: 5
+  PASS  redirect: no phantom internal URLs - []
+  PASS  redirect: chain and destination recorded
+  PASS  redirect: offsite links attributed to the other host
+  PASS  redirect: offsite content does not enter the queue - ['HEAD /landing', 'GET /landing', 'HEAD /issues', 'HEAD /pulls']
+
+test_external_images:
+Submitting task for: http://127.0.0.1:8913/
+Starting crawl of http://127.0.0.1:8913/
+Added URL to results: http://127.0.0.1:8913/ - Total in results: 6
+No more URLs to crawl
+Updating linked_from data for all URLs...
+Updated linked_from data for 0 URLs
+Running duplication detection...
+Duplication detection complete. Total issues: 11
+Crawl completed. Discovered: 1, Crawled: 6
+  PASS  images: offsite image listed as a row
+  PASS  images: offsite image HEAD-checked - ['HEAD /out.png', 'HEAD /page', 'HEAD /gone', 'HEAD /no-head', 'GET /no-head']
+  PASS  images: same-domain image still listed
+  PASS  external: link listed as an external row - (False, 200)
+  PASS  external: link HEAD-checked, never fetched - ['HEAD /out.png', 'HEAD /page', 'HEAD /gone', 'HEAD /no-head', 'GET /no-head']
+  PASS  external: dead link reports 404
+  PASS  external: HEAD 405 falls back to GET - ['HEAD /out.png', 'HEAD /page', 'HEAD /gone', 'HEAD /no-head', 'GET /no-head']
+  PASS  external: link status shown in Links tab - {'http://127.0.0.1:8914/page': 200, 'http://127.0.0.1:8914/gone': 404, 'http://127.0.0.1:8914/no-head': 200, 'javascript://void(0)': None, 'http://127.0.0.1:8913/in.png': 200, 'http://127.0.0.1:8914/out.png': 200}
+  PASS  external: link rows flagged link_check_only (left out of Overview)
+  PASS  external: offsite image rows not flagged (stay in Overview)
+  PASS  external: crawled pages not flagged
+  PASS  external: non-http links ignored
+Submitting task for: http://127.0.0.1:8913/
+Starting crawl of http://127.0.0.1:8913/
+Submitting task for: http://127.0.0.1:8914/page
+Submitting task for: http://127.0.0.1:8914/gone
+Starting crawl of http://127.0.0.1:8914/page
+Starting crawl of http://127.0.0.1:8914/gone
+Submitting task for: http://127.0.0.1:8914/no-head
+Starting crawl of http://127.0.0.1:8914/no-head
+Added URL to results: http://127.0.0.1:8913/ - Total in results: 3
+Submitting task for: http://127.0.0.1:8914/deeper
+Added URL to results: http://127.0.0.1:8914/page - Total in results: 4
+Starting crawl of http://127.0.0.1:8914/deeper
+Added URL to results: http://127.0.0.1:8914/gone - Total in results: 5
+Added URL to results: http://127.0.0.1:8914/no-head - Total in results: 6
+Added URL to results: http://127.0.0.1:8914/deeper - Total in results: 7
+No more URLs to crawl
+Updating linked_from data for all URLs...
+Updated linked_from data for 0 URLs
+Running duplication detection...
+Duplication detection complete. Total issues: 56
+Crawl completed. Discovered: 1, Crawled: 7
+  PASS  external: crawled for real when crawl_external is on - ['HEAD /out.png', 'HEAD /page', 'HEAD /gone', 'HEAD /no-head', 'GET /page', 'GET /gone', 'GET /no-head', 'HEAD /deeper', 'GET /deeper']
+
+test_sitemap_discovery_is_async:
+Starting sitemap discovery for http://127.0.0.1:8915/
+Submitting task for: http://127.0.0.1:8915/
+Starting crawl of http://127.0.0.1:8915/
+Discovering sitemaps for http://127.0.0.1:8915...
+Parsing sitemap: http://127.0.0.1:8915/sitemap.xml
+Added URL to results: http://127.0.0.1:8915/ - Total in results: 1
+Found 1 URLs in sitemap
+Parsing sitemap: http://127.0.0.1:8915/sitemap_index.xml
+Parsing sitemap: http://127.0.0.1:8915/sitemaps.xml
+Parsing sitemap: http://127.0.0.1:8915/sitemap/sitemap.xml
+Sitemap processing: 1 added, 0 filtered
+Sitemap discovery completed. Total discovered URLs: 2
+Submitting task for: http://127.0.0.1:8915/only-in-sitemap.html
+Starting crawl of http://127.0.0.1:8915/only-in-sitemap.html
+Added URL to results: http://127.0.0.1:8915/only-in-sitemap.html - Total in results: 2
+No more URLs to crawl
+Updating linked_from data for all URLs...
+Updated linked_from data for 0 URLs
+Running duplication detection...
+Duplication detection complete. Total issues: 22
+Crawl completed. Discovered: 2, Crawled: 2
+  PASS  sitemap: start_crawl returns immediately - 1ms
+  PASS  sitemap: crawl waits for slow discovery
+
+test_max_urls_counts_pages_not_images:
+Submitting task for: http://127.0.0.1:8916/
+Starting crawl of http://127.0.0.1:8916/
+Submitting task for: http://127.0.0.1:8916/p0.html
+Submitting task for: http://127.0.0.1:8916/p1.html
+Starting crawl of http://127.0.0.1:8916/p0.html
+Starting crawl of http://127.0.0.1:8916/p1.html
+Submitting task for: http://127.0.0.1:8916/p2.html
+Starting crawl of http://127.0.0.1:8916/p2.html
+Submitting task for: http://127.0.0.1:8916/p3.html
+Starting crawl of http://127.0.0.1:8916/p3.html
+Added URL to results: http://127.0.0.1:8916/ - Total in results: 31
+Added URL to results: http://127.0.0.1:8916/p0.html - Total in results: 32
+Added URL to results: http://127.0.0.1:8916/p1.html - Total in results: 33
+Added URL to results: http://127.0.0.1:8916/p2.html - Total in results: 34
+Added URL to results: http://127.0.0.1:8916/p3.html - Total in results: 35
+Reached maximum URLs limit (5)
+Updating linked_from data for all URLs...
+Updated linked_from data for 1 URLs
+Running duplication detection...
+Duplication detection complete. Total issues: 56
+Crawl completed. Discovered: 1, Crawled: 35
+  PASS  max_urls: budgets fetched pages, not image rows - 5 pages, 35 rows total
+  PASS  max_urls: image rows still captured
+
+test_event_ordering_under_polling:
+Submitting task for: http://127.0.0.1:8917/
+Starting crawl of http://127.0.0.1:8917/
+Submitting task for: http://127.0.0.1:8917/p0.html
+Submitting task for: http://127.0.0.1:8917/p1.html
+Starting crawl of http://127.0.0.1:8917/p0.html
+Starting crawl of http://127.0.0.1:8917/p1.html
+Submitting task for: http://127.0.0.1:8917/p2.html
+Starting crawl of http://127.0.0.1:8917/p2.html
+Submitting task for: http://127.0.0.1:8917/p3.html
+Starting crawl of http://127.0.0.1:8917/p3.html
+Submitting task for: http://127.0.0.1:8917/p4.html
+Starting crawl of http://127.0.0.1:8917/p4.html
+Submitting task for: http://127.0.0.1:8917/p5.html
+Starting crawl of http://127.0.0.1:8917/p5.html
+Submitting task for: http://127.0.0.1:8917/p6.html
+Starting crawl of http://127.0.0.1:8917/p6.html
+Added URL to results: http://127.0.0.1:8917/ - Total in results: 1
+Submitting task for: http://127.0.0.1:8917/p7.html
+Starting crawl of http://127.0.0.1:8917/p7.html
+Added URL to results: http://127.0.0.1:8917/p3.html - Total in results: 3
+Submitting task for: http://127.0.0.1:8917/p8.html
+Added URL to results: http://127.0.0.1:8917/p0.html - Total in results: 7
+Added URL to results: http://127.0.0.1:8917/p1.html - Total in results: 8
+Added URL to results: http://127.0.0.1:8917/p6.html - Total in results: 9
+Starting crawl of http://127.0.0.1:8917/p8.html
+Submitting task for: http://127.0.0.1:8917/p9.html
+Submitting task for: http://127.0.0.1:8917/p10.html
+Submitting task for: http://127.0.0.1:8917/p11.html
+Added URL to results: http://127.0.0.1:8917/p2.html - Total in results: 13
+Added URL to results: http://127.0.0.1:8917/p5.html - Total in results: 14
+Added URL to results: http://127.0.0.1:8917/p7.html - Total in results: 15
+Starting crawl of http://127.0.0.1:8917/p9.html
+Starting crawl of http://127.0.0.1:8917/p10.html
+Submitting task for: http://127.0.0.1:8917/p12.htmlStarting crawl of http://127.0.0.1:8917/p11.html
+
+Submitting task for: http://127.0.0.1:8917/p13.html
+Submitting task for: http://127.0.0.1:8917/p14.html
+Starting crawl of http://127.0.0.1:8917/p12.html
+Starting crawl of http://127.0.0.1:8917/p13.html
+Starting crawl of http://127.0.0.1:8917/p14.html
+Added URL to results: http://127.0.0.1:8917/p4.html - Total in results: 17
+Submitting task for: http://127.0.0.1:8917/p15.html
+Starting crawl of http://127.0.0.1:8917/p15.html
+Added URL to results: http://127.0.0.1:8917/p8.html - Total in results: 19
+Submitting task for: http://127.0.0.1:8917/p16.html
+Added URL to results: http://127.0.0.1:8917/p9.html - Total in results: 21
+Starting crawl of http://127.0.0.1:8917/p16.html
+Submitting task for: http://127.0.0.1:8917/p17.html
+Added URL to results: http://127.0.0.1:8917/p10.html - Total in results: 25
+Added URL to results: http://127.0.0.1:8917/p12.html - Total in results: 26
+Added URL to results: http://127.0.0.1:8917/p13.html - Total in results: 27
+Starting crawl of http://127.0.0.1:8917/p17.html
+Submitting task for: http://127.0.0.1:8917/p18.html
+Submitting task for: http://127.0.0.1:8917/p19.html
+Submitting task for: http://127.0.0.1:8917/p20.html
+Added URL to results: http://127.0.0.1:8917/p11.html - Total in results: 31
+Added URL to results: http://127.0.0.1:8917/p14.html - Total in results: 32
+Added URL to results: http://127.0.0.1:8917/p15.html - Total in results: 33
+Starting crawl of http://127.0.0.1:8917/p18.html
+Starting crawl of http://127.0.0.1:8917/p19.html
+Starting crawl of http://127.0.0.1:8917/p20.html
+Submitting task for: http://127.0.0.1:8917/p21.html
+Submitting task for: http://127.0.0.1:8917/p22.html
+Submitting task for: http://127.0.0.1:8917/p23.html
+Starting crawl of http://127.0.0.1:8917/p21.html
+Starting crawl of http://127.0.0.1:8917/p22.html
+Starting crawl of http://127.0.0.1:8917/p23.html
+Added URL to results: http://127.0.0.1:8917/p16.html - Total in results: 35
+Submitting task for: http://127.0.0.1:8917/p24.html
+Added URL to results: http://127.0.0.1:8917/p17.html - Total in results: 37
+Starting crawl of http://127.0.0.1:8917/p24.html
+Submitting task for: http://127.0.0.1:8917/p25.html
+Starting crawl of http://127.0.0.1:8917/p25.html
+Added URL to results: http://127.0.0.1:8917/p19.html - Total in results: 39
+Submitting task for: http://127.0.0.1:8917/p26.html
+Added URL to results: http://127.0.0.1:8917/p18.html - Total in results: 43
+Added URL to results: http://127.0.0.1:8917/p20.html - Total in results: 44
+Added URL to results: http://127.0.0.1:8917/p21.html - Total in results: 45
+Starting crawl of http://127.0.0.1:8917/p26.html
+Submitting task for: http://127.0.0.1:8917/p27.html
+Submitting task for: http://127.0.0.1:8917/p28.html
+Submitting task for: http://127.0.0.1:8917/p29.html
+Added URL to results: http://127.0.0.1:8917/p22.html - Total in results: 48
+Added URL to results: http://127.0.0.1:8917/p23.html - Total in results: 49
+Starting crawl of http://127.0.0.1:8917/p27.html
+Starting crawl of http://127.0.0.1:8917/p28.html
+Submitting task for: http://127.0.0.1:8917/p30.html
+Submitting task for: http://127.0.0.1:8917/p31.html
+Starting crawl of http://127.0.0.1:8917/p29.html
+Added URL to results: http://127.0.0.1:8917/p24.html - Total in results: 51
+Starting crawl of http://127.0.0.1:8917/p30.html
+Starting crawl of http://127.0.0.1:8917/p31.html
+Submitting task for: http://127.0.0.1:8917/p32.html
+Starting crawl of http://127.0.0.1:8917/p32.html
+Added URL to results: http://127.0.0.1:8917/p25.html - Total in results: 53
+Submitting task for: http://127.0.0.1:8917/p33.html
+Starting crawl of http://127.0.0.1:8917/p33.html
+Added URL to results: http://127.0.0.1:8917/p26.html - Total in results: 55
+Submitting task for: http://127.0.0.1:8917/p34.html
+Added URL to results: http://127.0.0.1:8917/p27.html - Total in results: 60
+Added URL to results: http://127.0.0.1:8917/p28.html - Total in results: 61
+Added URL to results: http://127.0.0.1:8917/p30.html - Total in results: 62
+Added URL to results: http://127.0.0.1:8917/p31.html - Total in results: 63
+Starting crawl of http://127.0.0.1:8917/p34.html
+Submitting task for: http://127.0.0.1:8917/p35.html
+Submitting task for: http://127.0.0.1:8917/p36.html
+Submitting task for: http://127.0.0.1:8917/p37.html
+Submitting task for: http://127.0.0.1:8917/p38.html
+Starting crawl of http://127.0.0.1:8917/p35.html
+Starting crawl of http://127.0.0.1:8917/p36.html
+Starting crawl of http://127.0.0.1:8917/p37.html
+Starting crawl of http://127.0.0.1:8917/p38.html
+Added URL to results: http://127.0.0.1:8917/p29.html - Total in results: 66
+Added URL to results: http://127.0.0.1:8917/p32.html - Total in results: 67
+Added URL to results: http://127.0.0.1:8917/p33.html - Total in results: 69
+Added URL to results: http://127.0.0.1:8917/p34.html - Total in results: 72
+Added URL to results: http://127.0.0.1:8917/p35.html - Total in results: 74
+Added URL to results: http://127.0.0.1:8917/p38.html - Total in results: 75
+Added URL to results: http://127.0.0.1:8917/p36.html - Total in results: 78
+Added URL to results: http://127.0.0.1:8917/p37.html - Total in results: 79
+Reached maximum URLs limit (40)
+Updating linked_from data for all URLs...
+Updated linked_from data for 2 URLs
+Running duplication detection...
+Duplication detection complete. Total issues: 479
+Crawl completed. Discovered: 1, Crawled: 79
+  PASS  events: no ordering violations under concurrent polling - 0 found: []
+  PASS  events: replayed client state matches the crawler - 79 client rows vs 79 crawler rows
+
+test_discovered_counts_image_rows:
+Submitting task for: http://127.0.0.1:8918/
+Starting crawl of http://127.0.0.1:8918/
+Submitting task for: http://127.0.0.1:8918/p1.html
+Added URL to results: http://127.0.0.1:8918/ - Total in results: 7
+Starting crawl of http://127.0.0.1:8918/p1.html
+Added URL to results: http://127.0.0.1:8918/p1.html - Total in results: 8
+No more URLs to crawl
+Updating linked_from data for all URLs...
+Updated linked_from data for 0 URLs
+Running duplication detection...
+Duplication detection complete. Total issues: 23
+Crawl completed. Discovered: 1, Crawled: 8
+  PASS  discovered counts every row, images included - discovered=8 crawled=8 rows=8
+  PASS  discovered is never behind crawled - 8 vs 8
+  PASS  image rows were actually synthesized - 8 rows
+
+test_js_response_time_excludes_render_wait:
+Initializing JavaScript rendering...
+Starting Playwright browser...
+JavaScript rendering initialized with 1 browser pages
+Added URL to results (JS): http://127.0.0.1:8919/ - Total in results: 1
+No more URLs to crawl
+Updating linked_from data for all URLs...
+Updated linked_from data for 0 URLs
+Running duplication detection...
+Duplication detection complete. Total issues: 9
+JavaScript rendering resources cleaned up
+Crawl completed. Discovered: 1, Crawled: 1
+  PASS  response_time excludes the render wait - 4.05ms with a 3s wait
+  PASS  response_time stays under the slow threshold for a fast page - 4.05ms
+  PASS  render_time is reported separately and includes the wait - 3078.0ms
+  PASS  a fast page is not flagged as slow - []
+
+test_duplicate_detection_is_linear:
+Submitting task for: http://127.0.0.1:8920/
+Starting crawl of http://127.0.0.1:8920/
+Submitting task for: http://127.0.0.1:8920/area-0/
+Submitting task for: http://127.0.0.1:8920/area-1/
+Starting crawl of http://127.0.0.1:8920/area-0/
+Submitting task for: http://127.0.0.1:8920/area-2/
+Starting crawl of http://127.0.0.1:8920/area-1/
+Starting crawl of http://127.0.0.1:8920/area-2/
+Submitting task for: http://127.0.0.1:8920/area-3/
+Starting crawl of http://127.0.0.1:8920/area-3/
+Added URL to results: http://127.0.0.1:8920/ - Total in results: 1
+Submitting task for: http://127.0.0.1:8920/area-4/
+Starting crawl of http://127.0.0.1:8920/area-4/
+Added URL to results: http://127.0.0.1:8920/area-0/ - Total in results: 2
+Submitting task for: http://127.0.0.1:8920/area-5/
+Starting crawl of http://127.0.0.1:8920/area-5/
+Added URL to results: http://127.0.0.1:8920/area-1/ - Total in results: 3
+Submitting task for: http://127.0.0.1:8920/area-6/
+Starting crawl of http://127.0.0.1:8920/area-6/
+Added URL to results: http://127.0.0.1:8920/area-2/ - Total in results: 4
+Submitting task for: http://127.0.0.1:8920/area-7/
+Starting crawl of http://127.0.0.1:8920/area-7/
+Added URL to results: http://127.0.0.1:8920/area-3/ - Total in results: 5
+Submitting task for: http://127.0.0.1:8920/area-8/
+Starting crawl of http://127.0.0.1:8920/area-8/
+Added URL to results: http://127.0.0.1:8920/area-4/ - Total in results: 6
+Submitting task for: http://127.0.0.1:8920/area-9/
+Starting crawl of http://127.0.0.1:8920/area-9/
+Added URL to results: http://127.0.0.1:8920/area-5/ - Total in results: 7
+Submitting task for: http://127.0.0.1:8920/area-10/
+Starting crawl of http://127.0.0.1:8920/area-10/
+Added URL to results: http://127.0.0.1:8920/area-6/ - Total in results: 8
+Submitting task for: http://127.0.0.1:8920/area-11/
+Starting crawl of http://127.0.0.1:8920/area-11/
+Added URL to results: http://127.0.0.1:8920/area-7/ - Total in results: 9
+Submitting task for: http://127.0.0.1:8920/area-12/
+Starting crawl of http://127.0.0.1:8920/area-12/
+Added URL to results: http://127.0.0.1:8920/area-8/ - Total in results: 10
+Submitting task for: http://127.0.0.1:8920/area-13/
+Starting crawl of http://127.0.0.1:8920/area-13/
+Added URL to results: http://127.0.0.1:8920/area-9/ - Total in results: 11
+Submitting task for: http://127.0.0.1:8920/area-14/
+Starting crawl of http://127.0.0.1:8920/area-14/
+Added URL to results: http://127.0.0.1:8920/area-10/ - Total in results: 12
+Submitting task for: http://127.0.0.1:8920/area-15/
+Starting crawl of http://127.0.0.1:8920/area-15/
+Added URL to results: http://127.0.0.1:8920/area-11/ - Total in results: 13
+Submitting task for: http://127.0.0.1:8920/area-16/
+Starting crawl of http://127.0.0.1:8920/area-16/
+Added URL to results: http://127.0.0.1:8920/area-12/ - Total in results: 14
+Submitting task for: http://127.0.0.1:8920/area-17/
+Starting crawl of http://127.0.0.1:8920/area-17/
+Added URL to results: http://127.0.0.1:8920/area-13/ - Total in results: 15
+Submitting task for: http://127.0.0.1:8920/area-18/
+Starting crawl of http://127.0.0.1:8920/area-18/
+Added URL to results: http://127.0.0.1:8920/area-14/ - Total in results: 16
+Submitting task for: http://127.0.0.1:8920/area-19/
+Starting crawl of http://127.0.0.1:8920/area-19/
+Added URL to results: http://127.0.0.1:8920/area-15/ - Total in results: 17
+Submitting task for: http://127.0.0.1:8920/area-20/
+Starting crawl of http://127.0.0.1:8920/area-20/
+Added URL to results: http://127.0.0.1:8920/area-16/ - Total in results: 18
+Submitting task for: http://127.0.0.1:8920/area-21/
+Starting crawl of http://127.0.0.1:8920/area-21/
+Added URL to results: http://127.0.0.1:8920/area-17/ - Total in results: 19
+Submitting task for: http://127.0.0.1:8920/area-22/
+Starting crawl of http://127.0.0.1:8920/area-22/
+Added URL to results: http://127.0.0.1:8920/area-18/ - Total in results: 20
+Submitting task for: http://127.0.0.1:8920/area-23/
+Starting crawl of http://127.0.0.1:8920/area-23/
+Added URL to results: http://127.0.0.1:8920/area-19/ - Total in results: 21
+Submitting task for: http://127.0.0.1:8920/area-24/
+Starting crawl of http://127.0.0.1:8920/area-24/
+Added URL to results: http://127.0.0.1:8920/area-20/ - Total in results: 22
+Submitting task for: http://127.0.0.1:8920/area-25/
+Starting crawl of http://127.0.0.1:8920/area-25/
+Added URL to results: http://127.0.0.1:8920/area-21/ - Total in results: 23
+Submitting task for: http://127.0.0.1:8920/area-26/
+Starting crawl of http://127.0.0.1:8920/area-26/
+Added URL to results: http://127.0.0.1:8920/area-22/ - Total in results: 24
+Submitting task for: http://127.0.0.1:8920/area-27/
+Starting crawl of http://127.0.0.1:8920/area-27/
+Added URL to results: http://127.0.0.1:8920/area-23/ - Total in results: 25
+Submitting task for: http://127.0.0.1:8920/area-28/
+Starting crawl of http://127.0.0.1:8920/area-28/
+Added URL to results: http://127.0.0.1:8920/area-24/ - Total in results: 26
+Submitting task for: http://127.0.0.1:8920/area-29/
+Starting crawl of http://127.0.0.1:8920/area-29/
+Added URL to results: http://127.0.0.1:8920/area-25/ - Total in results: 27
+Submitting task for: http://127.0.0.1:8920/area-30/
+Starting crawl of http://127.0.0.1:8920/area-30/
+Added URL to results: http://127.0.0.1:8920/area-26/ - Total in results: 28
+Submitting task for: http://127.0.0.1:8920/area-31/
+Starting crawl of http://127.0.0.1:8920/area-31/
+Added URL to results: http://127.0.0.1:8920/area-27/ - Total in results: 29
+Submitting task for: http://127.0.0.1:8920/area-32/
+Starting crawl of http://127.0.0.1:8920/area-32/
+Added URL to results: http://127.0.0.1:8920/area-28/ - Total in results: 30
+Submitting task for: http://127.0.0.1:8920/area-33/
+Starting crawl of http://127.0.0.1:8920/area-33/
+Added URL to results: http://127.0.0.1:8920/area-29/ - Total in results: 31
+Submitting task for: http://127.0.0.1:8920/area-34/
+Starting crawl of http://127.0.0.1:8920/area-34/
+Added URL to results: http://127.0.0.1:8920/area-30/ - Total in results: 32
+Submitting task for: http://127.0.0.1:8920/area-35/
+Starting crawl of http://127.0.0.1:8920/area-35/
+Added URL to results: http://127.0.0.1:8920/area-31/ - Total in results: 33
+Submitting task for: http://127.0.0.1:8920/area-36/
+Starting crawl of http://127.0.0.1:8920/area-36/
+Added URL to results: http://127.0.0.1:8920/area-32/ - Total in results: 34
+Submitting task for: http://127.0.0.1:8920/area-37/
+Starting crawl of http://127.0.0.1:8920/area-37/
+Added URL to results: http://127.0.0.1:8920/area-33/ - Total in results: 35
+Submitting task for: http://127.0.0.1:8920/area-38/
+Starting crawl of http://127.0.0.1:8920/area-38/
+Added URL to results: http://127.0.0.1:8920/area-34/ - Total in results: 36
+Submitting task for: http://127.0.0.1:8920/area-39/
+Starting crawl of http://127.0.0.1:8920/area-39/
+Added URL to results: http://127.0.0.1:8920/area-35/ - Total in results: 37
+Submitting task for: http://127.0.0.1:8920/area-40/
+Starting crawl of http://127.0.0.1:8920/area-40/
+Added URL to results: http://127.0.0.1:8920/area-36/ - Total in results: 38
+Submitting task for: http://127.0.0.1:8920/area-41/
+Starting crawl of http://127.0.0.1:8920/area-41/
+Added URL to results: http://127.0.0.1:8920/area-37/ - Total in results: 39
+Submitting task for: http://127.0.0.1:8920/area-42/
+Starting crawl of http://127.0.0.1:8920/area-42/
+Added URL to results: http://127.0.0.1:8920/area-38/ - Total in results: 40
+Submitting task for: http://127.0.0.1:8920/area-43/
+Starting crawl of http://127.0.0.1:8920/area-43/
+Added URL to results: http://127.0.0.1:8920/area-39/ - Total in results: 41
+Submitting task for: http://127.0.0.1:8920/area-44/
+Starting crawl of http://127.0.0.1:8920/area-44/
+Added URL to results: http://127.0.0.1:8920/area-40/ - Total in results: 42
+Submitting task for: http://127.0.0.1:8920/area-45/
+Starting crawl of http://127.0.0.1:8920/area-45/
+Added URL to results: http://127.0.0.1:8920/area-41/ - Total in results: 43
+Submitting task for: http://127.0.0.1:8920/area-46/
+Starting crawl of http://127.0.0.1:8920/area-46/
+Added URL to results: http://127.0.0.1:8920/area-42/ - Total in results: 44
+Submitting task for: http://127.0.0.1:8920/area-47/
+Starting crawl of http://127.0.0.1:8920/area-47/
+Added URL to results: http://127.0.0.1:8920/area-43/ - Total in results: 45
+Submitting task for: http://127.0.0.1:8920/area-48/
+Starting crawl of http://127.0.0.1:8920/area-48/
+Added URL to results: http://127.0.0.1:8920/area-44/ - Total in results: 46
+Submitting task for: http://127.0.0.1:8920/area-49/
+Starting crawl of http://127.0.0.1:8920/area-49/
+Added URL to results: http://127.0.0.1:8920/area-45/ - Total in results: 47
+Submitting task for: http://127.0.0.1:8920/area-50/
+Starting crawl of http://127.0.0.1:8920/area-50/
+Added URL to results: http://127.0.0.1:8920/area-46/ - Total in results: 48
+Submitting task for: http://127.0.0.1:8920/area-51/
+Starting crawl of http://127.0.0.1:8920/area-51/
+Added URL to results: http://127.0.0.1:8920/area-47/ - Total in results: 49
+Submitting task for: http://127.0.0.1:8920/area-52/
+Starting crawl of http://127.0.0.1:8920/area-52/
+Added URL to results: http://127.0.0.1:8920/area-48/ - Total in results: 50
+Submitting task for: http://127.0.0.1:8920/area-53/
+Starting crawl of http://127.0.0.1:8920/area-53/
+Added URL to results: http://127.0.0.1:8920/area-49/ - Total in results: 51
+Submitting task for: http://127.0.0.1:8920/area-54/
+Starting crawl of http://127.0.0.1:8920/area-54/
+Added URL to results: http://127.0.0.1:8920/area-50/ - Total in results: 52
+Submitting task for: http://127.0.0.1:8920/area-55/
+Starting crawl of http://127.0.0.1:8920/area-55/
+Added URL to results: http://127.0.0.1:8920/area-51/ - Total in results: 53
+Submitting task for: http://127.0.0.1:8920/area-56/
+Starting crawl of http://127.0.0.1:8920/area-56/
+Added URL to results: http://127.0.0.1:8920/area-52/ - Total in results: 54
+Submitting task for: http://127.0.0.1:8920/area-57/
+Starting crawl of http://127.0.0.1:8920/area-57/
+Added URL to results: http://127.0.0.1:8920/area-53/ - Total in results: 55
+Submitting task for: http://127.0.0.1:8920/area-58/
+Starting crawl of http://127.0.0.1:8920/area-58/
+Added URL to results: http://127.0.0.1:8920/area-54/ - Total in results: 56
+Submitting task for: http://127.0.0.1:8920/area-59/
+Starting crawl of http://127.0.0.1:8920/area-59/
+Added URL to results: http://127.0.0.1:8920/area-55/ - Total in results: 57
+Added URL to results: http://127.0.0.1:8920/area-56/ - Total in results: 58
+Added URL to results: http://127.0.0.1:8920/area-57/ - Total in results: 59
+Added URL to results: http://127.0.0.1:8920/area-58/ - Total in results: 60
+Added URL to results: http://127.0.0.1:8920/area-59/ - Total in results: 61
+Reached maximum URLs limit (61)
+Updating linked_from data for all URLs...
+Updated linked_from data for 0 URLs
+Running duplication detection...
+Duplication detection complete. Total issues: 490
+Crawl completed. Discovered: 1, Crawled: 61
+  PASS  one duplicate issue per templated page - 60 issues for 60 pages
+  PASS  each issue counts the other templated pages - 59 similar pages: http://127.0.0.1:8920/area-1/ (86.5% similar); http://127.0.0.1:8920/area-10/ (86.
+  PASS  the unrelated index page is not flagged
+  PASS  crawl finished promptly - 2.5s
+  PASS  1,500 templated pages produce 1,500 issues quickly - 1500 issues in 5.7s
+
+test_export_formats_apply_to_every_data_type:
+⚠️  WARNING: SECRET_KEY not set — using an ephemeral random key. Sessions will not persist across restarts. Set SECRET_KEY in production.
+Database initialized successfully
+Crawl persistence tables initialized successfully
+============================================================
+LOCAL MODE ENABLED
+All users will have admin tier access
+No rate limits or tier restrictions
+Auto-login enabled with 'local' admin account
+============================================================
+Creating new crawler instance for session: 4ae20fdd-2d85-4801-af42-e398d7376fbc, user: 1, tier: admin
+  PASS  streaming urls export honours csv - 200 text/csv attachment; filename=librecrawl_export_1791954853.csv
+  PASS  streaming urls export honours json - 200 application/json attachment; filename=librecrawl_export_1791954853.json
+  PASS  streaming urls export honours xml - 200 application/xml attachment; filename=librecrawl_export_1791954853.xml
+  PASS  streaming urls export honours xlsx - 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet attachment; filename=librecrawl_export_1791954853.xlsx
+  PASS  streaming links export honours csv - 200 text/csv attachment; filename=librecrawl_links_1791954853.csv
+  PASS  streaming links export honours json - 200 application/json attachment; filename=librecrawl_links_1791954853.json
+  PASS  streaming links export honours xml - 200 application/xml attachment; filename=librecrawl_links_1791954853.xml
+  PASS  streaming links export honours xlsx - 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet attachment; filename=librecrawl_links_1791954853.xlsx
+  PASS  streaming issues export honours csv - 200 text/csv attachment; filename=librecrawl_issues_1791954853.csv
+  PASS  streaming issues export honours json - 200 application/json attachment; filename=librecrawl_issues_1791954853.json
+  PASS  streaming issues export honours xml - 200 application/xml attachment; filename=librecrawl_issues_1791954853.xml
+  PASS  streaming issues export honours xlsx - 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet attachment; filename=librecrawl_issues_1791954853.xlsx
+DEBUG: After exclusion filter, 1 issues remain
+DEBUG: export_fields = ['url', 'title', 'links_detailed', 'issues_detected']
+DEBUG: has_issues_export = True
+DEBUG: has_links_export = True
+DEBUG: regular_fields = ['url', 'title']
+DEBUG: len(urls) = 2
+DEBUG: len(links) = 1
+DEBUG: len(issues) = 1
+  PASS  legacy export honours csv for every file - librecrawl_issues_1791954853.csv, librecrawl_links_1791954853.csv, librecrawl_export_1791954853.csv
+DEBUG: After exclusion filter, 1 issues remain
+DEBUG: export_fields = ['url', 'title', 'links_detailed', 'issues_detected']
+DEBUG: has_issues_export = True
+DEBUG: has_links_export = True
+DEBUG: regular_fields = ['url', 'title']
+DEBUG: len(urls) = 2
+DEBUG: len(links) = 1
+DEBUG: len(issues) = 1
+  PASS  legacy export honours json for every file - librecrawl_issues_1791954853.json, librecrawl_links_1791954853.json, librecrawl_export_1791954853.json
+DEBUG: After exclusion filter, 1 issues remain
+DEBUG: export_fields = ['url', 'title', 'links_detailed', 'issues_detected']
+DEBUG: has_issues_export = True
+DEBUG: has_links_export = True
+DEBUG: regular_fields = ['url', 'title']
+DEBUG: len(urls) = 2
+DEBUG: len(links) = 1
+DEBUG: len(issues) = 1
+  PASS  legacy export honours xml for every file - librecrawl_issues_1791954853.xml, librecrawl_links_1791954853.xml, librecrawl_export_1791954853.xml
+DEBUG: After exclusion filter, 1 issues remain
+DEBUG: export_fields = ['url', 'title', 'links_detailed', 'issues_detected']
+DEBUG: has_issues_export = True
+DEBUG: has_links_export = True
+DEBUG: regular_fields = ['url', 'title']
+DEBUG: len(urls) = 2
+DEBUG: len(links) = 1
+DEBUG: len(issues) = 1
+  PASS  legacy export honours xlsx for every file - librecrawl_issues_1791954853.xlsx, librecrawl_links_1791954853.xlsx, librecrawl_export_1791954853.xlsx
+
+test_empty_alt_is_not_missing_alt:
+Submitting task for: http://127.0.0.1:8922/
+Starting crawl of http://127.0.0.1:8922/
+Added URL to results: http://127.0.0.1:8922/ - Total in results: 4
+No more URLs to crawl
+Updating linked_from data for all URLs...
+Updated linked_from data for 0 URLs
+Running duplication detection...
+Duplication detection complete. Total issues: 11
+Crawl completed. Discovered: 1, Crawled: 4
+  PASS  alt extraction keeps all three images - ['a.png', 'b.png', 'c.png']
+  PASS  described image records its alt
+  PASS  decorative image is marked as having an alt
+  PASS  image with no attribute is marked as missing
+  PASS  exactly one image is reported, not two - 1 of 3 images have no alt attribute (1 decorative image with alt="" is fine)
+  PASS  the decorative image is called out as fine - 1 of 3 images have no alt attribute (1 decorative image with alt="" is fine)
+  PASS  correct markup raises no alt warning at all
+
+================================================================
+  58 passed, 0 failed
+
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51604)
+Traceback (most recent call last):
+  File "C:\Users\mdtav\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\mdtav\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\mdtav\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\mdtav\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\mdtav\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 408, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdtav\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socket.py", line 718, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------

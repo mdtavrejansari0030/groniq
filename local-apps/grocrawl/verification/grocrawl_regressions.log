@@ -1,0 +1,40 @@
+Submitting task for: http://127.0.0.1:65285/
+Starting crawl of http://127.0.0.1:65285/
+Added URL to results: http://127.0.0.1:65285/ - Total in results: 1
+Submitting task for: http://127.0.0.1:65285/blocked
+Added URL to results: http://127.0.0.1:65285/blocked - Total in results: 2
+Submitting task for: http://127.0.0.1:65285/redirect
+Starting crawl of http://127.0.0.1:65285/redirect
+Added URL to results: http://127.0.0.1:65285/redirect - Total in results: 3
+Submitting task for: http://127.0.0.1:65285/final?b=2&a=1&a=3
+Starting crawl of http://127.0.0.1:65285/final?b=2&a=1&a=3
+Added URL to results: http://127.0.0.1:65285/final?b=2&a=1&a=3 - Total in results: 4
+No more URLs to crawl
+Updating linked_from data for all URLs...
+Updated linked_from data for 2 URLs
+Running duplication detection...
+Duplication detection complete. Total issues: 37
+Crawl completed. Discovered: 1, Crawled: 4
+⚠️  WARNING: SECRET_KEY not set — using an ephemeral random key. Sessions will not persist across restarts. Set SECRET_KEY in production.
+Database initialized successfully
+Crawl persistence tables initialized successfully
+Starting crawl of http://127.0.0.1:65285/to-blocked
+Crawl persistence tables initialized successfully
+Crawl persistence tables initialized successfully
+Created new crawl record: ID=1, URL=http://127.0.0.1:65285
+Saved 4 URLs to database for crawl 1
+
+test_canonical_is_contextual (__main__.Regressions.test_canonical_is_contextual) ... ok
+test_delay_applied (__main__.Regressions.test_delay_applied) ... ok
+test_guest_history_ownership (__main__.Regressions.test_guest_history_ownership) ... ok
+test_guest_routes_reject_other_owners (__main__.Regressions.test_guest_routes_reject_other_owners) ... ok
+test_query_order_and_duplicates_preserved (__main__.Regressions.test_query_order_and_duplicates_preserved) ... ok
+test_redirect_and_header_scope (__main__.Regressions.test_redirect_and_header_scope) ... ok
+test_redirect_does_not_fetch_blocked_destination (__main__.Regressions.test_redirect_does_not_fetch_blocked_destination) ... ok
+test_robots_url_reported_without_request_or_status (__main__.Regressions.test_robots_url_reported_without_request_or_status) ... ok
+test_storage_and_exports_preserve_evidence (__main__.Regressions.test_storage_and_exports_preserve_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.194s
+
+OK

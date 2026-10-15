@@ -1,0 +1,176 @@
+[
+  {
+    "path": "",
+    "calls": [],
+    "cards": 3,
+    "emptyMessage": false,
+    "items": [
+      {
+        "id": "7BFJOwll8u80YQvAZo97d8",
+        "type": "projects",
+        "status": "published",
+        "slug": "google-ads-dental-clinic-campaign",
+        "coverImage": "",
+        "bodyLength": 3002
+      },
+      {
+        "id": "7c2da528-cbf3-4a2d-9792-dff6a1aacaf7",
+        "type": "case_studies",
+        "status": "published",
+        "slug": "spacia-interiors-conversion-focused-landing-page",
+        "coverImage": "https://cdn.sanity.io/images/1nhwbh5x/production/b1181f44fe305ced418500ce83cfce5a1e3ec2d5-1920x1020.png?w=1200&q=85&auto=format",
+        "bodyLength": 55
+      },
+      {
+        "id": "ada678f1-5507-4a02-b54b-e8c0aaae0381",
+        "type": "projects",
+        "status": "published",
+        "slug": "multi-client-seo-implementation",
+        "coverImage": "",
+        "bodyLength": 3200
+      }
+    ],
+    "images": [
+      "height: 120px; width: 100%; position: relative; background: linear-gradient(135deg, #180c2e 0%, #311042 100%);; display: flex; align-items: flex-end; padding: var(--space-sm);",
+      "height: 120px; width: 100%; position: relative; background: linear-gradient(135deg, #180c2e 0%, #311042 100%);; display: flex; align-items: flex-end; padding: var(--space-sm);",
+      "height: 120px; width: 100%; position: relative; background: linear-gradient(135deg, #180c2e 0%, #311042 100%);; display: flex; align-items: flex-end; padding: var(--space-sm);"
+    ]
+  },
+  {
+    "path": "projects/",
+    "calls": [],
+    "cards": 2,
+    "emptyMessage": false,
+    "items": [
+      {
+        "id": "7BFJOwll8u80YQvAZo97d8",
+        "type": "projects",
+        "status": "published",
+        "slug": "google-ads-dental-clinic-campaign",
+        "coverImage": "",
+        "bodyLength": 3002
+      },
+      {
+        "id": "7c2da528-cbf3-4a2d-9792-dff6a1aacaf7",
+        "type": "case_studies",
+        "status": "published",
+        "slug": "spacia-interiors-conversion-focused-landing-page",
+        "coverImage": "https://cdn.sanity.io/images/1nhwbh5x/production/b1181f44fe305ced418500ce83cfce5a1e3ec2d5-1920x1020.png?w=1200&q=85&auto=format",
+        "bodyLength": 55
+      },
+      {
+        "id": "ada678f1-5507-4a02-b54b-e8c0aaae0381",
+        "type": "projects",
+        "status": "published",
+        "slug": "multi-client-seo-implementation",
+        "coverImage": "",
+        "bodyLength": 3200
+      }
+    ],
+    "images": [
+      "height: 120px; width: 100%; position: relative; background: linear-gradient(135deg, #180c2e 0%, #311042 100%);; display: flex; align-items: flex-end; padding: var(--space-sm);",
+      "height: 120px; width: 100%; position: relative; background: linear-gradient(135deg, #180c2e 0%, #311042 100%);; display: flex; align-items: flex-end; padding: var(--space-sm);"
+    ]
+  },
+  {
+    "path": "case-studies/",
+    "calls": [],
+    "cards": 1,
+    "emptyMessage": false,
+    "items": [
+      {
+        "id": "7BFJOwll8u80YQvAZo97d8",
+        "type": "projects",
+        "status": "published",
+        "slug": "google-ads-dental-clinic-campaign",
+        "coverImage": "",
+        "bodyLength": 3002
+      },
+      {
+        "id": "7c2da528-cbf3-4a2d-9792-dff6a1aacaf7",
+        "type": "case_studies",
+        "status": "published",
+        "slug": "spacia-interiors-conversion-focused-landing-page",
+        "coverImage": "https://cdn.sanity.io/images/1nhwbh5x/production/b1181f44fe305ced418500ce83cfce5a1e3ec2d5-1920x1020.png?w=1200&q=85&auto=format",
+        "bodyLength": 55
+      },
+      {
+        "id": "ada678f1-5507-4a02-b54b-e8c0aaae0381",
+        "type": "projects",
+        "status": "published",
+        "slug": "multi-client-seo-implementation",
+        "coverImage": "",
+        "bodyLength": 3200
+      }
+    ],
+    "images": [
+      "height: 120px; width: 100%; position: relative; background: linear-gradient(135deg, #180c2e 0%, #311042 100%);; display: flex; align-items: flex-end; padding: var(--space-sm);"
+    ]
+  },
+  {
+    "path": "articles/",
+    "calls": [],
+    "cards": 0,
+    "emptyMessage": true,
+    "items": [
+      {
+        "id": "7BFJOwll8u80YQvAZo97d8",
+        "type": "projects",
+        "status": "published",
+        "slug": "google-ads-dental-clinic-campaign",
+        "coverImage": "",
+        "bodyLength": 3002
+      },
+      {
+        "id": "7c2da528-cbf3-4a2d-9792-dff6a1aacaf7",
+        "type": "case_studies",
+        "status": "published",
+        "slug": "spacia-interiors-conversion-focused-landing-page",
+        "coverImage": "https://cdn.sanity.io/images/1nhwbh5x/production/b1181f44fe305ced418500ce83cfce5a1e3ec2d5-1920x1020.png?w=1200&q=85&auto=format",
+        "bodyLength": 55
+      },
+      {
+        "id": "ada678f1-5507-4a02-b54b-e8c0aaae0381",
+        "type": "projects",
+        "status": "published",
+        "slug": "multi-client-seo-implementation",
+        "coverImage": "",
+        "bodyLength": 3200
+      }
+    ],
+    "images": []
+  },
+  {
+    "path": "resources/",
+    "calls": [],
+    "cards": 0,
+    "emptyMessage": true,
+    "items": [
+      {
+        "id": "7BFJOwll8u80YQvAZo97d8",
+        "type": "projects",
+        "status": "published",
+        "slug": "google-ads-dental-clinic-campaign",
+        "coverImage": "",
+        "bodyLength": 3002
+      },
+      {
+        "id": "7c2da528-cbf3-4a2d-9792-dff6a1aacaf7",
+        "type": "case_studies",
+        "status": "published",
+        "slug": "spacia-interiors-conversion-focused-landing-page",
+        "coverImage": "https://cdn.sanity.io/images/1nhwbh5x/production/b1181f44fe305ced418500ce83cfce5a1e3ec2d5-1920x1020.png?w=1200&q=85&auto=format",
+        "bodyLength": 55
+      },
+      {
+        "id": "ada678f1-5507-4a02-b54b-e8c0aaae0381",
+        "type": "projects",
+        "status": "published",
+        "slug": "multi-client-seo-implementation",
+        "coverImage": "",
+        "bodyLength": 3200
+      }
+    ],
+    "images": []
+  }
+]

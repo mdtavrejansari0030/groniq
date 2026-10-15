@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<librecrawl_issues export_date="2026-10-14 11:29:04" total_issues="177">
+  <issues>
+    <issue>
+      <url>http://127.0.0.1:57233/</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p0?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p0?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p0?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p0?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p0?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p0?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p0?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p0?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p0?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p0?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p1?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p1?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p1?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p1?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p1?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p1?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p1?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p1?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p1?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p1?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p2?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p2?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p2?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p2?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p2?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p2?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p2?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p2?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p2?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p2?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p3?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p3?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p3?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p3?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p3?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p3?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p3?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p3?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p3?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p3?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p4?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p4?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p4?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p4?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p4?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p4?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p4?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p4?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p4?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p4?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p5?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p5?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p5?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p5?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p5?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p5?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p5?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p5?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p5?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p5?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p6?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p6?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p6?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p6?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p6?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p6?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p6?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p6?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p6?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p6?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p7?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p7?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p7?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p7?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p7?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p7?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p7?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p7?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p7?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p7?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p8?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p8?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p8?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p8?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p8?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p8?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p8?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p8?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p8?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p8?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p9?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p9?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p9?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p9?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p9?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p9?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p9?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p9?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p9?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p9?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p10?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p10?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p10?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p10?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p10?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p10?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p10?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p10?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p10?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p10?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p11?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p11?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p11?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p11?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p11?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p11?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p11?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p11?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p11?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p11?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p12?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p12?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p12?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p12?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p12?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p12?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p12?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p12?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p12?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p12?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p13?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p13?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p13?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p13?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p13?b=2&amp;a=1</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p13?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p13?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p13?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p13?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p13?b=2&amp;a=1</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/blocked</url>
+      <type>info</type>
+      <category>Crawl policy</category>
+      <issue>Robots-blocked URL</issue>
+      <details>Not permitted by robots.txt policy (or robots.txt unavailable) for LibreCrawl/1.0 (Web Crawler). No HTTP status observed.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/go</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/go</url>
+      <type>info</type>
+      <category>Crawl directives</category>
+      <issue>X-Robots-Tag directive</issue>
+      <details>Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/go</url>
+      <type>error</type>
+      <category>SEO</category>
+      <issue>Missing Meta Description</issue>
+      <details>Page has no meta description</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/go</url>
+      <type>warning</type>
+      <category>Content</category>
+      <issue>Thin Content</issue>
+      <details>Page has only 22 words (recommended: ≥300)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/go</url>
+      <type>info</type>
+      <category>Technical</category>
+      <issue>Canonical points elsewhere</issue>
+      <details>Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical.</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/go</url>
+      <type>error</type>
+      <category>Mobile</category>
+      <issue>Missing Viewport Meta Tag</issue>
+      <details>Page is not mobile-optimized</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/go</url>
+      <type>warning</type>
+      <category>Accessibility</category>
+      <issue>Missing Language Attribute</issue>
+      <details>HTML tag has no lang attribute</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/go</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing OpenGraph Tags</issue>
+      <details>Page has no OpenGraph tags for social sharing</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/go</url>
+      <type>warning</type>
+      <category>Social</category>
+      <issue>Missing Twitter Card Tags</issue>
+      <details>Page has no Twitter Card tags</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/go</url>
+      <type>error</type>
+      <category>Structured Data</category>
+      <issue>No Structured Data</issue>
+      <details>Page has no JSON-LD or Schema.org markup</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p12?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p0?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p12?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p1?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p2?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p3?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p4?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p5?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p6?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p7?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p8?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p9?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p10?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p12?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p11?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p12?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p12?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/p13?b=2&amp;a=1</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+    <issue>
+      <url>http://127.0.0.1:57233/go</url>
+      <type>warning</type>
+      <category>Duplication</category>
+      <issue>Duplicate Content Detected</issue>
+      <details>15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&amp;a=1 (identical title, description and H1); http://127.0.0.1:57233/p12?b=2&amp;a=1 (identical title, description and H1) (+10 more)</details>
+    </issue>
+  </issues>
+</librecrawl_issues>

@@ -1,0 +1,178 @@
+url,type,category,issue,details
+http://127.0.0.1:57233/,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p0?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p0?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p0?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p0?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p0?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p0?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p0?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p0?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p0?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p0?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p1?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p1?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p1?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p1?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p1?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p1?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p1?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p1?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p1?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p1?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p2?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p2?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p2?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p2?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p2?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p2?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p2?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p2?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p2?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p2?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p3?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p3?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p3?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p3?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p3?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p3?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p3?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p3?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p3?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p3?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p4?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p4?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p4?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p4?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p4?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p4?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p4?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p4?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p4?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p4?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p5?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p5?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p5?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p5?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p5?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p5?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p5?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p5?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p5?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p5?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p6?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p6?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p6?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p6?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p6?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p6?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p6?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p6?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p6?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p6?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p7?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p7?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p7?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p7?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p7?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p7?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p7?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p7?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p7?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p7?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p8?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p8?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p8?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p8?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p8?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p8?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p8?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p8?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p8?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p8?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p9?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p9?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p9?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p9?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p9?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p9?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p9?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p9?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p9?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p9?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p10?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p10?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p10?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p10?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p10?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p10?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p10?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p10?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p10?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p10?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p11?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p11?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p11?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p11?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p11?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p11?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p11?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p11?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p11?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p11?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p12?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p12?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p12?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p12?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p12?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p12?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p12?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p12?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p12?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p12?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/p13?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p13?b=2&a=1,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/p13?b=2&a=1,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/p13?b=2&a=1,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/p13?b=2&a=1,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/p13?b=2&a=1,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/p13?b=2&a=1,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/p13?b=2&a=1,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/p13?b=2&a=1,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/p13?b=2&a=1,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/blocked,info,Crawl policy,Robots-blocked URL,Not permitted by robots.txt policy (or robots.txt unavailable) for LibreCrawl/1.0 (Web Crawler). No HTTP status observed.
+http://127.0.0.1:57233/go,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/go,info,Crawl directives,X-Robots-Tag directive,"Scope: googlebot; raw header: googlebot: noindex, nofollow. Verify intended scope; this does not establish Google indexing status."
+http://127.0.0.1:57233/go,error,SEO,Missing Meta Description,Page has no meta description
+http://127.0.0.1:57233/go,warning,Content,Thin Content,Page has only 22 words (recommended: ≥300)
+http://127.0.0.1:57233/go,info,Technical,Canonical points elsewhere,"Declared canonical: /preferred. This can be intentional consolidation. Verify the target, content equivalence and intended preferred URL; the declaration does not establish Google's selected canonical."
+http://127.0.0.1:57233/go,error,Mobile,Missing Viewport Meta Tag,Page is not mobile-optimized
+http://127.0.0.1:57233/go,warning,Accessibility,Missing Language Attribute,HTML tag has no lang attribute
+http://127.0.0.1:57233/go,warning,Social,Missing OpenGraph Tags,Page has no OpenGraph tags for social sharing
+http://127.0.0.1:57233/go,warning,Social,Missing Twitter Card Tags,Page has no Twitter Card tags
+http://127.0.0.1:57233/go,error,Structured Data,No Structured Data,Page has no JSON-LD or Schema.org markup
+http://127.0.0.1:57233/,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p12?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p0?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p12?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p1?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p2?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p3?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p4?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p5?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p6?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p7?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p8?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p9?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p10?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p12?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p11?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p12?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p12?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/p13?b=2&a=1,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/go (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1) (+10 more)"
+http://127.0.0.1:57233/go,warning,Duplication,Duplicate Content Detected,"15 similar pages: http://127.0.0.1:57233/ (identical title, description and H1); http://127.0.0.1:57233/p0?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p10?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p11?b=2&a=1 (identical title, description and H1); http://127.0.0.1:57233/p12?b=2&a=1 (identical title, description and H1) (+10 more)"

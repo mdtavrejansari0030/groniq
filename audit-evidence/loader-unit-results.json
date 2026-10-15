@@ -1,0 +1,21 @@
+{
+  "fetches": [],
+  "counts": {
+    "projects-list-grid": 2,
+    "case_studies-list-grid": 1,
+    "articles-list-grid": 0,
+    "resources-list-grid": 0
+  },
+  "empty": {
+    "projects-list-grid": "",
+    "case_studies-list-grid": "",
+    "articles-list-grid": "<div class=\"col-span-12\" style=\"text-align: center; padding: var(--space-xl) 0; color: var(--color-text-muted);\">No publications found matching current filters.</div>",
+    "resources-list-grid": "<div class=\"col-span-12\" style=\"text-align: center; padding: var(--space-xl) 0; color: var(--color-text-muted);\">No publications found matching current filters.</div>"
+  },
+  "caseImage": "linear-gradient(135deg, #180c2e 0%, #311042 100%)",
+  "snapshotIds": [
+    "7BFJOwll8u80YQvAZo97d8",
+    "7c2da528-cbf3-4a2d-9792-dff6a1aacaf7",
+    "ada678f1-5507-4a02-b54b-e8c0aaae0381"
+  ]
+}

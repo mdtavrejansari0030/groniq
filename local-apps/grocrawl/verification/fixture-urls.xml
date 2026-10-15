@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<librecrawl_export export_date="2026-10-14 11:29:04" total_urls="17">
+  <urls>
+    <url>
+      <url>http://127.0.0.1:57233/</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>0</depth>
+      <response_time>2.2</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>[]</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p0?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p0?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>1.98</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p1?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p1?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>25.0</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p2?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p2?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>22.04</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p3?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p3?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>2.04</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p4?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p4?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>23.26</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p5?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p5?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>1.69</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p6?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p6?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>2.73</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p7?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p7?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>2.16</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p8?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p8?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>1.58</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p9?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p9?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>19.38</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p10?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p10?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>2.42</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p11?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p11?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>1.99</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p12?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p12?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>2.03</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/p13?b=2&amp;a=1</url>
+      <initial_status>200</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p13?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>14.5</response_time>
+      <status_code>200</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/blocked</url>
+      <initial_status>None</initial_status>
+      <final_status>None</final_status>
+      <final_url>None</final_url>
+      <fetch_state>robots_blocked</fetch_state>
+      <title></title>
+      <meta_description></meta_description>
+      <canonical_url></canonical_url>
+      <robots></robots>
+      <x_robots_tag></x_robots_tag>
+      <depth>1</depth>
+      <response_time>0</response_time>
+      <status_code>None</status_code>
+      <redirected_to></redirected_to>
+      <redirects>[]</redirects>
+      <robots_directives></robots_directives>
+      <robots_evidence>Not permitted by robots.txt policy (or robots.txt unavailable) for LibreCrawl/1.0 (Web Crawler)</robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+    <url>
+      <url>http://127.0.0.1:57233/go</url>
+      <initial_status>302</initial_status>
+      <final_status>200</final_status>
+      <final_url>http://127.0.0.1:57233/p1?b=2&amp;a=1</final_url>
+      <fetch_state>fetched</fetch_state>
+      <title>&lt;img src=x onerror=alert(1)&gt; fixture title</title>
+      <meta_description></meta_description>
+      <canonical_url>/preferred</canonical_url>
+      <robots></robots>
+      <x_robots_tag>['googlebot: noindex, nofollow']</x_robots_tag>
+      <depth>1</depth>
+      <response_time>14.07</response_time>
+      <status_code>200</status_code>
+      <redirected_to>http://127.0.0.1:57233/p1?b=2&amp;a=1</redirected_to>
+      <redirects>[{'url': 'http://127.0.0.1:57233/go', 'status_code': 302, 'location': '/p1?b=2&amp;a=1', 'x_robots_tag': 'googlebot: noindex, nofollow'}]</redirects>
+      <robots_directives>[{'scope': 'googlebot', 'directive': 'noindex', 'raw': 'googlebot: noindex, nofollow'}, {'scope': 'googlebot', 'directive': 'nofollow', 'raw': 'googlebot: noindex, nofollow'}]</robots_directives>
+      <robots_evidence></robots_evidence>
+      <error_type>None</error_type>
+      <linked_from>['http://127.0.0.1:57233/', 'http://127.0.0.1:57233/p0?b=2&amp;a=1', 'http://127.0.0.1:57233/p1?b=2&amp;a=1', 'http://127.0.0.1:57233/p2?b=2&amp;a=1', 'http://127.0.0.1:57233/p3?b=2&amp;a=1', 'http://127.0.0.1:57233/p4?b=2&amp;a=1', 'http://127.0.0.1:57233/p5?b=2&amp;a=1', 'http://127.0.0.1:57233/p6?b=2&amp;a=1', 'http://127.0.0.1:57233/p7?b=2&amp;a=1', 'http://127.0.0.1:57233/p8?b=2&amp;a=1', 'http://127.0.0.1:57233/p9?b=2&amp;a=1', 'http://127.0.0.1:57233/p10?b=2&amp;a=1', 'http://127.0.0.1:57233/p11?b=2&amp;a=1', 'http://127.0.0.1:57233/p12?b=2&amp;a=1', 'http://127.0.0.1:57233/p13?b=2&amp;a=1', 'http://127.0.0.1:57233/go']</linked_from>
+    </url>
+  </urls>
+</librecrawl_export>

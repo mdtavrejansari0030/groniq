@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://groniqdigital.com/",
+    "status_matches": true,
+    "title_matches": true,
+    "canonical_matches": true,
+    "json_ld_count": 1,
+    "x_robots_tag": null,
+    "html_bytes": 211222
+  },
+  {
+    "url": "https://groniqdigital.com/tools/",
+    "status_matches": true,
+    "title_matches": true,
+    "canonical_matches": true,
+    "json_ld_count": 1,
+    "x_robots_tag": null,
+    "html_bytes": 61810
+  },
+  {
+    "url": "https://groniqdigital.com/learn/",
+    "status_matches": true,
+    "title_matches": true,
+    "canonical_matches": true,
+    "json_ld_count": 0,
+    "x_robots_tag": null,
+    "html_bytes": 31111
+  }
+]

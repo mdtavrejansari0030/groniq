@@ -1,0 +1,840 @@
+{
+  "crawl": {
+    "base_domain": "groniqdigital.com",
+    "base_url": "https://groniqdigital.com",
+    "can_resume": 1,
+    "completed_at": "2026-10-14 05:09:17",
+    "config_snapshot": {
+      "accept_language": "en-US,en;q=0.9",
+      "allow_cookies": true,
+      "check_auxiliary_links": false,
+      "concurrency": 1,
+      "crawl_external": false,
+      "crawl_images": false,
+      "custom_headers": {},
+      "delay": 1.0,
+      "discover_sitemaps": false,
+      "duplication_threshold": 0.85,
+      "enable_duplication_check": true,
+      "enable_javascript": false,
+      "enable_pagespeed": false,
+      "enable_proxy": false,
+      "exclude_extensions": [
+        "pdf",
+        "doc",
+        "docx",
+        "zip",
+        "exe",
+        "dmg"
+      ],
+      "exclude_patterns": [],
+      "follow_redirects": true,
+      "google_api_key": "",
+      "include_extensions": [
+        "html",
+        "htm",
+        "php",
+        "asp",
+        "aspx",
+        "jsp"
+      ],
+      "include_patterns": [],
+      "issue_exclusion_patterns": [],
+      "js_browser": "chromium",
+      "js_headless": true,
+      "js_max_concurrent_pages": 1,
+      "js_timeout": 30,
+      "js_user_agent": "LibreCrawl/1.0 (Web Crawler with JavaScript)",
+      "js_viewport_height": 1080,
+      "js_viewport_width": 1920,
+      "js_wait_time": 2,
+      "log_level": "INFO",
+      "max_depth": 4,
+      "max_file_size": 0,
+      "max_urls": 50,
+      "memory_limit": 536870912,
+      "proxy_url": null,
+      "respect_robots": true,
+      "retries": 3,
+      "timeout": 10,
+      "user_agent": "LibreCrawl/1.0 (Web Crawler)"
+    },
+    "estimated_size_mb": 0.0,
+    "id": 4,
+    "last_saved_at": "2026-10-14 05:09:17",
+    "max_depth_reached": 1,
+    "peak_memory_mb": 0.0,
+    "resume_checkpoint": null,
+    "session_id": "8d78cd24-dde2-48c9-8143-284a36b998d2",
+    "started_at": "2026-10-14 05:09:12",
+    "status": "completed",
+    "urls_crawled": 3,
+    "urls_discovered": 1,
+    "user_id": 1
+  },
+  "issues": [
+    {
+      "category": "Performance",
+      "crawl_id": 4,
+      "details": "Page took 1376.02ms to respond (recommended: <1000ms)",
+      "detected_at": "2026-10-14 05:09:17",
+      "id": 237,
+      "issue": "Moderate Response Time",
+      "type": "warning",
+      "url": "https://groniqdigital.com/"
+    },
+    {
+      "category": "Content",
+      "crawl_id": 4,
+      "details": "Page has only 254 words (recommended: \u2265300)",
+      "detected_at": "2026-10-14 05:09:17",
+      "id": 238,
+      "issue": "Thin Content",
+      "type": "warning",
+      "url": "https://groniqdigital.com/tools/"
+    },
+    {
+      "category": "Content",
+      "crawl_id": 4,
+      "details": "Page has only 103 words (recommended: \u2265300)",
+      "detected_at": "2026-10-14 05:09:17",
+      "id": 239,
+      "issue": "Thin Content",
+      "type": "warning",
+      "url": "https://groniqdigital.com/learn/"
+    },
+    {
+      "category": "Structured Data",
+      "crawl_id": 4,
+      "details": "Page has no JSON-LD or Schema.org markup",
+      "detected_at": "2026-10-14 05:09:17",
+      "id": 240,
+      "issue": "No Structured Data",
+      "type": "error",
+      "url": "https://groniqdigital.com/learn/"
+    },
+    {
+      "category": "Performance",
+      "crawl_id": 4,
+      "details": "Page took 1446.52ms to respond (recommended: <1000ms)",
+      "detected_at": "2026-10-14 05:09:17",
+      "id": 241,
+      "issue": "Moderate Response Time",
+      "type": "warning",
+      "url": "https://groniqdigital.com/learn/"
+    }
+  ],
+  "links": [
+    {
+      "anchor_text": "GRONIQ\nDigital\n                        Solutions",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 337,
+      "is_internal": 1,
+      "placement": "navigation",
+      "source_url": "https://groniqdigital.com/",
+      "target_domain": "groniqdigital.com",
+      "target_status": 200,
+      "target_url": "https://groniqdigital.com/"
+    },
+    {
+      "anchor_text": "Tools",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 338,
+      "is_internal": 1,
+      "placement": "navigation",
+      "source_url": "https://groniqdigital.com/",
+      "target_domain": "groniqdigital.com",
+      "target_status": 200,
+      "target_url": "https://groniqdigital.com/tools/"
+    },
+    {
+      "anchor_text": "Learn",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 339,
+      "is_internal": 1,
+      "placement": "navigation",
+      "source_url": "https://groniqdigital.com/",
+      "target_domain": "groniqdigital.com",
+      "target_status": null,
+      "target_url": "https://groniqdigital.com/learn/"
+    },
+    {
+      "anchor_text": "Chat on WhatsApp",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 340,
+      "is_internal": 0,
+      "placement": "body",
+      "source_url": "https://groniqdigital.com/",
+      "target_domain": "wa.me",
+      "target_status": null,
+      "target_url": "https://wa.me/918016156537?text=Hi%20Groniq,%20I'd%20like%20to%20discuss%20a%20growth%20audit%20for%20my%20brand."
+    },
+    {
+      "anchor_text": "LinkedIn",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 341,
+      "is_internal": 0,
+      "placement": "body",
+      "source_url": "https://groniqdigital.com/",
+      "target_domain": "www.linkedin.com",
+      "target_status": null,
+      "target_url": "https://www.linkedin.com/company/groniq-digital-solutions"
+    },
+    {
+      "anchor_text": "Instagram",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 342,
+      "is_internal": 0,
+      "placement": "body",
+      "source_url": "https://groniqdigital.com/",
+      "target_domain": "instagram.com",
+      "target_status": null,
+      "target_url": "https://instagram.com/groniq_digiital_solutions"
+    },
+    {
+      "anchor_text": "YouTube",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 343,
+      "is_internal": 0,
+      "placement": "body",
+      "source_url": "https://groniqdigital.com/",
+      "target_domain": "www.youtube.com",
+      "target_status": null,
+      "target_url": "https://www.youtube.com/@mdtavrejansari"
+    },
+    {
+      "anchor_text": "(no text)",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 344,
+      "is_internal": 0,
+      "placement": "footer",
+      "source_url": "https://groniqdigital.com/",
+      "target_domain": "www.behance.net",
+      "target_status": null,
+      "target_url": "https://www.behance.net/md-tavrej-ansari"
+    },
+    {
+      "anchor_text": "Request a Growth\n            Audit \u2192",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 345,
+      "is_internal": 1,
+      "placement": "body",
+      "source_url": "https://groniqdigital.com/tools/",
+      "target_domain": "groniqdigital.com",
+      "target_status": 200,
+      "target_url": "https://groniqdigital.com/"
+    },
+    {
+      "anchor_text": "Tools",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 346,
+      "is_internal": 1,
+      "placement": "navigation",
+      "source_url": "https://groniqdigital.com/tools/",
+      "target_domain": "groniqdigital.com",
+      "target_status": 200,
+      "target_url": "https://groniqdigital.com/tools/"
+    },
+    {
+      "anchor_text": "Learn",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 347,
+      "is_internal": 1,
+      "placement": "navigation",
+      "source_url": "https://groniqdigital.com/tools/",
+      "target_domain": "groniqdigital.com",
+      "target_status": null,
+      "target_url": "https://groniqdigital.com/learn/"
+    },
+    {
+      "anchor_text": "Chat on WhatsApp",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 348,
+      "is_internal": 0,
+      "placement": "body",
+      "source_url": "https://groniqdigital.com/tools/",
+      "target_domain": "wa.me",
+      "target_status": null,
+      "target_url": "https://wa.me/918016156537?text=Hi%20Groniq,%20I'd%20like%20to%20discuss%20a%20growth%20audit%20for%20my%20brand."
+    },
+    {
+      "anchor_text": "(no text)",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 349,
+      "is_internal": 0,
+      "placement": "footer",
+      "source_url": "https://groniqdigital.com/tools/",
+      "target_domain": "www.linkedin.com",
+      "target_status": null,
+      "target_url": "https://www.linkedin.com/company/groniq-digital-solutions"
+    },
+    {
+      "anchor_text": "(no text)",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 350,
+      "is_internal": 0,
+      "placement": "footer",
+      "source_url": "https://groniqdigital.com/tools/",
+      "target_domain": "instagram.com",
+      "target_status": null,
+      "target_url": "https://instagram.com/groniq_digiital_solutions"
+    },
+    {
+      "anchor_text": "(no text)",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 351,
+      "is_internal": 0,
+      "placement": "footer",
+      "source_url": "https://groniqdigital.com/tools/",
+      "target_domain": "www.youtube.com",
+      "target_status": null,
+      "target_url": "https://www.youtube.com/@mdtavrejansari"
+    },
+    {
+      "anchor_text": "(no text)",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 352,
+      "is_internal": 0,
+      "placement": "footer",
+      "source_url": "https://groniqdigital.com/tools/",
+      "target_domain": "www.behance.net",
+      "target_status": null,
+      "target_url": "https://www.behance.net/md-tavrej-ansari"
+    },
+    {
+      "anchor_text": "GRONIQ\nDigital\n                        Solutions",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 353,
+      "is_internal": 1,
+      "placement": "navigation",
+      "source_url": "https://groniqdigital.com/learn/",
+      "target_domain": "groniqdigital.com",
+      "target_status": 200,
+      "target_url": "https://groniqdigital.com/"
+    },
+    {
+      "anchor_text": "Tools",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 354,
+      "is_internal": 1,
+      "placement": "navigation",
+      "source_url": "https://groniqdigital.com/learn/",
+      "target_domain": "groniqdigital.com",
+      "target_status": 200,
+      "target_url": "https://groniqdigital.com/tools/"
+    },
+    {
+      "anchor_text": "Learn",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 355,
+      "is_internal": 1,
+      "placement": "navigation",
+      "source_url": "https://groniqdigital.com/learn/",
+      "target_domain": "groniqdigital.com",
+      "target_status": null,
+      "target_url": "https://groniqdigital.com/learn/"
+    },
+    {
+      "anchor_text": "Chat\n                        on WhatsApp",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 356,
+      "is_internal": 0,
+      "placement": "body",
+      "source_url": "https://groniqdigital.com/learn/",
+      "target_domain": "wa.me",
+      "target_status": null,
+      "target_url": "https://wa.me/918016156537?text=Hi%20Groniq,%20I'd%20like%20to%20discuss%20a%20growth%20audit%20for%20my%20brand."
+    },
+    {
+      "anchor_text": "(no text)",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 357,
+      "is_internal": 0,
+      "placement": "footer",
+      "source_url": "https://groniqdigital.com/learn/",
+      "target_domain": "www.linkedin.com",
+      "target_status": null,
+      "target_url": "https://www.linkedin.com/company/groniq-digital-solutions"
+    },
+    {
+      "anchor_text": "(no text)",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 358,
+      "is_internal": 0,
+      "placement": "footer",
+      "source_url": "https://groniqdigital.com/learn/",
+      "target_domain": "instagram.com",
+      "target_status": null,
+      "target_url": "https://instagram.com/groniq_digiital_solutions"
+    },
+    {
+      "anchor_text": "(no text)",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 359,
+      "is_internal": 0,
+      "placement": "footer",
+      "source_url": "https://groniqdigital.com/learn/",
+      "target_domain": "www.youtube.com",
+      "target_status": null,
+      "target_url": "https://www.youtube.com/@mdtavrejansari"
+    },
+    {
+      "anchor_text": "(no text)",
+      "crawl_id": 4,
+      "discovered_at": "2026-10-14 05:09:17",
+      "id": 360,
+      "is_internal": 0,
+      "placement": "footer",
+      "source_url": "https://groniqdigital.com/learn/",
+      "target_domain": "www.behance.net",
+      "target_status": null,
+      "target_url": "https://www.behance.net/md-tavrej-ansari"
+    }
+  ],
+  "success": true,
+  "urls": [
+    {
+      "analytics": {
+        "facebook_pixel": false,
+        "ga4_id": "",
+        "google_analytics": true,
+        "gtag": false,
+        "gtm_id": "GTM-WZFQDDBR",
+        "hotjar": false,
+        "mixpanel": false
+      },
+      "author": "Groniq Digital Solutions",
+      "canonical_url": "https://groniqdigital.com/",
+      "charset": "UTF-8",
+      "content_type": "text/html",
+      "crawl_id": 4,
+      "crawled_at": "2026-10-14 05:09:17",
+      "depth": 0,
+      "error_type": null,
+      "external_links": 9,
+      "fetch_state": "fetched",
+      "final_status": 200,
+      "final_url": "https://groniqdigital.com/",
+      "generator": "",
+      "h1": "Turn Digital Attention\n                                Into Customers.",
+      "h2": [
+        "Start a Project",
+        "Growth rarely breaks \nin\n                            just one place.",
+        "The Groniq Growth System.",
+        "What Groniq Delivers.",
+        "From Diagnosis To Growth.",
+        "Real Client Work.",
+        "Groniq Labs.",
+        "Built through real execution.",
+        "Insights & Experiments.",
+        "Marketing works better when the system is\n                                        connected."
+      ],
+      "h3": [
+        "Traffic Without\n                            Conversion",
+        "Ads With Weak Tracking",
+        "Good Product, Poor UX",
+        "Visibility Without\n                            Journey",
+        "Leads With Weak\n                            Follow-Up",
+        "Data Without Action",
+        "ACQUIRE",
+        "DISCOVER",
+        "CONVERT",
+        "MEASURE"
+      ],
+      "hreflang": [],
+      "id": 38,
+      "images": [],
+      "initial_status": 200,
+      "internal_links": 16,
+      "is_internal": true,
+      "javascript_rendered": 0,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "areaServed": "Global",
+          "description": "Digital growth systems, performance marketing, SEO, conversion-focused websites, and analytics for emerging consumer and e-commerce brands.",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Performance Marketing (Google & Meta Ads)"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Search Engine Optimization (SEO)"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "E-commerce Website & Landing Page CRO"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "GA4, GTM & Conversion Tracking Infrastructure"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Marketing Funnels & Automation"
+                }
+              }
+            ],
+            "name": "Growth Services"
+          },
+          "logo": "https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png",
+          "name": "Groniq Digital Solutions",
+          "sameAs": [
+            "https://www.linkedin.com/company/groniq-digital-solutions",
+            "https://instagram.com/groniq_digiital_solutions",
+            "https://www.behance.net/groniq",
+            "https://www.youtube.com/@groniq"
+          ],
+          "url": "https://groniqdigital.com/"
+        }
+      ],
+      "keywords": "Groniq Digital Solutions, Performance Marketing, E-commerce Growth, SEO, Conversion Rate Optimisation, CRO, Google Ads, Meta Ads, GA4, GTM, Marketing Automation, Emerging Consumer Brands",
+      "lang": "en",
+      "link_check_only": 0,
+      "linked_from": [
+        "https://groniqdigital.com/",
+        "https://groniqdigital.com/tools/",
+        "https://groniqdigital.com/learn/"
+      ],
+      "meta_description": "Grow your business with Groniq through performance marketing, SEO, conversion-focused websites, CRO and reliable analytics and tracking systems.",
+      "meta_tags": {
+        "author": "Groniq Digital Solutions",
+        "description": "Grow your business with Groniq through performance marketing, SEO, conversion-focused websites, CRO and reliable analytics and tracking systems.",
+        "keywords": "Groniq Digital Solutions, Performance Marketing, E-commerce Growth, SEO, Conversion Rate Optimisation, CRO, Google Ads, Meta Ads, GA4, GTM, Marketing Automation, Emerging Consumer Brands",
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "twitter:card": "summary_large_image",
+        "twitter:creator": "@groniq",
+        "twitter:description": "Grow your business with Groniq through performance marketing, SEO, conversion-focused websites, CRO and reliable analytics and tracking systems.",
+        "twitter:image": "https://res.cloudinary.com/deaammmyy/image/upload/w_1200,h_630,c_pad,b_rgb:050505/v1765349123/favicon.png",
+        "twitter:image:alt": "Groniq Digital Solutions",
+        "twitter:site": "@groniq",
+        "twitter:title": "Groniq | Performance Marketing, SEO & Digital Growth",
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0"
+      },
+      "og_tags": {
+        "description": "Grow your business with Groniq through performance marketing, SEO, conversion-focused websites, CRO and reliable analytics and tracking systems.",
+        "image": "https://res.cloudinary.com/deaammmyy/image/upload/w_1200,h_630,c_pad,b_rgb:050505/v1765349123/favicon.png",
+        "image:alt": "Groniq Digital Solutions",
+        "image:height": "630",
+        "image:secure_url": "https://res.cloudinary.com/deaammmyy/image/upload/w_1200,h_630,c_pad,b_rgb:050505/v1765349123/favicon.png",
+        "image:type": "image/png",
+        "image:width": "1200",
+        "locale": "en_US",
+        "site_name": "Groniq",
+        "title": "Groniq | Performance Marketing, SEO & Digital Growth",
+        "type": "website",
+        "url": "https://groniqdigital.com/"
+      },
+      "redirects": [],
+      "render_time": null,
+      "response_time": 1376.02,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "robots_directives": [],
+      "schema_org": [],
+      "size": 211222,
+      "status_code": 200,
+      "theme_color": "",
+      "title": "Groniq | Performance Marketing, SEO & Digital Growth",
+      "twitter_tags": {
+        "card": "summary_large_image",
+        "creator": "@groniq",
+        "description": "Grow your business with Groniq through performance marketing, SEO, conversion-focused websites, CRO and reliable analytics and tracking systems.",
+        "image": "https://res.cloudinary.com/deaammmyy/image/upload/w_1200,h_630,c_pad,b_rgb:050505/v1765349123/favicon.png",
+        "image:alt": "Groniq Digital Solutions",
+        "site": "@groniq",
+        "title": "Groniq | Performance Marketing, SEO & Digital Growth"
+      },
+      "url": "https://groniqdigital.com/",
+      "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+      "word_count": 2168,
+      "x_robots_tag": []
+    },
+    {
+      "analytics": {
+        "facebook_pixel": false,
+        "ga4_id": "",
+        "google_analytics": true,
+        "gtag": false,
+        "gtm_id": "GTM-WZFQDDBR",
+        "hotjar": false,
+        "mixpanel": false
+      },
+      "author": "Groniq Digital Solutions",
+      "canonical_url": "https://groniqdigital.com/tools/",
+      "charset": "UTF-8",
+      "content_type": "text/html",
+      "crawl_id": 4,
+      "crawled_at": "2026-10-14 05:09:17",
+      "depth": 1,
+      "error_type": null,
+      "external_links": 5,
+      "fetch_state": "fetched",
+      "final_status": 200,
+      "final_url": "https://groniqdigital.com/tools/",
+      "generator": "",
+      "h1": "Free Marketing Tools",
+      "h2": [
+        "Start a Project",
+        "Why we built these tools",
+        "Discuss Scope"
+      ],
+      "h3": [
+        "No Tools Found",
+        "Inquiry Received"
+      ],
+      "hreflang": [],
+      "id": 39,
+      "images": [],
+      "initial_status": 200,
+      "internal_links": 26,
+      "is_internal": true,
+      "javascript_rendered": 0,
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@id": "https://groniqdigital.com/#organization",
+              "@type": "Organization",
+              "description": "Digital growth systems, performance marketing, SEO, conversion-focused websites, and analytics for emerging consumer and e-commerce brands.",
+              "logo": "https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png",
+              "name": "Groniq Digital Solutions",
+              "sameAs": [
+                "https://www.linkedin.com/company/groniq-digital-solutions",
+                "https://instagram.com/groniq_digiital_solutions",
+                "https://www.behance.net/groniq",
+                "https://www.youtube.com/@groniq"
+              ],
+              "url": "https://groniqdigital.com/"
+            },
+            {
+              "@id": "https://groniqdigital.com/tools/#webpage",
+              "@type": "CollectionPage",
+              "description": "Free marketing and analytics tools from Groniq for cleaner campaign tracking, UTM links, URL auditing, QR codes and better marketing workflows.",
+              "hasPart": [
+                {
+                  "@type": "WebApplication",
+                  "applicationCategory": "BusinessApplication",
+                  "description": "Free, privacy-first UTM builder and campaign URL generator. Create clean campaign tracking links with presets for Google Ads and Meta Ads.",
+                  "name": "Groniq UTM Builder & Campaign URL Generator",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                  },
+                  "operatingSystem": "All",
+                  "url": "https://groniqdigital.com/tools/utm-builder/"
+                }
+              ],
+              "isPartOf": {
+                "@id": "https://groniqdigital.com/#website"
+              },
+              "name": "Free Marketing & Analytics Tools | Groniq",
+              "url": "https://groniqdigital.com/tools/"
+            },
+            {
+              "@id": "https://groniqdigital.com/tools/#breadcrumb",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "item": "https://groniqdigital.com/",
+                  "name": "Home",
+                  "position": 1
+                },
+                {
+                  "@type": "ListItem",
+                  "item": "https://groniqdigital.com/tools/",
+                  "name": "Tools",
+                  "position": 2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "keywords": "free marketing tools, utm builder, campaign url generator, ecommerce growth tools, conversion rate optimization tools, performance marketing tools, groniq",
+      "lang": "en",
+      "link_check_only": 0,
+      "linked_from": [
+        "https://groniqdigital.com/",
+        "https://groniqdigital.com/tools/",
+        "https://groniqdigital.com/learn/"
+      ],
+      "meta_description": "Free marketing and analytics tools from Groniq for cleaner campaign tracking, UTM links, URL auditing, QR codes and better marketing workflows.",
+      "meta_tags": {
+        "author": "Groniq Digital Solutions",
+        "description": "Free marketing and analytics tools from Groniq for cleaner campaign tracking, UTM links, URL auditing, QR codes and better marketing workflows.",
+        "keywords": "free marketing tools, utm builder, campaign url generator, ecommerce growth tools, conversion rate optimization tools, performance marketing tools, groniq",
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "twitter:card": "summary_large_image",
+        "twitter:creator": "@groniq",
+        "twitter:description": "Free marketing and analytics tools from Groniq for cleaner campaign tracking, UTM links, URL auditing, QR codes and better marketing workflows.",
+        "twitter:image": "https://res.cloudinary.com/deaammmyy/image/upload/w_1200,h_630,c_pad,b_rgb:050505/v1765349123/favicon.png",
+        "twitter:image:alt": "Groniq Free Marketing Tools",
+        "twitter:site": "@groniq",
+        "twitter:title": "Free Marketing & Analytics Tools | Groniq",
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0"
+      },
+      "og_tags": {
+        "description": "Free marketing and analytics tools from Groniq for cleaner campaign tracking, UTM links, URL auditing, QR codes and better marketing workflows.",
+        "image": "https://res.cloudinary.com/deaammmyy/image/upload/w_1200,h_630,c_pad,b_rgb:050505/v1765349123/favicon.png",
+        "image:alt": "Groniq Free Marketing Tools",
+        "image:height": "630",
+        "image:secure_url": "https://res.cloudinary.com/deaammmyy/image/upload/w_1200,h_630,c_pad,b_rgb:050505/v1765349123/favicon.png",
+        "image:type": "image/png",
+        "image:width": "1200",
+        "locale": "en_US",
+        "site_name": "Groniq",
+        "title": "Free Marketing & Analytics Tools | Groniq",
+        "type": "website",
+        "url": "https://groniqdigital.com/tools/"
+      },
+      "redirects": [],
+      "render_time": null,
+      "response_time": 113.89,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "robots_directives": [],
+      "schema_org": [],
+      "size": 61810,
+      "status_code": 200,
+      "theme_color": "",
+      "title": "Free Marketing & Analytics Tools | Groniq",
+      "twitter_tags": {
+        "card": "summary_large_image",
+        "creator": "@groniq",
+        "description": "Free marketing and analytics tools from Groniq for cleaner campaign tracking, UTM links, URL auditing, QR codes and better marketing workflows.",
+        "image": "https://res.cloudinary.com/deaammmyy/image/upload/w_1200,h_630,c_pad,b_rgb:050505/v1765349123/favicon.png",
+        "image:alt": "Groniq Free Marketing Tools",
+        "site": "@groniq",
+        "title": "Free Marketing & Analytics Tools | Groniq"
+      },
+      "url": "https://groniqdigital.com/tools/",
+      "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+      "word_count": 254,
+      "x_robots_tag": []
+    },
+    {
+      "analytics": {
+        "facebook_pixel": false,
+        "ga4_id": "",
+        "google_analytics": true,
+        "gtag": false,
+        "gtm_id": "GTM-WZFQDDBR",
+        "hotjar": false,
+        "mixpanel": false
+      },
+      "author": "",
+      "canonical_url": "https://groniqdigital.com/learn/",
+      "charset": "UTF-8",
+      "content_type": "text/html",
+      "crawl_id": 4,
+      "crawled_at": "2026-10-14 05:09:17",
+      "depth": 1,
+      "error_type": null,
+      "external_links": 5,
+      "fetch_state": "fetched",
+      "final_status": 200,
+      "final_url": "https://groniqdigital.com/learn/",
+      "generator": "",
+      "h1": "Learn",
+      "h2": [
+        "Start a\n                    Project"
+      ],
+      "h3": [],
+      "hreflang": [],
+      "id": 40,
+      "images": [],
+      "initial_status": 200,
+      "internal_links": 25,
+      "is_internal": true,
+      "javascript_rendered": 0,
+      "json_ld": [],
+      "keywords": "",
+      "lang": "en",
+      "link_check_only": 0,
+      "linked_from": [
+        "https://groniqdigital.com/",
+        "https://groniqdigital.com/tools/",
+        "https://groniqdigital.com/learn/"
+      ],
+      "meta_description": "Practical guides on performance marketing, SEO, analytics, attribution, CRO, tracking, websites and digital growth from Groniq.",
+      "meta_tags": {
+        "description": "Practical guides on performance marketing, SEO, analytics, attribution, CRO, tracking, websites and digital growth from Groniq.",
+        "twitter:card": "summary_large_image",
+        "twitter:description": "Practical guides on performance marketing, SEO, analytics, attribution, CRO, tracking, websites and digital growth from Groniq.",
+        "twitter:image": "https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png",
+        "twitter:title": "Marketing Guides & Analytics Knowledge Base | Groniq",
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0"
+      },
+      "og_tags": {
+        "description": "Practical guides on performance marketing, SEO, analytics, attribution, CRO, tracking, websites and digital growth from Groniq.",
+        "image": "https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png",
+        "title": "Marketing Guides & Analytics Knowledge Base | Groniq",
+        "type": "website",
+        "url": "https://groniqdigital.com/learn/"
+      },
+      "redirects": [],
+      "render_time": null,
+      "response_time": 1446.52,
+      "robots": "",
+      "robots_directives": [],
+      "schema_org": [],
+      "size": 31111,
+      "status_code": 200,
+      "theme_color": "",
+      "title": "Marketing Guides & Analytics Knowledge Base | Groniq",
+      "twitter_tags": {
+        "card": "summary_large_image",
+        "description": "Practical guides on performance marketing, SEO, analytics, attribution, CRO, tracking, websites and digital growth from Groniq.",
+        "image": "https://res.cloudinary.com/deaammmyy/image/upload/v1765349123/favicon.png",
+        "title": "Marketing Guides & Analytics Knowledge Base | Groniq"
+      },
+      "url": "https://groniqdigital.com/learn/",
+      "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+      "word_count": 103,
+      "x_robots_tag": []
+    }
+  ]
+}

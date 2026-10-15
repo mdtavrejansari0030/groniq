@@ -1,0 +1,15 @@
+{
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.ignoreFiles": [
+        "**/.vscode/**",
+        "**/.git/**",
+        "**/local-apps/**",
+        "**/scratch/**",
+        "**/data/**",
+        "**/*.db*",
+        "**/*.sqlite*",
+        "**/*.log",
+        "**/.venv/**",
+        "**/node_modules/**"
+    ]
+}

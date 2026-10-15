@@ -1,0 +1,33 @@
+{
+  "name": "temp-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "node build-utm-builder.js && node build-grocrawl.js && npm run build:css && node build-static.js",
+    "build:css": "tailwindcss --input ./src/styles/tailwind.css --output ./tailwind.css --minify",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "jsqr": "^1.4.0",
+    "lucide-react": "^1.49.0",
+    "next": "16.3.8",
+    "node-html-parser": "^9.0.4",
+    "qrcode": "^1.5.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.8",
+    "pngjs": "^7.0.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
